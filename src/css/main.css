@@ -369,6 +369,18 @@ nav a {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+/* Force Saurabh and Vineet to match sizes (taller portrait) */
+.profile-img-placeholder[src*="team-2"],
+.profile-img-placeholder[src*="team-3"] {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Make Ritesh a little bigger */
+.profile-img-placeholder[src*="team-1"] {
+    width: 175px;
+}
+
 .profile-card-preview h4 {
     font-size: 1.2rem;
     margin-bottom: 5px;
@@ -417,6 +429,18 @@ nav a {
     margin: 0 auto 20px auto;
     border: 5px solid var(--brand-white);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Force Saurabh and Vineet to match sizes on full team page */
+.profile-img-placeholder-large[src*="team-2"],
+.profile-img-placeholder-large[src*="team-3"] {
+    height: 260px;
+    object-fit: cover;
+}
+
+/* Make Ritesh a little bigger */
+.profile-img-placeholder-large[src*="team-1"] {
+    width: 230px;
 }
 
 .profile-card-full h3 {
