@@ -301,6 +301,31 @@ nav a {
     color: var(--text-dark);
 }
 
+.catalogue-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-view {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--brand-red);
+    color: var(--brand-white);
+    border: 1px solid var(--brand-red);
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-view:hover {
+    background-color: var(--brand-dark-red);
+    border-color: var(--brand-dark-red);
+}
+
 .btn-download {
     display: inline-block;
     padding: 8px 16px;
