@@ -361,9 +361,9 @@ nav a {
 
 .profile-img-placeholder {
     width: 150px;
-    height: 150px;
+    height: auto;
     background-color: #ccc;
-    border-radius: 50%;
+    border-radius: 8px;
     margin: 0 auto 20px auto;
     border: 4px solid var(--brand-white);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -410,10 +410,10 @@ nav a {
 }
 
 .profile-img-placeholder-large {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: auto;
     background-color: #ccc;
-    border-radius: 50%;
+    border-radius: 8px;
     margin: 0 auto 20px auto;
     border: 5px solid var(--brand-white);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
