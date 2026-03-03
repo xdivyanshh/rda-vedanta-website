@@ -119,6 +119,16 @@ nav a {
     background-color: var(--brand-white);
 }
 
+.hero-tagline {
+    display: block;
+    color: var(--brand-red);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
 .hero h1 {
     font-size: 3rem;
     line-height: 1.1;
