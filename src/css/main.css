@@ -221,6 +221,7 @@ nav a {
     transition: transform 0.2s;
     position: relative;
     overflow: hidden;
+    border-radius: 8px; /* Softened edges to match the 'Wire/Coil' aesthetic */
 }
 
 .bento-card:hover {
@@ -341,6 +342,100 @@ nav a {
     text-transform: uppercase;
 }
 
+/* TEAM PREVIEW SECTION */
+.team-preview {
+    padding: 80px 0;
+    background-color: var(--brand-gray); /* A slightly different background to stand out */
+}
+
+.team-grid-preview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.profile-card-preview {
+    text-align: center;
+}
+
+.profile-img-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    border: 4px solid var(--brand-white);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.profile-card-preview h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.profile-card-preview p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.team-cta {
+    text-align: center;
+}
+
+/* FULL TEAM PAGE STYLES (our-team.html) */
+.team-page-main {
+    padding-bottom: 80px;
+}
+
+.team-page-main h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--brand-red);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.team-grid-full {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.profile-card-full {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+}
+
+.profile-img-placeholder-large {
+    width: 180px;
+    height: 180px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    border: 5px solid var(--brand-white);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.profile-card-full h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.profile-card-full span {
+    display: block;
+    color: var(--brand-red);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.profile-card-full p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
 /* FOOTER */
 footer {
     background-color: var(--brand-dark-red);
@@ -405,6 +500,9 @@ footer {
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .hero, .bento-grid, .distributor-grid, .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    .team-grid-preview {
         grid-template-columns: 1fr;
     }
     .nav-wrapper {
