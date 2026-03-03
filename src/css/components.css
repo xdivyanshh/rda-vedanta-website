@@ -1,0 +1,217 @@
+/* BUTTONS */
+.btn {
+    padding: 12px 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background-color: var(--brand-red);
+    color: var(--brand-white);
+    border: 2px solid var(--brand-red);
+}
+
+.btn-primary:hover {
+    background-color: var(--brand-dark-red);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--brand-red);
+    border: 2px solid var(--brand-red);
+}
+
+.btn-whatsapp {
+    background-color: transparent;
+    color: #25D366;
+    border: 2px solid #25D366;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #25D366;
+    color: var(--brand-white);
+}
+
+/* TRUST BADGE */
+.trust-badge {
+    font-weight: 700;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.trust-badge span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #ddd;
+    border-radius: 50%;
+}
+
+/* BENTO CARD */
+.bento-card {
+    border: 1px solid var(--border-color);
+    padding: 30px;
+    transition: transform 0.2s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.bento-card:hover {
+    border-color: var(--brand-red);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.bento-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--brand-red);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.bento-card:hover::before {
+    opacity: 1;
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: var(--brand-red);
+    margin-bottom: 20px;
+}
+
+.bento-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.bento-card p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* CATALOGUE CARD */
+.catalogue-card {
+    background: var(--brand-white);
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.catalogue-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: var(--brand-red);
+}
+
+.cat-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.catalogue-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.catalogue-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-view, .btn-download {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-view {
+    background-color: var(--brand-red);
+    color: var(--brand-white);
+    border: 1px solid var(--brand-red);
+}
+
+.btn-view:hover {
+    background-color: var(--brand-dark-red);
+    border-color: var(--brand-dark-red);
+}
+
+.btn-download {
+    background-color: transparent;
+    color: var(--brand-red);
+    border: 1px solid var(--brand-red);
+}
+
+.btn-download:hover {
+    background-color: var(--brand-red);
+    color: var(--brand-white);
+}
+
+/* FORMS */
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.9rem; }
+.form-group input, .form-group select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+.form-submit { width: 100%; background-color: var(--text-dark); color: var(--brand-white); border: none; padding: 15px; font-weight: 700; cursor: pointer; text-transform: uppercase; }
+
+/* PRICE ACCORDION & TABLES */
+.price-accordion { max-width: 1000px; margin: 0 auto; }
+.price-details { background: var(--brand-white); border: 1px solid var(--border-color); margin-bottom: 15px; border-radius: 4px; overflow: hidden; }
+.price-summary { padding: 15px 20px; background: #f9f9f9; cursor: pointer; font-weight: 700; font-size: 1.1rem; list-style: none; display: flex; justify-content: space-between; align-items: center; transition: background 0.2s; }
+.price-summary:hover { background: #eee; }
+.price-summary::-webkit-details-marker { display: none; }
+.price-summary::after { content: '+'; font-size: 1.5rem; color: var(--brand-red); font-weight: 400; }
+details[open] .price-summary::after { content: '-'; }
+.price-content { padding: 25px; border-top: 1px solid var(--border-color); overflow-x: auto; }
+.price-content h4 { color: var(--brand-red); margin: 25px 0 15px 0; border-bottom: 2px solid #eee; padding-bottom: 5px; }
+.price-content h4:first-child { margin-top: 0; }
+.price-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 0.9rem; min-width: 600px; }
+.price-table th, .price-table td { border: 1px solid #eee; padding: 10px 15px; text-align: left; }
+.price-table th { background-color: var(--brand-red); color: #fff; font-weight: 600; }
+.price-table tr:nth-child(even) { background-color: #f9f9f9; }
+.price-table tr:hover { background-color: #f0f0f0; }
+.price-list-text { padding-left: 20px; margin-bottom: 20px; }
+.price-list-text li { margin-bottom: 8px; }
+.note { font-size: 0.85rem; color: var(--text-light); font-style: italic; margin-bottom: 20px; }
+
+/* PROFILE CARDS */
+.profile-card-preview { text-align: center; }
+.profile-img-placeholder { width: 150px; height: auto; background-color: #ccc; border-radius: 8px; margin: 0 auto 20px auto; border: 4px solid var(--brand-white); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.profile-img-placeholder[src*="team-2"], .profile-img-placeholder[src*="team-3"] { height: 200px; object-fit: cover; }
+.profile-img-placeholder[src*="team-1"] { width: 175px; }
+.profile-card-preview h4 { font-size: 1.2rem; margin-bottom: 5px; }
+.profile-card-preview p { color: var(--text-light); font-size: 0.9rem; }
+
+.profile-card-full { border: 1px solid var(--border-color); border-radius: 8px; padding: 30px; text-align: center; }
+.profile-img-placeholder-large { width: 200px; height: auto; background-color: #ccc; border-radius: 8px; margin: 0 auto 20px auto; border: 5px solid var(--brand-white); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.profile-img-placeholder-large[src*="team-2"], .profile-img-placeholder-large[src*="team-3"] { height: 260px; object-fit: cover; }
+.profile-img-placeholder-large[src*="team-1"] { width: 230px; }
+.profile-card-full h3 { font-size: 1.5rem; margin-bottom: 5px; }
+.profile-card-full span { display: block; color: var(--brand-red); font-weight: 600; margin-bottom: 15px; }
+.profile-card-full p { color: var(--text-light); font-size: 0.95rem; }
