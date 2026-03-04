@@ -78,9 +78,21 @@
 .team-page-main h2 { font-size: 1.8rem; margin-bottom: 30px; border-bottom: 2px solid var(--brand-red); padding-bottom: 10px; display: inline-block; }
 .team-grid-full { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
 
+/* FACTSHEET SECTION */
+.factsheet-section { padding: 80px 0; background-color: var(--brand-gray); }
+.factsheet-container { max-width: 1000px; margin: 0 auto; }
+.factsheet-table { width: 100%; border-collapse: collapse; background: var(--brand-white); box-shadow: 0 2px 15px rgba(0,0,0,0.05); border-radius: 8px; overflow: hidden; }
+.factsheet-table th, .factsheet-table td { padding: 18px 25px; border-bottom: 1px solid var(--border-color); text-align: left; vertical-align: top; }
+.factsheet-table th { width: 35%; background-color: #f8f9fa; font-weight: 600; color: var(--text-dark); border-right: 1px solid var(--border-color); }
+.factsheet-table tr:last-child th, .factsheet-table tr:last-child td { border-bottom: none; }
+.factsheet-table td { color: var(--text-light); }
+
 /* RESPONSIVE SECTIONS */
 @media (max-width: 768px) {
     .hero, .bento-grid, .distributor-grid { grid-template-columns: 1fr; }
     .team-grid-preview { grid-template-columns: 1fr; }
     .hero-content { padding: 40px 20px; }
+    .factsheet-table th, .factsheet-table td { display: block; width: 100%; border-right: none; }
+    .factsheet-table th { background-color: #eaeaea; padding-bottom: 5px; }
+    .factsheet-table td { padding-top: 5px; padding-bottom: 20px; }
 }
