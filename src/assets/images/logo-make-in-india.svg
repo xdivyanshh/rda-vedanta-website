@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#e67e22">
+    <path d="M50 5C25.1 5 5 25.1 5 50s20.1 45 45 45 45-20.1 45-45S74.9 5 50 5zm0 80c-19.3 0-35-15.7-35-35S30.7 15 50 15s35 15.7 35 35-15.7 35-35 35z"/>
+    <path d="M50 25A25 25 0 1050 75 25 25 0 1050 25z" fill="#2980b9"/>
+    <text x="50" y="55" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#fff">INDIA</text>
+</svg>
