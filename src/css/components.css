@@ -51,12 +51,10 @@
     font-size: 0.85rem;
 }
 
-.trust-badge span {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background: #ddd;
-    border-radius: 50%;
+.trust-badge img {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
 }
 
 /* BENTO CARD */
