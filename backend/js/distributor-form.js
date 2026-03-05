@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
                 // Send data to the Node.js backend
-                const response = await fetch('http://localhost:3000/api/distributors', {
+                const response = await fetch('http://127.0.0.1:3000/api/distributors', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

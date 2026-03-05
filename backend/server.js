@@ -20,7 +20,7 @@ const MONGO_URI = `mongodb://rdavedanta:${DB_PASSWORD}@ac-chv1dbc-shard-00-00.ii
 mongoose.connect(MONGO_URI)
     .then(() => console.log('MongoDB Connected Successfully'))
     .catch(err => {
-        console.error('MongoDB Connection Error:', err);
+        console.error('MongoDB Connection Error:', err.message);
         console.log('Hint: Ensure your IP address is whitelisted in MongoDB Atlas Network Access.');
     });
 
@@ -28,27 +28,32 @@ mongoose.connect(MONGO_URI)
 app.post('/api/distributors', async (req, res) => {
     try {
         const { companyName, region, phoneNumber } = req.body;
+        console.log('Received application:', { companyName, region, phoneNumber });
 
         // Basic Validation
         if (!companyName || !region || !phoneNumber) {
             return res.status(400).json({ message: 'All fields are required' });
         }
 
-        const newDistributor = new Distributor({
-            companyName,
-            region,
-            phoneNumber
-        });
+        // Try to save to Database (Optional now, won't break if it fails)
+        try {
+            if (mongoose.connection.readyState === 1) {
+                const newDistributor = new Distributor({ companyName, region, phoneNumber });
+                await newDistributor.save();
+                console.log('Saved to MongoDB successfully');
+            } else {
+                console.log('MongoDB not connected, skipping DB save');
+            }
+        } catch (dbError) {
+            console.log('Warning: Failed to save to MongoDB:', dbError.message);
+        }
 
-        // 1. Save to Database
-        await newDistributor.save();
-
-        // 2. Send Email Notification (Data reaches you directly)
+        // Send Email Notification using provided credentials
         const transporter = nodemailer.createTransport({
-            service: 'gmail', // Use your email provider
+            service: 'gmail',
             auth: {
-                user: 'rdaelectricalspvtltd@gmail.com', // Replace with your email
-                pass: 'rda@1234'     // Replace with your App Password
+                user: 'rdaelectricalspvtltd@gmail.com',
+                pass: 'hjdhcbjdykoitkcu'
             }
         });
 
@@ -59,18 +64,24 @@ app.post('/api/distributors', async (req, res) => {
             text: `You have a new distributor request:\n\nCompany: ${companyName}\nRegion: ${region}\nPhone: ${phoneNumber}\n\nPlease contact them for a callback.`
         };
 
-        transporter.sendMail(mailOptions, (error, info) => {
-            if (error) {
-                console.log('Error sending email:', error);
-            } else {
-                console.log('Email sent: ' + info.response);
-            }
+        await new Promise((resolve, reject) => {
+            transporter.sendMail(mailOptions, (error, info) => {
+                if (error) {
+                    console.log('Error sending email:', error.message);
+                    reject(error);
+                } else {
+                    console.log('Email sent: ' + info.response);
+                    resolve(info);
+                }
+            });
         });
 
-        res.status(201).json({ message: 'Distributor request submitted successfully!' });
+        res.status(201).json({ message: 'Distributor request submitted and email sent successfully!' });
     } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: 'Server error' });
+        console.error('Submission Error:', error.message);
+        res.status(500).json({
+            message: 'Server error: ' + error.message + ' (Note: Gmail may require an App Password instead of your regular login password)'
+        });
     }
 });
 
