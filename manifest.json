@@ -1,0 +1,23 @@
+{
+  "short_name": "RDA Vedanta",
+  "name": "RDA Vedanta Electricals",
+  "description": "UPPWD-approved manufacturer of HRFR house wires and pure copper cables.",
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#d32f2f",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "src/assets/images/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "src/assets/images/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ]
+}
