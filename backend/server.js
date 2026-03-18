@@ -1,9 +1,7 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
-const Distributor = require('./js/Distributor');
 
 const app = express();
 const PORT = 3000;
@@ -12,17 +10,6 @@ const PORT = 3000;
 app.use(cors()); // Allows your frontend to talk to this backend
 app.use(bodyParser.json());
 
-// MongoDB Connection
-// We use encodeURIComponent to handle special characters in the password automatically
-const DB_PASSWORD = encodeURIComponent('(khRuWiQ/$yAmJ8');
-const MONGO_URI = `mongodb://rdavedanta:${DB_PASSWORD}@ac-chv1dbc-shard-00-00.iiuazye.mongodb.net:27017,ac-chv1dbc-shard-00-01.iiuazye.mongodb.net:27017,ac-chv1dbc-shard-00-02.iiuazye.mongodb.net:27017/rda_vedanta?ssl=true&replicaSet=atlas-13f3eo-shard-0&authSource=admin&retryWrites=true&w=majority&appName=admin`;
-
-mongoose.connect(MONGO_URI)
-    .then(() => console.log('MongoDB Connected Successfully'))
-    .catch(err => {
-        console.error('MongoDB Connection Error:', err.message);
-        console.log('Hint: Ensure your IP address is whitelisted in MongoDB Atlas Network Access.');
-    });
 
 // API Route to handle form submission
 app.post('/api/distributors', async (req, res) => {
@@ -35,25 +22,14 @@ app.post('/api/distributors', async (req, res) => {
             return res.status(400).json({ message: 'All fields are required' });
         }
 
-        // Try to save to Database (Optional now, won't break if it fails)
-        try {
-            if (mongoose.connection.readyState === 1) {
-                const newDistributor = new Distributor({ companyName, region, phoneNumber });
-                await newDistributor.save();
-                console.log('Saved to MongoDB successfully');
-            } else {
-                console.log('MongoDB not connected, skipping DB save');
-            }
-        } catch (dbError) {
-            console.log('Warning: Failed to save to MongoDB:', dbError.message);
-        }
-
         // Send Email Notification using provided credentials
         const transporter = nodemailer.createTransport({
-            service: 'gmail',
+            host: 'smtp.gmail.com',
+            port: 587,
+            secure: false, // use STARTTLS (more firewall-friendly than port 465)
             auth: {
                 user: 'rdaelectricalspvtltd@gmail.com',
-                pass: 'hjdhcbjdykoitkcu'
+                pass: 'alzo nipe qhoh zhqc'
             }
         });
 

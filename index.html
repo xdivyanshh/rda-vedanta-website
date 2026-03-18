@@ -20,41 +20,49 @@
 
 <body>
 
+    <!-- ═══ PREMIUM LOADING SCREEN ═══ -->
+    <div id="global-loader" class="global-loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- ═══ HEADER ═══ -->
     <header>
         <div class="container nav-wrapper">
-            <a href="index.html">
+            <a href="/">
                 <img src="src/assets/images/vedanta-logo.png" alt="RDA Vedanta Electricals Logo" class="header-logo">
             </a>
             <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
             <nav id="mainNav">
                 <ul>
-                    <li><a href="our-team.html">Our Team</a></li>
-                    <li><a href="#">Product Matrix</a></li>
-                    <li><a href="#">Approvals</a></li>
-                    <li><a href="#">Distributors</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/leadership/">Our Team</a></li>
+                    <li><a href="/products/">Products</a></li>
+                    <li><a href="/price-list/">Price List</a></li>
+                    <li><a href="/contact/">Distributors</a></li>
+                    <li><a href="/contact/">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-actions" id="headerActions">
-                <a href="https://wa.me/916392959815" class="btn btn-whatsapp" target="_blank"><svg width="20"
-                        height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
-                    </svg> Sales Inquiry</a>
-                <a href="#" class="btn btn-primary">Download B2B Catalog</a>
+                <a href="https://wa.me/916392959815" class="btn btn-whatsapp" target="_blank">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                    Sales Inquiry
+                </a>
+                <a href="/price-list/" class="btn btn-primary">Download Catalog</a>
             </div>
         </div>
     </header>
 
+    <!-- ═══ HERO ═══ -->
     <section class="hero">
-        <div class="hero-content">
+        <div class="container hero-content">
             <span class="hero-tagline">Your Safety is Our Priority</span>
             <h1>India's Lifeline: 99.97% Pure Electrolytic Copper Wiring.</h1>
             <p>UPPWD Approved Manufacturer of HRFR House Wires, Multicore Industrial Cables, and Submersible Lines.
                 Engineered for maximum conductivity and fire safety.</p>
-            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
-                <a href="#" class="btn btn-primary">View Cable Specs</a>
-                <a href="#" class="btn btn-outline">Get Copper Rates</a>
+            <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                <a href="/products/" class="btn btn-primary">View Products</a>
+                <a href="/price-list/" class="btn btn-outline">Get Price List</a>
             </div>
         </div>
         <div class="hero-visual">
@@ -63,945 +71,31 @@
         </div>
     </section>
 
+    <!-- ═══ TRUST STRIP ═══ -->
     <div class="trust-strip">
         <div class="container trust-wrapper">
             <div class="trust-badge"><img src="src/assets/images/logo-uppwd.svg" alt="UPPWD Badge"> UPPWD Approved</div>
-            <div class="trust-badge"><img src="src/assets/images/logo-make-in-india.svg" alt="Make In India Logo"> Make
-                In India</div>
+            <div class="trust-badge"><img src="src/assets/images/logo-make-in-india.svg" alt="Make In India Logo"> Make In India</div>
             <div class="trust-badge"><img src="src/assets/images/logo-iso.svg" alt="ISO Logo"> ISO 9001:2015</div>
-            <div class="trust-badge"><img src="src/assets/images/logo-indiamart.svg" alt="IndiaMART TrustSEAL">
-                IndiaMART TrustSEAL</div>
+            <div class="trust-badge"><img src="src/assets/images/logo-indiamart.svg" alt="IndiaMART TrustSEAL"> IndiaMART TrustSEAL</div>
         </div>
     </div>
 
-    <section class="product-matrix">
+    <!-- ═══ PRODUCTS CATEGORIES ═══ -->
+    <section class="product-matrix reveal" id="product-categories">
         <div class="container">
             <div class="section-header">
                 <h2>Premium Electrical Wires, Cables & Switchgears</h2>
                 <p>From domestic housing to heavy industry, we power the connection.</p>
             </div>
-            <div class="bento-grid">
-                <div class="bento-card">
-                    <div class="card-icon">🔌</div>
-                    <h3>Domestic Shielding (HRFR)</h3>
-                    <p>Heat-Resistant Flame Retardant PVC house wires. 99.97% pure copper for zero-loss power
-                        transmission.</p>
-                </div>
-                <div class="bento-card">
-                    <div class="card-icon">🏭</div>
-                    <h3>Industrial Armored Cables</h3>
-                    <p>Heavy-duty multicore cables for factory infrastructure. High tensile strength and chemical
-                        resistance.</p>
-                </div>
-                <div class="bento-card">
-                    <div class="card-icon">⚡</div>
-                    <h3>Circuit Protection</h3>
-                    <p>Mild Steel MCB Distribution Boards and Changeovers. The perfect termination point for our
-                        high-grade wires.</p>
-                </div>
-                <div class="bento-card">
-                    <div class="card-icon">❄️</div>
-                    <h3>Ventilation Systems</h3>
-                    <p>High-speed aluminum ceiling fans (Tornado Series) designed to run efficiently on RDA cabling.</p>
-                </div>
-            </div>
+            <div class="bento-grid" id="bentoGrid"></div>
         </div>
     </section>
 
-    <section class="catalogue-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Electrical Product Catalogues & Specifications</h2>
-                <p>Download technical specifications and brochures for our complete range.</p>
-            </div>
-            <div class="catalogue-grid">
-                <div class="catalogue-card">
-                    <div class="cat-icon">❄️</div>
-                    <h3>Coolers</h3>
-                    <div class="catalogue-actions">
-                        <a href="src/assets/catalogs/rda-coolers.pdf" class="btn-view" target="_blank">View</a>
-                        <a href="src/assets/catalogs/rda-coolers.pdf" class="btn-download" download>Download</a>
-                    </div>
-                </div>
-                <div class="catalogue-card">
-                    <div class="cat-icon">🔥</div>
-                    <h3>Heaters</h3>
-                    <div class="catalogue-actions">
-                        <a href="src/assets/catalogs/rda-heaters.pdf" class="btn-view" target="_blank">View</a>
-                        <a href="src/assets/catalogs/rda-heaters.pdf" class="btn-download" download>Download</a>
-                    </div>
-                </div>
-                <div class="catalogue-card">
-                    <div class="cat-icon">🧶</div>
-                    <h3>Wires & Cables</h3>
-                    <div class="catalogue-actions">
-                        <a href="src/assets/catalogs/rda-wires-cables.pdf" class="btn-view" target="_blank">View</a>
-                        <a href="src/assets/catalogs/rda-wires-cables.pdf" class="btn-download" download>Download</a>
-                    </div>
-                </div>
-                <div class="catalogue-card">
-                    <div class="cat-icon">🌀</div>
-                    <h3>Ceiling Fans</h3>
-                    <div class="catalogue-actions">
-                        <a href="src/assets/catalogs/rda-fans.pdf" class="btn-view" target="_blank">View</a>
-                        <a href="src/assets/catalogs/rda-fans.pdf" class="btn-download" download>Download</a>
-                    </div>
-                </div>
-                <div class="catalogue-card">
-                    <div class="cat-icon">💨</div>
-                    <h3>Additional Fans</h3>
-                    <div class="catalogue-actions">
-                        <a href="src/assets/catalogs/rda-other-fans.pdf" class="btn-view" target="_blank">View</a>
-                        <a href="src/assets/catalogs/rda-other-fans.pdf" class="btn-download" download>Download</a>
-                    </div>
-                </div>
-                <div class="catalogue-card">
-                    <div class="cat-icon">🚇</div>
-                    <h3>Round Conduit PVC Pipes</h3>
-                    <div class="catalogue-actions">
-                        <a href="src/assets/catalogs/rda-pipes.pdf" class="btn-view" target="_blank">View</a>
-                        <a href="src/assets/catalogs/rda-pipes.pdf" class="btn-download" download>Download</a>
-                    </div>
-                </div>
-                <div class="catalogue-card">
-                    <div class="cat-icon">👕</div>
-                    <h3>Dry Irons</h3>
-                    <div class="catalogue-actions">
-                        <a href="src/assets/catalogs/rda-irons.pdf" class="btn-view" target="_blank">View</a>
-                        <a href="src/assets/catalogs/rda-irons.pdf" class="btn-download" download>Download</a>
-                    </div>
-                </div>
-                <div class="catalogue-card">
-                    <div class="cat-icon">⚡</div>
-                    <h3>Distribution Boards</h3>
-                    <div class="catalogue-actions">
-                        <a href="src/assets/catalogs/rda-distribution-boards.pdf" class="btn-view"
-                            target="_blank">View</a>
-                        <a href="src/assets/catalogs/rda-distribution-boards.pdf" class="btn-download"
-                            download>Download</a>
-                    </div>
-                </div>
-                <div class="catalogue-card">
-                    <div class="cat-icon">✨</div>
-                    <h3>Signature Series</h3>
-                    <div class="catalogue-actions">
-                        <a href="src/assets/catalogs/rda-signature-series.pdf" class="btn-view" target="_blank">View</a>
-                        <a href="src/assets/catalogs/rda-signature-series.pdf" class="btn-download"
-                            download>Download</a>
-                    </div>
-                </div>
-                <div class="catalogue-card">
-                    <div class="cat-icon">🔌</div>
-                    <h3>Electrical Accessories</h3>
-                    <div class="catalogue-actions">
-                        <a href="src/assets/catalogs/rda-electrical-accessories.pdf" class="btn-view"
-                            target="_blank">View</a>
-                        <a href="src/assets/catalogs/rda-electrical-accessories.pdf" class="btn-download"
-                            download>Download</a>
-                    </div>
-                </div>
-                <div class="catalogue-card">
-                    <div class="cat-icon">📎</div>
-                    <h3>Wire Clips</h3>
-                    <div class="catalogue-actions">
-                        <a href="src/assets/catalogs/rda-wire-clips.pdf" class="btn-view" target="_blank">View</a>
-                        <a href="src/assets/catalogs/rda-wire-clips.pdf" class="btn-download" download>Download</a>
-                    </div>
-                </div>
-                <div class="catalogue-card">
-                    <div class="cat-icon">🔗</div>
-                    <h3>Cable Ties</h3>
-                    <div class="catalogue-actions">
-                        <a href="src/assets/catalogs/rda-cable-ties.pdf" class="btn-view" target="_blank">View</a>
-                        <a href="src/assets/catalogs/rda-cable-ties.pdf" class="btn-download" download>Download</a>
-                    </div>
-                </div>
-                <div class="catalogue-card">
-                    <div class="cat-icon">📦</div>
-                    <h3>Other Accessories</h3>
-                    <div class="catalogue-actions">
-                        <a href="src/assets/catalogs/rda-accessories-misc.pdf" class="btn-view" target="_blank">View</a>
-                        <a href="src/assets/catalogs/rda-accessories-misc.pdf" class="btn-download"
-                            download>Download</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="distributor-section">
-        <div class="container distributor-grid">
-            <div class="distributor-content">
-                <h2>Become an RDA Vedanta Wire & Cable Distributor</h2>
-                <p style="margin-bottom: 20px; opacity: 0.9;">Join the fastest-growing Wire & Cable network in Telangana
-                    & Southern India.</p>
-                <ul>
-                    <li><strong>Reel-to-Reel Consistency:</strong> Precision gauge assurance on every coil.</li>
-                    <li><strong>Copper Pricing Transparency:</strong> Real-time rate adjustments for partners.</li>
-                    <li><strong>Regulatory Compliance:</strong> All products GST & ISO compliant.</li>
-                </ul>
-            </div>
-            <div class="lead-form">
-                <h3 style="margin-bottom: 15px; color: var(--brand-red);">Apply for Distributorship</h3>
-                <form id="distributorForm">
-                    <div class="form-group">
-                        <label>Company Name</label>
-                        <input type="text" id="companyName" placeholder="Enter business name" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Region / State</label>
-                        <select id="region" required>
-                            <option>Select Region</option>
-                            <option>Telangana</option>
-                            <option>Andhra Pradesh</option>
-                            <option>Uttar Pradesh</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Phone Number</label>
-                        <input type="tel" id="phoneNumber" placeholder="+91" required>
-                    </div>
-                    <button type="submit" class="form-submit">Request Callback</button>
-                </form>
-            </div>
-        </div>
-    </section>
 
-    <section class="price-list-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Official Price List</h2>
-                <p>Effective from 21st Jan 2026. All prices in INR.</p>
-            </div>
-
-            <div class="price-accordion">
-
-                <details class="price-details">
-                    <summary class="price-summary">1. Cables & Wires</summary>
-                    <div class="price-content">
-
-                        <h4>FR PVC Insulated Single Core Cables (1100V, IS 694)</h4>
-                        <table class="price-table">
-                            <thead>
-                                <tr>
-                                    <th>Nominal Area (sq. mm)</th>
-                                    <th>List Price per 90 m</th>
-                                    <th>Standard Packing</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>0.50</td>
-                                    <td>1359</td>
-                                    <td>24</td>
-                                </tr>
-                                <tr>
-                                    <td>0.75</td>
-                                    <td>1688</td>
-                                    <td>24</td>
-                                </tr>
-                                <tr>
-                                    <td>1.0</td>
-                                    <td>2000</td>
-                                    <td>24</td>
-                                </tr>
-                                <tr>
-                                    <td>1.5</td>
-                                    <td>3038</td>
-                                    <td>20</td>
-                                </tr>
-                                <tr>
-                                    <td>2.5</td>
-                                    <td>4926</td>
-                                    <td>12</td>
-                                </tr>
-                                <tr>
-                                    <td>4.0</td>
-                                    <td>7658</td>
-                                    <td>08</td>
-                                </tr>
-                                <tr>
-                                    <td>6.0</td>
-                                    <td>11290</td>
-                                    <td>06</td>
-                                </tr>
-                                <tr>
-                                    <td>10.0</td>
-                                    <td>18916</td>
-                                    <td>04</td>
-                                </tr>
-                                <tr>
-                                    <td>16.0</td>
-                                    <td>32343</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>25.0</td>
-                                    <td>50885</td>
-                                    <td>-</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <h4>Aluminium FR PVC Insulated Cables (1100V, IS 694)</h4>
-                        <table class="price-table">
-                            <thead>
-                                <tr>
-                                    <th>Nominal Area</th>
-                                    <th>Single Core</th>
-                                    <th>2 Core</th>
-                                    <th>3 Core</th>
-                                    <th>4 Core</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1.5</td>
-                                    <td>416</td>
-                                    <td>970</td>
-                                    <td>1015</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>2.5</td>
-                                    <td>589</td>
-                                    <td>1324</td>
-                                    <td>1366</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>4.0</td>
-                                    <td>809</td>
-                                    <td>1681</td>
-                                    <td>1741 / 3519</td>
-                                    <td>4616</td>
-                                </tr>
-                                <tr>
-                                    <td>6.0</td>
-                                    <td>1130</td>
-                                    <td>2474</td>
-                                    <td>2415 / 5184</td>
-                                    <td>6796</td>
-                                </tr>
-                                <tr>
-                                    <td>10.0</td>
-                                    <td>1801</td>
-                                    <td>3679</td>
-                                    <td>3745 / 7578</td>
-                                    <td>9564</td>
-                                </tr>
-                                <tr>
-                                    <td>16.0</td>
-                                    <td>3087</td>
-                                    <td>6742</td>
-                                    <td>6983</td>
-                                    <td>16542</td>
-                                </tr>
-                                <tr>
-                                    <td>25.0</td>
-                                    <td>6434</td>
-                                    <td>10501</td>
-                                    <td>-</td>
-                                    <td>25482</td>
-                                </tr>
-                                <tr>
-                                    <td>35.0</td>
-                                    <td>8133</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>38571</td>
-                                </tr>
-                                <tr>
-                                    <td>50.0</td>
-                                    <td>12999</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>49625</td>
-                                </tr>
-                                <tr>
-                                    <td>70.0</td>
-                                    <td>17795</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <h4>Submersible Flat Three Core PVC Insulated Cables</h4>
-                        <table class="price-table">
-                            <thead>
-                                <tr>
-                                    <th>Nominal Area (sq. mm)</th>
-                                    <th>List Price per meter</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1.5</td>
-                                    <td>97</td>
-                                </tr>
-                                <tr>
-                                    <td>2.5</td>
-                                    <td>152</td>
-                                </tr>
-                                <tr>
-                                    <td>4.0</td>
-                                    <td>227</td>
-                                </tr>
-                                <tr>
-                                    <td>6.0</td>
-                                    <td>352</td>
-                                </tr>
-                                <tr>
-                                    <td>10.0</td>
-                                    <td>583</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <h4>Flexible Wires (Copper & Cotton)</h4>
-                        <table class="price-table">
-                            <thead>
-                                <tr>
-                                    <th>Category</th>
-                                    <th>Specifications</th>
-                                    <th>List Price</th>
-                                    <th>Unit</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Twin Twisted Copper</td>
-                                    <td>10/76</td>
-                                    <td>765</td>
-                                    <td>Per 90 m</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>14/76</td>
-                                    <td>1002</td>
-                                    <td>Per 90 m</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>18/76</td>
-                                    <td>1391</td>
-                                    <td>Per 90 m</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>23/76</td>
-                                    <td>1692</td>
-                                    <td>Per 90 m</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>30/76</td>
-                                    <td>2329</td>
-                                    <td>Per 90 m</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>40/76</td>
-                                    <td>2923</td>
-                                    <td>Per 90 m</td>
-                                </tr>
-                                <tr>
-                                    <td>Parallel & Flat Twin</td>
-                                    <td>14/76</td>
-                                    <td>1367 / 1580</td>
-                                    <td>Per 90 m</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>23/76</td>
-                                    <td>2267 / 2692</td>
-                                    <td>Per 90 m</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>40/76</td>
-                                    <td>4109 / 4144</td>
-                                    <td>Per 90 m</td>
-                                </tr>
-                                <tr>
-                                    <td>Round Copper</td>
-                                    <td>23/52 (2/3 Core)</td>
-                                    <td>3306 / 4655</td>
-                                    <td>Per 90 m</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>40/52 (2/3 Core)</td>
-                                    <td>5464 / 7621</td>
-                                    <td>Per 90 m</td>
-                                </tr>
-                                <tr>
-                                    <td>Cotton Wire</td>
-                                    <td>23/52 (3/2 Core)</td>
-                                    <td>1495 / 2329</td>
-                                    <td>Per 45 m</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>40/52 (3/2 Core)</td>
-                                    <td>3379 / 2547</td>
-                                    <td>Per 45 m</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <h4>Speaker & Communication Cables</h4>
-                        <table class="price-table">
-                            <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Specifications</th>
-                                    <th>List Price</th>
-                                    <th>Length</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Speaker Cable</td>
-                                    <td>0.50 to 2.5 sq. mm</td>
-                                    <td>2382 to 9846</td>
-                                    <td>Per 90 m</td>
-                                </tr>
-                                <tr>
-                                    <td>Communication</td>
-                                    <td>RG 06 Copper</td>
-                                    <td>3462</td>
-                                    <td>Per 90 m</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>RG 06 Copper (REEL)</td>
-                                    <td>11751</td>
-                                    <td>Per 300 m</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>RG 06 CCS</td>
-                                    <td>1425</td>
-                                    <td>Per 90 m</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>RG 06 CCS (REEL)</td>
-                                    <td>4909</td>
-                                    <td>Per 300 m</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>CAT 06</td>
-                                    <td>5168</td>
-                                    <td>Per 100 m</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>CAT 06 (REEL)</td>
-                                    <td>15744</td>
-                                    <td>Per 305 m</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>CCTV 3+1</td>
-                                    <td>3300</td>
-                                    <td>Per 90 m</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>RG 59 CCS</td>
-                                    <td>1274</td>
-                                    <td>Per 90 m</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <h4>Multicore Round Cables (1100V, IS 694)</h4>
-                        <table class="price-table">
-                            <thead>
-                                <tr>
-                                    <th>Nominal Area</th>
-                                    <th>2 Core (90m)</th>
-                                    <th>3 Core (90m)</th>
-                                    <th>4 Core (90m)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>0.5</td>
-                                    <td>3026</td>
-                                    <td>4444</td>
-                                    <td>5306</td>
-                                </tr>
-                                <tr>
-                                    <td>0.75</td>
-                                    <td>4109</td>
-                                    <td>5534</td>
-                                    <td>7166</td>
-                                </tr>
-                                <tr>
-                                    <td>1.0</td>
-                                    <td>4911</td>
-                                    <td>7032</td>
-                                    <td>9025</td>
-                                </tr>
-                                <tr>
-                                    <td>1.5</td>
-                                    <td>6093</td>
-                                    <td>9128</td>
-                                    <td>11681</td>
-                                </tr>
-                                <tr>
-                                    <td>2.5</td>
-                                    <td>10022</td>
-                                    <td>14574</td>
-                                    <td>18640</td>
-                                </tr>
-                                <tr>
-                                    <td>4.0</td>
-                                    <td>15266</td>
-                                    <td>22172</td>
-                                    <td>30661</td>
-                                </tr>
-                                <tr>
-                                    <td>6.0</td>
-                                    <td>21242</td>
-                                    <td>31858</td>
-                                    <td>43940</td>
-                                </tr>
-                                <tr>
-                                    <td>10.0</td>
-                                    <td>37171</td>
-                                    <td>52698</td>
-                                    <td>73131</td>
-                                </tr>
-                                <tr>
-                                    <td>16.0</td>
-                                    <td>59469</td>
-                                    <td>84319</td>
-                                    <td>117011</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <h4>Flame Retardant Industrial Cables (200m)</h4>
-                        <table class="price-table">
-                            <thead>
-                                <tr>
-                                    <th>Nominal Area</th>
-                                    <th>FR PVC Price</th>
-                                    <th>FR-LSH PVC Price</th>
-                                    <th>Packing</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>0.75 sq. mm</td>
-                                    <td>3756</td>
-                                    <td>3939</td>
-                                    <td>12</td>
-                                </tr>
-                                <tr>
-                                    <td>1.0 sq. mm</td>
-                                    <td>4438</td>
-                                    <td>4670</td>
-                                    <td>12</td>
-                                </tr>
-                                <tr>
-                                    <td>1.5 sq. mm</td>
-                                    <td>6752</td>
-                                    <td>7101</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>2.5 sq. mm</td>
-                                    <td>10945</td>
-                                    <td>11484</td>
-                                    <td>06</td>
-                                </tr>
-                                <tr>
-                                    <td>4.0 sq. mm</td>
-                                    <td>16691</td>
-                                    <td>16566</td>
-                                    <td>04</td>
-                                </tr>
-                                <tr>
-                                    <td>6.0 sq. mm</td>
-                                    <td>25104</td>
-                                    <td>26343</td>
-                                    <td>03</td>
-                                </tr>
-                                <tr>
-                                    <td>10.0 sq. mm (100m)</td>
-                                    <td>21029</td>
-                                    <td>22048</td>
-                                    <td>02</td>
-                                </tr>
-                                <tr>
-                                    <td>16.0 sq. mm (100m)</td>
-                                    <td>35938</td>
-                                    <td>37669</td>
-                                    <td>-</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </details>
-
-                <details class="price-details">
-                    <summary class="price-summary">2. Distribution Boards, Switches & Accessories</summary>
-                    <div class="price-content">
-                        <h4>Distribution Boards</h4>
-                        <table class="price-table">
-                            <thead>
-                                <tr>
-                                    <th>Series & Type</th>
-                                    <th>Ways</th>
-                                    <th>List Price per Pc</th>
-                                    <th>Standard Packing</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Limnia SPN</td>
-                                    <td>04 to 16 Way</td>
-                                    <td>726 to 1397</td>
-                                    <td>24 to 08</td>
-                                </tr>
-                                <tr>
-                                    <td>Limnia TPN</td>
-                                    <td>04 to 08 Way</td>
-                                    <td>2090 to 3256</td>
-                                    <td>06 to 04</td>
-                                </tr>
-                                <tr>
-                                    <td>Signature SPN</td>
-                                    <td>04 to 16 Way</td>
-                                    <td>1210 to 2360</td>
-                                    <td>12 to 06</td>
-                                </tr>
-                                <tr>
-                                    <td>PVC MCB Box</td>
-                                    <td>1-4 Way</td>
-                                    <td>32 / 59</td>
-                                    <td>10</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <h4>Switches & Chambers</h4>
-                        <ul class="price-list-text">
-                            <li><strong>TPN Main Switch:</strong> 32A to 200A range from 2035 to 12034 per piece.</li>
-                            <li><strong>Changeover Switches:</strong> Standard and Deluxe (2 Pole/4 Pole) from 16A to
-                                100A, ranging from 858 to 10181 per piece.</li>
-                            <li><strong>Knife Type Changeover:</strong> 32A to 630A range from 8047 to 58883 per piece.
-                            </li>
-                            <li><strong>Automatic Changeover:</strong> 32A (2112 per piece) and 63A (5946 per piece).
-                            </li>
-                            <li><strong>Busbar Chamber (TPN):</strong> 32A to 630A range from 1903 to 13178 per piece.
-                            </li>
-                        </ul>
-
-                        <h4>Electrical Accessories</h4>
-                        <table class="price-table">
-                            <thead>
-                                <tr>
-                                    <th>Particulars</th>
-                                    <th>List Price per Pc</th>
-                                    <th>Packing in Box</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Fancy / Batton Holder</td>
-                                    <td>38 / 29</td>
-                                    <td>20</td>
-                                </tr>
-                                <tr>
-                                    <td>Combined with Box</td>
-                                    <td>150</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>2 Pin Top (Sumo / Sleek)</td>
-                                    <td>15 / 16</td>
-                                    <td>20</td>
-                                </tr>
-                                <tr>
-                                    <td>3 Pin Top Crystal (6A / 16A)</td>
-                                    <td>58 / 95</td>
-                                    <td>20 / 10</td>
-                                </tr>
-                                <tr>
-                                    <td>3 Pin Top Jumbo (6A / 16A)</td>
-                                    <td>37 / 68</td>
-                                    <td>20 / 10</td>
-                                </tr>
-                                <tr>
-                                    <td>3 Pin Top Mega (6A / 16A)</td>
-                                    <td>42 / 74</td>
-                                    <td>20 / 10</td>
-                                </tr>
-                                <tr>
-                                    <td>Ceiling Rose / Multiplug / Pendant Holder</td>
-                                    <td>25 / 74 / 28</td>
-                                    <td>Varies</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </details>
-
-                <details class="price-details">
-                    <summary class="price-summary">3. uPVC Pipes, Fittings, Clips & Ties</summary>
-                    <div class="price-content">
-                        <h4>Round Conduit uPVC Pipes (3 Meter Length)</h4>
-                        <table class="price-table">
-                            <thead>
-                                <tr>
-                                    <th>Type / Size</th>
-                                    <th>LMS</th>
-                                    <th>MMS</th>
-                                    <th>HMS</th>
-                                    <th>SHMS</th>
-                                    <th>Pkg / Bundle</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>RDA Vedanta 20MM</td>
-                                    <td>53</td>
-                                    <td>64</td>
-                                    <td>72</td>
-                                    <td>80</td>
-                                    <td>40 PCS</td>
-                                </tr>
-                                <tr>
-                                    <td>RDA Vedanta 25MM</td>
-                                    <td>59</td>
-                                    <td>70</td>
-                                    <td>85</td>
-                                    <td>99</td>
-                                    <td>25 PCS</td>
-                                </tr>
-                                <tr>
-                                    <td>Supreme 20MM</td>
-                                    <td>36</td>
-                                    <td>44</td>
-                                    <td>56</td>
-                                    <td>68</td>
-                                    <td>40 PCS</td>
-                                </tr>
-                                <tr>
-                                    <td>Supreme 25MM</td>
-                                    <td>51</td>
-                                    <td>58</td>
-                                    <td>69</td>
-                                    <td>79</td>
-                                    <td>25 PCS</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p class="note">Note: Pipe Fittings, Long Bends, Junction Boxes, and Accessories are available
-                            across Vedanta, Supreme, and Economy lines varying from 11/PC to 230/Dozen.</p>
-
-                        <h4>Hardware</h4>
-                        <ul class="price-list-text">
-                            <li><strong>Wire Clips:</strong> Nominal sizes from 4 MM to 40 MM. Prices range from 11.00
-                                to 704.00 depending on nail size/type.</li>
-                            <li><strong>Cable Ties:</strong> Sizes from 100 x 1.8 (4 Inch) to 450 x 4.8 (18 Inch).
-                                Prices range from 12 to 196.</li>
-                        </ul>
-                    </div>
-                </details>
-
-                <details class="price-details">
-                    <summary class="price-summary">4. Electrical Appliances</summary>
-                    <div class="price-content">
-                        <h4>Fans Range</h4>
-                        <table class="price-table">
-                            <thead>
-                                <tr>
-                                    <th>Category</th>
-                                    <th>Model</th>
-                                    <th>Specifications</th>
-                                    <th>List Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Ceiling Regular</td>
-                                    <td>Rosa / Creta Plain</td>
-                                    <td>1200 MM</td>
-                                    <td>1280</td>
-                                </tr>
-                                <tr>
-                                    <td>Farrata</td>
-                                    <td>Udaan / Tez</td>
-                                    <td>400 MM</td>
-                                    <td>1800 / 2000</td>
-                                </tr>
-                                <tr>
-                                    <td>Budget/Premium</td>
-                                    <td>Speedo / Speedo Metallic</td>
-                                    <td>50 W, 600 MM</td>
-                                    <td>1350 / 1425</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>Creta Deluxe / Wings</td>
-                                    <td>50 W, 1200 MM</td>
-                                    <td>1450 / 1525</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>Seltose / CF-390 / Striker</td>
-                                    <td>50 W, 900-1200 MM</td>
-                                    <td>1700 - 1850</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>Compass / Gloster</td>
-                                    <td>50 W, 1200 MM</td>
-                                    <td>1950 / 2000</td>
-                                </tr>
-                                <tr>
-                                    <td>Table/Pedestal/Wall</td>
-                                    <td>Supreme NS / HS</td>
-                                    <td>Various</td>
-                                    <td>1650 to 2300</td>
-                                </tr>
-                                <tr>
-                                    <td>Ventilation</td>
-                                    <td>Fresh Air Fan</td>
-                                    <td>150 MM to 250 MM</td>
-                                    <td>990 to 1190</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <h4>Heaters & Irons</h4>
-                        <ul class="price-list-text">
-                            <li><strong>Dry Irons:</strong> Rocky (550W), Deluxe/Evo (750W), Plancha (750W), Steelco
-                                (1000W). Prices range from 350 to 675.</li>
-                            <li><strong>Heating Range:</strong> Room Heaters (250-300), Quartz Heaters (800), Heat
-                                Convectors (up to 1625), Immersion Rods (225-450).</li>
-                            <li><strong>Cooler Submersible Pump:</strong> 120 (List Price).</li>
-                            <li><strong>PVC Tapes:</strong> Vogue PVC Tape (220), Signature PVC Tape (240).</li>
-                        </ul>
-                    </div>
-                </details>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="team-preview">
+    <!-- ═══ LEADERSHIP PARTIAL ═══ -->
+    <section class="team-preview reveal">
         <div class="container">
             <div class="section-header">
                 <h2>The Core Leadership</h2>
@@ -1009,7 +103,7 @@
             </div>
             <div class="team-grid-preview">
                 <div class="profile-card-preview">
-                    <img src="src/assets/images/team-2.jpg" alt="Saurabh Agarwal - Technical Director at RDA Vedanta"
+                    <img src="src/assets/images/team-2.jpg" alt="Saurabh Agarwal - Managing Director at RDA Vedanta"
                         class="profile-img-placeholder">
                     <h4>Saurabh Agarwal</h4>
                     <p>Managing Director</p>
@@ -1027,11 +121,14 @@
                     <p>All India Distribution Head</p>
                 </div>
             </div>
-            <div class="team-cta"><a href="our-team.html" class="btn btn-primary">Meet The Entire Team</a></div>
+            <div class="team-cta">
+                <a href="/leadership/" class="btn btn-primary">Meet The Entire Team</a>
+            </div>
         </div>
     </section>
 
-    <section class="factsheet-section">
+    <!-- ═══ FACTSHEET ═══ -->
+    <section class="factsheet-section reveal">
         <div class="container">
             <div class="section-header">
                 <h2>Company Factsheet</h2>
@@ -1040,45 +137,22 @@
             <div class="factsheet-container">
                 <table class="factsheet-table">
                     <tbody>
-                        <tr>
-                            <th>Nature of Business</th>
-                            <td>Wholesaler / Distributor / Trader</td>
-                        </tr>
-                        <tr>
-                            <th>Legal Status of Firm</th>
-                            <td>Limited Company (Private Ltd)</td>
-                        </tr>
-                        <tr>
-                            <th>Managing Director / CEO</th>
-                            <td>Ritesh Agarwal</td>
-                        </tr>
+                        <tr><th>Nature of Business</th><td>Wholesaler / Distributor / Trader</td></tr>
+                        <tr><th>Legal Status of Firm</th><td>Limited Company (Private Ltd)</td></tr>
+                        <tr><th>Managing Director / CEO</th><td>Ritesh Agarwal</td></tr>
                         <tr>
                             <th>Registered Address</th>
                             <td>First Floor, Flat No F1, Green Life Apartment, Utraula, 34 Blunt Square, Pan Dariba,
                                 Charbagh, Near Durgapuri Metro Station, Lucknow- 226001, Uttar Pradesh, India</td>
                         </tr>
-                        <tr>
-                            <th>GST Registration No.</th>
-                            <td>09AAJCR1095E1Z9 (Reg. Date: 29-12-2018)</td>
-                        </tr>
-                        <tr>
-                            <th>CIN No.</th>
-                            <td>U74990UP2018PTC107359</td>
-                        </tr>
-                        <tr>
-                            <th>Annual Turnover</th>
-                            <td>5 - 25 Cr</td>
-                        </tr>
-                        <tr>
-                            <th>Bankers</th>
-                            <td>ICICI Bank, HDFC Bank</td>
-                        </tr>
+                        <tr><th>GST Registration No.</th><td>09AAJCR1095E1Z9 (Reg. Date: 29-12-2018)</td></tr>
+                        <tr><th>CIN No.</th><td>U74990UP2018PTC107359</td></tr>
+                        <tr><th>Annual Turnover</th><td>5 - 25 Cr</td></tr>
+                        <tr><th>Bankers</th><td>ICICI Bank, HDFC Bank</td></tr>
                         <tr>
                             <th>Payment & Shipment</th>
-                            <td>
-                                <strong>Payment:</strong> Cash, Credit Card, Bank Transfer, Cheque, DD, Online<br>
-                                <strong>Shipment:</strong> By Road
-                            </td>
+                            <td><strong>Payment:</strong> Cash, Credit Card, Bank Transfer, Cheque, DD, Online<br>
+                                <strong>Shipment:</strong> By Road</td>
                         </tr>
                     </tbody>
                 </table>
@@ -1086,22 +160,8 @@
         </div>
     </section>
 
-    <section class="map-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Corporate Headquarters in Lucknow</h2>
-                <p>Visit us at our corporate office in the heart of Lucknow.</p>
-            </div>
-            <div class="map-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1936626411366!2d80.91241027576164!3d26.83379197669439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd1c7e057239%3A0x1a610aa1b12514c2!2sRDA%20ELECTRICALS%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1772562892044!5m2!1sen!2sin"
-                    width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contact">
+    <!-- ═══ FOOTER ═══ -->
+    <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
@@ -1109,7 +169,7 @@
                     <p class="address-block">
                         <strong>RDA Electricals Pvt Ltd.</strong><br>
                         <em>Your Safety is Our Priority.</em><br>
-                        We are one of the reputed name in the field of Wire and cables, Switchgear, Conduit pipe and
+                        We are one of the reputed names in the field of Wire and cables, Switchgear, Conduit pipe and
                         fittings and other electrical products.
                     </p>
                 </div>
@@ -1131,7 +191,7 @@
                 <div class="footer-col">
                     <h4>Procurement</h4>
                     <ul>
-                        <li><a href="#">Download Catalog</a></li>
+                        <li><a href="/price-list/">Download Catalog</a></li>
                         <li><a href="#">Bulk Order Policy</a></li>
                         <li><a href="#">GST Compliance</a></li>
                     </ul>
@@ -1143,8 +203,12 @@
         </div>
     </footer>
 
+    <!-- ═══ SCRIPTS ═══ -->
     <script type="module" src="src/js/main.js"></script>
-    <script src="src/js/distributor-form.js"></script>
+    <script src="src/js/render-products.js"></script>
+
+    <script src="src/js/scroll-animations.js"></script>
+
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
@@ -1156,6 +220,7 @@
             });
         }
     </script>
+
 </body>
 
 </html>

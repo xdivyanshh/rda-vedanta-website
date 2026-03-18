@@ -1,136 +1,188 @@
-/* BUTTONS */
+/* ═══════════════════════════════════
+   COMPONENTS — Premium Design System
+   ═══════════════════════════════════ */
+
+/* ── Buttons ── */
 .btn {
-    padding: 12px 24px;
-    font-weight: 700;
+    padding: 13px 28px;
+    font-family: var(--font-body);
+    font-weight: var(--fw-semibold);
+    font-size: 0.85rem;
     text-transform: uppercase;
+    letter-spacing: 0.8px;
     text-decoration: none;
-    border-radius: 4px;
-    display: inline-block;
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
+    border-radius: var(--radius-sm);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all var(--transition-base);
+    cursor: pointer;
+    border: 2px solid transparent;
 }
 
 .btn-primary {
     background-color: var(--brand-red);
-    color: var(--brand-white);
-    border: 2px solid var(--brand-red);
+    color: var(--color-white);
+    border-color: var(--brand-red);
 }
 
 .btn-primary:hover {
     background-color: var(--brand-dark-red);
+    border-color: var(--brand-dark-red);
+    box-shadow: 0 4px 16px rgba(211, 47, 47, 0.3);
+    transform: translateY(-1px);
 }
 
 .btn-outline {
     background-color: transparent;
+    color: var(--color-charcoal);
+    border-color: var(--color-border);
+}
+
+.btn-outline:hover {
+    border-color: var(--brand-red);
     color: var(--brand-red);
-    border: 2px solid var(--brand-red);
 }
 
 .btn-whatsapp {
     background-color: transparent;
     color: #25D366;
-    border: 2px solid #25D366;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    border-color: #25D366;
 }
 
 .btn-whatsapp:hover {
     background-color: #25D366;
-    color: var(--brand-white);
+    color: var(--color-white);
+    transform: translateY(-1px);
 }
 
-/* TRUST BADGE */
+/* ── Section Headers ── */
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-header h2 {
+    font-size: 2.4rem;
+    font-weight: var(--fw-bold);
+    margin-bottom: 14px;
+    color: var(--color-charcoal);
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: var(--color-mid-gray);
+    line-height: 1.7;
+}
+
+/* ── Trust Badge ── */
 .trust-badge {
-    font-weight: 700;
-    color: #666;
+    font-weight: var(--fw-semibold);
+    color: var(--color-mid-gray);
     display: flex;
     align-items: center;
     gap: 10px;
     text-transform: uppercase;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
 }
 
 .trust-badge img {
-    height: 35px;
+    height: 32px;
     width: auto;
     object-fit: contain;
+    opacity: 0.7;
+    transition: opacity var(--transition-base);
 }
 
-/* BENTO CARD */
+.trust-badge:hover img {
+    opacity: 1;
+}
+
+/* ── Bento / Product Cards ── */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
 .bento-card {
-    border: 1px solid var(--border-color);
-    padding: 30px;
-    transition: transform 0.2s;
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    padding: 36px 28px;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-base);
     position: relative;
-    overflow: hidden;
-    border-radius: 8px;
 }
 
 .bento-card:hover {
-    border-color: var(--brand-red);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-}
-
-.bento-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background-color: var(--brand-red);
-    opacity: 0;
-    transition: opacity 0.2s;
-}
-
-.bento-card:hover::before {
-    opacity: 1;
+    border-color: transparent;
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-card-hover);
 }
 
 .card-icon {
     font-size: 2rem;
-    color: var(--brand-red);
     margin-bottom: 20px;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--brand-red-light);
+    border-radius: var(--radius-md);
 }
 
 .bento-card h3 {
-    font-size: 1.2rem;
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: var(--fw-semibold);
     margin-bottom: 10px;
 }
 
 .bento-card p {
     font-size: 0.9rem;
-    color: var(--text-light);
+    color: var(--color-mid-gray);
+    line-height: 1.7;
 }
 
-/* CATALOGUE CARD */
+/* ── Catalogue Cards ── */
+.catalogue-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
 .catalogue-card {
-    background: var(--brand-white);
-    padding: 25px;
-    border-radius: 8px;
+    background: var(--color-white);
+    padding: 36px 28px;
+    border-radius: var(--radius-md);
     text-align: center;
-    border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-base);
 }
 
 .catalogue-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    border-color: var(--brand-red);
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-card-hover);
+    border-color: transparent;
 }
 
 .cat-icon {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
+    font-size: 2.2rem;
+    margin-bottom: 16px;
     display: block;
 }
 
 .catalogue-card h3 {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-    color: var(--text-dark);
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: var(--fw-semibold);
+    margin-bottom: 18px;
+    color: var(--color-charcoal);
 }
 
 .catalogue-actions {
@@ -143,17 +195,19 @@
 .btn-view,
 .btn-download {
     display: inline-block;
-    padding: 8px 16px;
-    border-radius: 4px;
+    padding: 9px 20px;
+    border-radius: var(--radius-sm);
     text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
+    font-size: 0.8rem;
+    font-weight: var(--fw-semibold);
+    transition: all var(--transition-base);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .btn-view {
     background-color: var(--brand-red);
-    color: var(--brand-white);
+    color: var(--color-white);
     border: 1px solid var(--brand-red);
 }
 
@@ -164,214 +218,208 @@
 
 .btn-download {
     background-color: transparent;
-    color: var(--brand-red);
-    border: 1px solid var(--brand-red);
+    color: var(--color-charcoal);
+    border: 1px solid var(--color-border);
 }
 
 .btn-download:hover {
-    background-color: var(--brand-red);
-    color: var(--brand-white);
+    border-color: var(--brand-red);
+    color: var(--brand-red);
 }
 
-/* FORMS */
+/* ── Download Center Cards (replaces price accordion) ── */
+.download-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.download-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 32px 24px;
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+.download-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-card-hover);
+    border-color: transparent;
+}
+
+.download-card-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--brand-red-light);
+    border-radius: var(--radius-md);
+}
+
+.download-card-icon svg {
+    width: 28px;
+    height: 28px;
+    color: var(--brand-red);
+}
+
+.download-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: var(--fw-semibold);
+    margin-bottom: 8px;
+    color: var(--color-charcoal);
+}
+
+.download-card .download-meta {
+    font-size: 0.78rem;
+    color: var(--color-mid-gray);
+    margin-bottom: 20px;
+    letter-spacing: 0.3px;
+}
+
+.download-card .btn-download-pdf {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    background: var(--brand-red);
+    color: var(--color-white);
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: var(--fw-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all var(--transition-base);
+}
+
+.download-card .btn-download-pdf:hover {
+    background: var(--brand-dark-red);
+    box-shadow: 0 4px 16px rgba(211, 47, 47, 0.3);
+    transform: translateY(-1px);
+}
+
+.download-card .btn-download-pdf svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* ── Forms ── */
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 5px;
-    font-weight: 600;
-    font-size: 0.9rem;
+    margin-bottom: 6px;
+    font-weight: var(--fw-medium);
+    font-size: 0.88rem;
+    color: var(--color-charcoal);
 }
 
 .form-group input,
 .form-group select {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 12px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--color-charcoal);
+    background: var(--color-white);
+    transition: border-color var(--transition-base);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--brand-red);
+    box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.1);
 }
 
 .form-submit {
     width: 100%;
-    background-color: var(--text-dark);
-    color: var(--brand-white);
+    background-color: var(--brand-red);
+    color: var(--color-white);
     border: none;
-    padding: 15px;
-    font-weight: 700;
+    padding: 14px;
+    font-family: var(--font-body);
+    font-weight: var(--fw-semibold);
+    font-size: 0.9rem;
     cursor: pointer;
     text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-base);
 }
 
-/* PRICE ACCORDION & TABLES */
-.price-accordion {
-    width: 100%;
-    margin: 0 auto;
+.form-submit:hover {
+    background-color: var(--brand-dark-red);
+    box-shadow: 0 4px 16px rgba(211, 47, 47, 0.3);
 }
 
-.price-details {
-    background: var(--brand-white);
-    border: 1px solid var(--border-color);
-    margin-bottom: 15px;
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.price-summary {
-    padding: 15px 20px;
-    background: #f9f9f9;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 1.1rem;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background 0.2s;
-}
-
-.price-summary:hover {
-    background: #eee;
-}
-
-.price-summary::-webkit-details-marker {
-    display: none;
-}
-
-.price-summary::after {
-    content: '+';
-    font-size: 1.5rem;
-    color: var(--brand-red);
-    font-weight: 400;
-}
-
-details[open] .price-summary::after {
-    content: '-';
-}
-
-.price-content {
-    padding: 25px;
-    border-top: 1px solid var(--border-color);
-    overflow-x: auto;
-}
-
-.price-content h4 {
-    color: var(--brand-red);
-    margin: 25px 0 15px 0;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 5px;
-}
-
-.price-content h4:first-child {
-    margin-top: 0;
-}
-
-.price-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    font-size: 0.9rem;
-    min-width: 600px;
-}
-
-.price-table th,
-.price-table td {
-    border: 1px solid #eee;
-    padding: 10px 15px;
-    text-align: left;
-}
-
-.price-table th {
-    background-color: var(--brand-red);
-    color: #fff;
-    font-weight: 600;
-}
-
-.price-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-.price-table tr:hover {
-    background-color: #f0f0f0;
-}
-
-.price-list-text {
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
-
-.price-list-text li {
-    margin-bottom: 8px;
-}
-
-.note {
-    font-size: 0.85rem;
-    color: var(--text-light);
-    font-style: italic;
-    margin-bottom: 20px;
-}
-
-/* PROFILE CARDS */
+/* ── Profile Cards ── */
 .profile-card-preview {
     text-align: center;
 }
 
 .profile-img-placeholder {
-    width: 150px;
-    height: auto;
-    background-color: #ccc;
-    border-radius: 8px;
-    margin: 0 auto 20px auto;
-    border: 4px solid var(--brand-white);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.profile-img-placeholder[src*="team-2"],
-.profile-img-placeholder[src*="team-3"] {
-    height: 200px;
+    width: 180px;
+    height: 220px;
     object-fit: cover;
+    border-radius: var(--radius-md);
+    margin: 0 auto 20px auto;
+    filter: grayscale(100%);
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-card);
 }
 
-.profile-img-placeholder[src*="team-1"] {
-    width: 175px;
+.profile-card-preview:hover .profile-img-placeholder {
+    filter: grayscale(0%);
+    transform: scale(1.03);
+    box-shadow: var(--shadow-card-hover);
 }
 
 .profile-card-preview h4 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: var(--fw-semibold);
+    margin-bottom: 4px;
 }
 
 .profile-card-preview p {
-    color: var(--text-light);
-    font-size: 0.9rem;
+    color: var(--color-mid-gray);
+    font-size: 0.88rem;
 }
 
+/* Full page profile cards (our-team.html) */
 .profile-card-full {
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
     padding: 30px;
     text-align: center;
 }
 
 .profile-img-placeholder-large {
     width: 200px;
-    height: auto;
-    background-color: #ccc;
-    border-radius: 8px;
-    margin: 0 auto 20px auto;
-    border: 5px solid var(--brand-white);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.profile-img-placeholder-large[src*="team-2"],
-.profile-img-placeholder-large[src*="team-3"] {
     height: 260px;
     object-fit: cover;
+    border-radius: var(--radius-md);
+    margin: 0 auto 20px auto;
+    filter: grayscale(100%);
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-card);
 }
 
-.profile-img-placeholder-large[src*="team-1"] {
-    width: 230px;
+.profile-card-full:hover .profile-img-placeholder-large {
+    filter: grayscale(0%);
 }
 
 .profile-card-full h3 {
@@ -382,31 +430,128 @@ details[open] .price-summary::after {
 .profile-card-full span {
     display: block;
     color: var(--brand-red);
-    font-weight: 600;
+    font-weight: var(--fw-semibold);
     margin-bottom: 15px;
+    font-size: 0.9rem;
 }
 
 .profile-card-full p {
-    color: var(--text-light);
+    color: var(--color-mid-gray);
     font-size: 0.95rem;
 }
 
-/* RESPONSIVE COMPONENTS */
-@media (max-width: 768px) {
-    .price-content {
-        padding: 15px;
+/* ── Scroll Reveal Animations ── */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.16s; }
+.reveal-delay-3 { transition-delay: 0.24s; }
+.reveal-delay-4 { transition-delay: 0.32s; }
+
+/* ── Factsheet Table ── */
+.factsheet-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.factsheet-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--color-white);
+    box-shadow: var(--shadow-card);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.factsheet-table th,
+.factsheet-table td {
+    padding: 18px 28px;
+    border-bottom: 1px solid var(--color-border);
+    text-align: left;
+    vertical-align: top;
+    font-size: 0.92rem;
+}
+
+.factsheet-table th {
+    width: 35%;
+    background-color: var(--color-off-white);
+    font-weight: var(--fw-semibold);
+    color: var(--color-charcoal);
+    border-right: 1px solid var(--color-border);
+}
+
+.factsheet-table tr:last-child th,
+.factsheet-table tr:last-child td {
+    border-bottom: none;
+}
+
+.factsheet-table td {
+    color: var(--color-mid-gray);
+}
+
+/* ── Responsive Components ── */
+@media (max-width: 992px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .price-summary {
-        font-size: 1rem;
-        padding: 12px 15px;
+    .download-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .bento-grid,
+    .download-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .catalogue-grid {
+        grid-template-columns: 1fr 1fr;
     }
 
     .bento-card {
-        padding: 20px;
+        padding: 24px 20px;
     }
 
     .catalogue-card {
-        padding: 20px;
+        padding: 24px 20px;
+    }
+
+    .factsheet-table th,
+    .factsheet-table td {
+        display: block;
+        width: 100%;
+        border-right: none;
+    }
+
+    .factsheet-table th {
+        background-color: var(--color-light-gray);
+        padding-bottom: 6px;
+    }
+
+    .factsheet-table td {
+        padding-top: 6px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .catalogue-grid {
+        grid-template-columns: 1fr;
     }
 }

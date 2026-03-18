@@ -1,205 +1,231 @@
-/* HERO SECTION */
+/* ═══════════════════════════════════
+   SECTIONS — Spacious Corporate Layout
+   ═══════════════════════════════════ */
+
+/* ── Hero Section ── */
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 80vh;
+    min-height: 85vh;
     align-items: center;
-    border-bottom: 1px solid var(--border-color);
+    background-color: var(--color-white);
 }
 
 .hero-content {
-    padding: 60px;
-    background-color: var(--brand-white);
+    padding: 80px 60px 80px 0;
+    margin-left: auto;
+    max-width: 600px;
 }
 
 .hero-tagline {
-    display: block;
+    display: inline-block;
     color: var(--brand-red);
-    font-weight: 700;
+    font-weight: var(--fw-semibold);
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-    margin-bottom: 15px;
+    letter-spacing: 3px;
+    font-size: 0.78rem;
+    margin-bottom: 20px;
+    padding: 6px 14px;
+    background: var(--brand-red-light);
+    border-radius: 20px;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     line-height: 1.1;
-    margin-bottom: 20px;
-    color: var(--text-dark);
+    margin-bottom: 24px;
+    color: var(--color-charcoal);
+    font-weight: 800;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    color: var(--text-light);
-    margin-bottom: 30px;
-    max-width: 500px;
+    font-size: 1.1rem;
+    color: var(--color-mid-gray);
+    margin-bottom: 36px;
+    max-width: 480px;
+    line-height: 1.8;
 }
 
 .hero-visual {
-    background-color: var(--brand-white);
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     overflow: hidden;
+    background-color: var(--color-off-white);
 }
 
 .hero-image {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
-.visual-placeholder {
-    border: 2px dashed #999;
-    padding: 40px;
-    text-align: center;
-    color: #777;
-    background: #fff;
-}
-
-/* TRUST STRIP */
+/* ── Trust Strip ── */
 .trust-strip {
-    background-color: #F9F9F9;
-    padding: 20px 0;
-    border-bottom: 1px solid var(--border-color);
+    background-color: var(--color-white);
+    padding: 28px 0;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .trust-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 48px;
 }
 
-/* PRODUCT MATRIX */
+/* ── Product Matrix ── */
 .product-matrix {
-    padding: 80px 0;
+    padding: var(--section-py) 0;
+    background-color: var(--color-white);
 }
 
-.section-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.section-header h2 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-}
-
-.bento-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-/* CATALOGUE SECTION */
+/* ── Catalogue Section ── */
 .catalogue-section {
-    padding: 80px 0;
-    background-color: var(--brand-gray);
+    padding: var(--section-py) 0;
+    background-color: var(--color-off-white);
 }
 
-.catalogue-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-/* DISTRIBUTOR SECTION */
+/* ── Distributor Section — Split Layout ── */
 .distributor-section {
-    background-color: var(--brand-red);
-    color: var(--brand-white);
-    padding: 80px 0;
+    padding: 0;
+    background-color: var(--color-slate);
+    color: var(--color-white);
+    overflow: hidden;
 }
 
 .distributor-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
+    gap: 0;
+    align-items: stretch;
+    padding: 0;
+    max-width: 100%;
+}
+
+.distributor-content {
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    margin-left: auto;
 }
 
 .distributor-content h2 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     margin-bottom: 20px;
+    color: var(--color-white);
+    font-weight: var(--fw-bold);
+}
+
+.distributor-content > p {
+    opacity: 0.7;
+    margin-bottom: 28px;
+    font-size: 1.05rem;
+    line-height: 1.8;
 }
 
 .distributor-content ul {
-    list-style: none;
-    margin-bottom: 30px;
+    margin-bottom: 0;
 }
 
 .distributor-content li {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.1rem;
+    align-items: flex-start;
+    gap: 14px;
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
 }
 
 .distributor-content li::before {
     content: '✓';
-    background: rgba(255, 255, 255, 0.2);
-    width: 25px;
-    height: 25px;
+    background: rgba(211, 47, 47, 0.2);
+    color: var(--brand-red);
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    font-weight: var(--fw-bold);
+    margin-top: 2px;
 }
 
-.lead-form {
-    background-color: var(--brand-white);
-    padding: 30px;
-    border-radius: 4px;
-    color: var(--text-dark);
+.distributor-form-wrapper {
+    background: var(--color-white);
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-/* PRICE LIST SECTION */
-.price-list-section {
-    padding: 80px 0;
+.distributor-form-wrapper h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-charcoal);
+    margin-bottom: 8px;
 }
 
-/* TEAM PREVIEW SECTION */
+.distributor-form-wrapper .form-subtitle {
+    color: var(--color-mid-gray);
+    font-size: 0.9rem;
+    margin-bottom: 28px;
+}
+
+/* ── Download / Price List Section ── */
+.download-section {
+    padding: var(--section-py) 0;
+    background-color: var(--color-white);
+}
+
+/* ── Team Preview Section ── */
 .team-preview {
-    padding: 80px 0;
-    background-color: var(--brand-gray);
+    padding: var(--section-py) 0;
+    background-color: var(--color-off-white);
 }
 
 .team-grid-preview {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-bottom: 40px;
+    gap: 40px;
+    margin-bottom: 48px;
 }
 
 .team-cta {
     text-align: center;
 }
 
-/* MAP SECTION */
+/* ── Factsheet Section ── */
+.factsheet-section {
+    padding: var(--section-py) 0;
+    background-color: var(--color-white);
+}
+
+/* ── Map Section ── */
 .map-section {
-    padding: 80px 0;
-    background-color: var(--brand-white);
+    padding: var(--section-py) 0;
+    background-color: var(--color-off-white);
 }
 
 .map-container {
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 50%;
-    /* Aspect Ratio (height/width) */
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding-top: 45%;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
 }
 
-.map-container iframe,
-.map-placeholder {
+.map-container iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -208,16 +234,7 @@
     border: none;
 }
 
-.map-placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--brand-gray);
-    color: var(--text-light);
-    font-size: 1.2rem;
-}
-
-/* TEAM PAGE MAIN */
+/* ── Team Page ── */
 .team-page-main {
     padding-bottom: 80px;
 }
@@ -236,102 +253,67 @@
     gap: 40px;
 }
 
-/* FACTSHEET SECTION */
-.factsheet-section {
-    padding: 80px 0;
-    background-color: var(--brand-gray);
-}
+/* ═══════════════════════════════════
+   RESPONSIVE SECTIONS
+   ═══════════════════════════════════ */
+@media (max-width: 992px) {
+    .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
 
-.factsheet-container {
-    width: 100%;
-    margin: 0 auto;
-}
+    .hero-content {
+        padding: 60px 24px;
+        max-width: none;
+        margin-left: 0;
+    }
 
-.factsheet-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: var(--brand-white);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
-    border-radius: 8px;
-    overflow: hidden;
-}
+    .hero-visual {
+        max-height: 400px;
+    }
 
-.factsheet-table th,
-.factsheet-table td {
-    padding: 18px 25px;
-    border-bottom: 1px solid var(--border-color);
-    text-align: left;
-    vertical-align: top;
-}
-
-.factsheet-table th {
-    width: 35%;
-    background-color: #f8f9fa;
-    font-weight: 600;
-    color: var(--text-dark);
-    border-right: 1px solid var(--border-color);
-}
-
-.factsheet-table tr:last-child th,
-.factsheet-table tr:last-child td {
-    border-bottom: none;
-}
-
-.factsheet-table td {
-    color: var(--text-light);
-}
-
-/* RESPONSIVE SECTIONS */
-@media (max-width: 768px) {
-
-    .hero,
-    .bento-grid,
     .distributor-grid {
         grid-template-columns: 1fr;
     }
 
-    .team-grid-preview {
-        grid-template-columns: 1fr;
+    .distributor-content {
+        max-width: none;
+        padding: 60px 24px;
+        margin-left: 0;
     }
 
-    .hero-content {
-        padding: 40px 20px;
+    .distributor-form-wrapper {
+        padding: 40px 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --section-py: 60px;
     }
 
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .hero p {
         font-size: 1rem;
     }
 
-    .section-header h2 {
-        font-size: 1.8rem;
+    .team-grid-preview {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 
     .distributor-content h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .map-container {
-        padding-top: 100%;
+        padding-top: 80%;
     }
 
-    .factsheet-table th,
-    .factsheet-table td {
-        display: block;
-        width: 100%;
-        border-right: none;
-    }
-
-    .factsheet-table th {
-        background-color: #eaeaea;
-        padding-bottom: 5px;
-    }
-
-    .factsheet-table td {
-        padding-top: 5px;
-        padding-bottom: 20px;
+    .trust-wrapper {
+        gap: 24px;
     }
 }

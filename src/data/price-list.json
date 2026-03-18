@@ -1,0 +1,216 @@
+[
+    {
+        "title": "1. Cables & Wires",
+        "sections": [
+            {
+                "heading": "FR PVC Insulated Single Core Cables (1100V, IS 694)",
+                "type": "table",
+                "headers": ["Nominal Area (sq. mm)", "List Price per 90 m", "Standard Packing"],
+                "rows": [
+                    ["0.50", "1359", "24"],
+                    ["0.75", "1688", "24"],
+                    ["1.0", "2000", "24"],
+                    ["1.5", "3038", "20"],
+                    ["2.5", "4926", "12"],
+                    ["4.0", "7658", "08"],
+                    ["6.0", "11290", "06"],
+                    ["10.0", "18916", "04"],
+                    ["16.0", "32343", "-"],
+                    ["25.0", "50885", "-"]
+                ]
+            },
+            {
+                "heading": "Aluminium FR PVC Insulated Cables (1100V, IS 694)",
+                "type": "table",
+                "headers": ["Nominal Area", "Single Core", "2 Core", "3 Core", "4 Core"],
+                "rows": [
+                    ["1.5", "416", "970", "1015", "-"],
+                    ["2.5", "589", "1324", "1366", "-"],
+                    ["4.0", "809", "1681", "1741 / 3519", "4616"],
+                    ["6.0", "1130", "2474", "2415 / 5184", "6796"],
+                    ["10.0", "1801", "3679", "3745 / 7578", "9564"],
+                    ["16.0", "3087", "6742", "6983", "16542"],
+                    ["25.0", "6434", "10501", "-", "25482"],
+                    ["35.0", "8133", "-", "-", "38571"],
+                    ["50.0", "12999", "-", "-", "49625"],
+                    ["70.0", "17795", "-", "-", "-"]
+                ]
+            },
+            {
+                "heading": "Submersible Flat Three Core PVC Insulated Cables",
+                "type": "table",
+                "headers": ["Nominal Area (sq. mm)", "List Price per meter"],
+                "rows": [
+                    ["1.5", "97"],
+                    ["2.5", "152"],
+                    ["4.0", "227"],
+                    ["6.0", "352"],
+                    ["10.0", "583"]
+                ]
+            },
+            {
+                "heading": "Flexible Wires (Copper & Cotton)",
+                "type": "table",
+                "headers": ["Category", "Specifications", "List Price", "Unit"],
+                "rows": [
+                    ["Twin Twisted Copper", "10/76", "765", "Per 90 m"],
+                    ["", "14/76", "1002", "Per 90 m"],
+                    ["", "18/76", "1391", "Per 90 m"],
+                    ["", "23/76", "1692", "Per 90 m"],
+                    ["", "30/76", "2329", "Per 90 m"],
+                    ["", "40/76", "2923", "Per 90 m"],
+                    ["Parallel & Flat Twin", "14/76", "1367 / 1580", "Per 90 m"],
+                    ["", "23/76", "2267 / 2692", "Per 90 m"],
+                    ["", "40/76", "4109 / 4144", "Per 90 m"],
+                    ["Round Copper", "23/52 (2/3 Core)", "3306 / 4655", "Per 90 m"],
+                    ["", "40/52 (2/3 Core)", "5464 / 7621", "Per 90 m"],
+                    ["Cotton Wire", "23/52 (3/2 Core)", "1495 / 2329", "Per 45 m"],
+                    ["", "40/52 (3/2 Core)", "3379 / 2547", "Per 45 m"]
+                ]
+            },
+            {
+                "heading": "Speaker & Communication Cables",
+                "type": "table",
+                "headers": ["Type", "Specifications", "List Price", "Length"],
+                "rows": [
+                    ["Speaker Cable", "0.50 to 2.5 sq. mm", "2382 to 9846", "Per 90 m"],
+                    ["Communication", "RG 06 Copper", "3462", "Per 90 m"],
+                    ["", "RG 06 Copper (REEL)", "11751", "Per 300 m"],
+                    ["", "RG 06 CCS", "1425", "Per 90 m"],
+                    ["", "RG 06 CCS (REEL)", "4909", "Per 300 m"],
+                    ["", "CAT 06", "5168", "Per 100 m"],
+                    ["", "CAT 06 (REEL)", "15744", "Per 305 m"],
+                    ["", "CCTV 3+1", "3300", "Per 90 m"],
+                    ["", "RG 59 CCS", "1274", "Per 90 m"]
+                ]
+            },
+            {
+                "heading": "Multicore Round Cables (1100V, IS 694)",
+                "type": "table",
+                "headers": ["Nominal Area", "2 Core (90m)", "3 Core (90m)", "4 Core (90m)"],
+                "rows": [
+                    ["0.5", "3026", "4444", "5306"],
+                    ["0.75", "4109", "5534", "7166"],
+                    ["1.0", "4911", "7032", "9025"],
+                    ["1.5", "6093", "9128", "11681"],
+                    ["2.5", "10022", "14574", "18640"],
+                    ["4.0", "15266", "22172", "30661"],
+                    ["6.0", "21242", "31858", "43940"],
+                    ["10.0", "37171", "52698", "73131"],
+                    ["16.0", "59469", "84319", "117011"]
+                ]
+            },
+            {
+                "heading": "Flame Retardant Industrial Cables (200m)",
+                "type": "table",
+                "headers": ["Nominal Area", "FR PVC Price", "FR-LSH PVC Price", "Packing"],
+                "rows": [
+                    ["0.75 sq. mm", "3756", "3939", "12"],
+                    ["1.0 sq. mm", "4438", "4670", "12"],
+                    ["1.5 sq. mm", "6752", "7101", "10"],
+                    ["2.5 sq. mm", "10945", "11484", "06"],
+                    ["4.0 sq. mm", "16691", "16566", "04"],
+                    ["6.0 sq. mm", "25104", "26343", "03"],
+                    ["10.0 sq. mm (100m)", "21029", "22048", "02"],
+                    ["16.0 sq. mm (100m)", "35938", "37669", "-"]
+                ]
+            }
+        ]
+    },
+    {
+        "title": "2. Distribution Boards, Switches & Accessories",
+        "sections": [
+            {
+                "heading": "Distribution Boards",
+                "type": "table",
+                "headers": ["Series & Type", "Ways", "List Price per Pc", "Standard Packing"],
+                "rows": [
+                    ["Limnia SPN", "04 to 16 Way", "726 to 1397", "24 to 08"],
+                    ["Limnia TPN", "04 to 08 Way", "2090 to 3256", "06 to 04"],
+                    ["Signature SPN", "04 to 16 Way", "1210 to 2360", "12 to 06"],
+                    ["PVC MCB Box", "1-4 Way", "32 / 59", "10"]
+                ]
+            },
+            {
+                "heading": "Switches & Chambers",
+                "type": "list",
+                "items": [
+                    "<strong>TPN Main Switch:</strong> 32A to 200A range from 2035 to 12034 per piece.",
+                    "<strong>Changeover Switches:</strong> Standard and Deluxe (2 Pole/4 Pole) from 16A to 100A, ranging from 858 to 10181 per piece.",
+                    "<strong>Knife Type Changeover:</strong> 32A to 630A range from 8047 to 58883 per piece.",
+                    "<strong>Automatic Changeover:</strong> 32A (2112 per piece) and 63A (5946 per piece).",
+                    "<strong>Busbar Chamber (TPN):</strong> 32A to 630A range from 1903 to 13178 per piece."
+                ]
+            },
+            {
+                "heading": "Electrical Accessories",
+                "type": "table",
+                "headers": ["Particulars", "List Price per Pc", "Packing in Box"],
+                "rows": [
+                    ["Fancy / Batton Holder", "38 / 29", "20"],
+                    ["Combined with Box", "150", "10"],
+                    ["2 Pin Top (Sumo / Sleek)", "15 / 16", "20"],
+                    ["3 Pin Top Crystal (6A / 16A)", "58 / 95", "20 / 10"],
+                    ["3 Pin Top Jumbo (6A / 16A)", "37 / 68", "20 / 10"],
+                    ["3 Pin Top Mega (6A / 16A)", "42 / 74", "20 / 10"],
+                    ["Ceiling Rose / Multiplug / Pendant Holder", "25 / 74 / 28", "Varies"]
+                ]
+            }
+        ]
+    },
+    {
+        "title": "3. uPVC Pipes, Fittings, Clips & Ties",
+        "sections": [
+            {
+                "heading": "Round Conduit uPVC Pipes (3 Meter Length)",
+                "type": "table",
+                "headers": ["Type / Size", "LMS", "MMS", "HMS", "SHMS", "Pkg / Bundle"],
+                "rows": [
+                    ["RDA Vedanta 20MM", "53", "64", "72", "80", "40 PCS"],
+                    ["RDA Vedanta 25MM", "59", "70", "85", "99", "25 PCS"],
+                    ["Supreme 20MM", "36", "44", "56", "68", "40 PCS"],
+                    ["Supreme 25MM", "51", "58", "69", "79", "25 PCS"]
+                ],
+                "note": "Note: Pipe Fittings, Long Bends, Junction Boxes, and Accessories are available across Vedanta, Supreme, and Economy lines varying from 11/PC to 230/Dozen."
+            },
+            {
+                "heading": "Hardware",
+                "type": "list",
+                "items": [
+                    "<strong>Wire Clips:</strong> Nominal sizes from 4 MM to 40 MM. Prices range from 11.00 to 704.00 depending on nail size/type.",
+                    "<strong>Cable Ties:</strong> Sizes from 100 x 1.8 (4 Inch) to 450 x 4.8 (18 Inch). Prices range from 12 to 196."
+                ]
+            }
+        ]
+    },
+    {
+        "title": "4. Electrical Appliances",
+        "sections": [
+            {
+                "heading": "Fans Range",
+                "type": "table",
+                "headers": ["Category", "Model", "Specifications", "List Price"],
+                "rows": [
+                    ["Ceiling Regular", "Rosa / Creta Plain", "1200 MM", "1280"],
+                    ["Farrata", "Udaan / Tez", "400 MM", "1800 / 2000"],
+                    ["Budget/Premium", "Speedo / Speedo Metallic", "50 W, 600 MM", "1350 / 1425"],
+                    ["", "Creta Deluxe / Wings", "50 W, 1200 MM", "1450 / 1525"],
+                    ["", "Seltose / CF-390 / Striker", "50 W, 900-1200 MM", "1700 - 1850"],
+                    ["", "Compass / Gloster", "50 W, 1200 MM", "1950 / 2000"],
+                    ["Table/Pedestal/Wall", "Supreme NS / HS", "Various", "1650 to 2300"],
+                    ["Ventilation", "Fresh Air Fan", "150 MM to 250 MM", "990 to 1190"]
+                ]
+            },
+            {
+                "heading": "Heaters & Irons",
+                "type": "list",
+                "items": [
+                    "<strong>Dry Irons:</strong> Rocky (550W), Deluxe/Evo (750W), Plancha (750W), Steelco (1000W). Prices range from 350 to 675.",
+                    "<strong>Heating Range:</strong> Room Heaters (250-300), Quartz Heaters (800), Heat Convectors (up to 1625), Immersion Rods (225-450).",
+                    "<strong>Cooler Submersible Pump:</strong> 120 (List Price).",
+                    "<strong>PVC Tapes:</strong> Vogue PVC Tape (220), Signature PVC Tape (240)."
+                ]
+            }
+        ]
+    }
+]

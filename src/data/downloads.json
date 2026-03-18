@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Cables & Wires",
+        "description": "FR PVC, Aluminium, Submersible, Flexible & Industrial cables. Complete specifications.",
+        "meta": "Updated: Jan 2026 | 3.8 MB",
+        "pdf": "src/assets/catalogs/rda-wires-cables.pdf"
+    },
+    {
+        "title": "Distribution Boards & Switches",
+        "description": "Limnia, Signature SPN/TPN boards, changeover switches & MCB accessories.",
+        "meta": "Updated: Jan 2026 | 2.4 MB",
+        "pdf": "src/assets/catalogs/rda-distribution-boards.pdf"
+    },
+    {
+        "title": "uPVC Pipes & Fittings",
+        "description": "Round conduit pipes, fittings, wire clips, cable ties & hardware accessories.",
+        "meta": "Updated: Jan 2026 | 1.9 MB",
+        "pdf": "src/assets/catalogs/rda-pipes.pdf"
+    },
+    {
+        "title": "Electrical Appliances",
+        "description": "Ceiling fans, table fans, heaters, dry irons, ventilation & cooling range.",
+        "meta": "Updated: Jan 2026 | 2.1 MB",
+        "pdf": "src/assets/catalogs/rda-fans.pdf"
+    }
+]

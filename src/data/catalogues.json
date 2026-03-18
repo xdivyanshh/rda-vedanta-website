@@ -1,0 +1,15 @@
+[
+    { "icon": "❄️", "name": "Coolers", "pdf": "src/assets/catalogs/rda-coolers.pdf" },
+    { "icon": "🔥", "name": "Heaters", "pdf": "src/assets/catalogs/rda-heaters.pdf" },
+    { "icon": "🧶", "name": "Wires & Cables", "pdf": "src/assets/catalogs/rda-wires-cables.pdf" },
+    { "icon": "🌀", "name": "Ceiling Fans", "pdf": "src/assets/catalogs/rda-fans.pdf" },
+    { "icon": "💨", "name": "Additional Fans", "pdf": "src/assets/catalogs/rda-other-fans.pdf" },
+    { "icon": "🚇", "name": "Round Conduit PVC Pipes", "pdf": "src/assets/catalogs/rda-pipes.pdf" },
+    { "icon": "👕", "name": "Dry Irons", "pdf": "src/assets/catalogs/rda-irons.pdf" },
+    { "icon": "⚡", "name": "Distribution Boards", "pdf": "src/assets/catalogs/rda-distribution-boards.pdf" },
+    { "icon": "✨", "name": "Signature Series", "pdf": "src/assets/catalogs/rda-signature-series.pdf" },
+    { "icon": "🔌", "name": "Electrical Accessories", "pdf": "src/assets/catalogs/rda-electrical-accessories.pdf" },
+    { "icon": "📎", "name": "Wire Clips", "pdf": "src/assets/catalogs/rda-wire-clips.pdf" },
+    { "icon": "🔗", "name": "Cable Ties", "pdf": "src/assets/catalogs/rda-cable-ties.pdf" },
+    { "icon": "📦", "name": "Other Accessories", "pdf": "src/assets/catalogs/rda-accessories-misc.pdf" }
+]
