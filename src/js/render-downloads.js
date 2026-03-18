@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <div class="download-card-icon">${pdfIconSVG}</div>
                 <h3>${d.title}</h3>
                 <p class="download-meta">${d.meta}</p>
-                <a href="${d.pdf}" class="btn-download-pdf" download>
+                <a href="/${d.pdf}" class="btn-download-pdf" download>
                     ${downloadSVG} Download PDF
                 </a>
             </div>
