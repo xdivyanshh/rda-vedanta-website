@@ -3,12 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (form) {
         form.addEventListener('submit', async (e) => {
-            e.preventDefault(); // Prevent the default page reload
+            e.preventDefault();
 
-            // Get values from the form
-            const companyName = document.getElementById('companyName') ? document.getElementById('companyName').value : '';
-            const region = document.getElementById('region') ? document.getElementById('region').value : '';
-            const phoneNumber = document.getElementById('phoneNumber') ? document.getElementById('phoneNumber').value : '';
+            const companyName = document.getElementById('companyName').value;
+            const region = document.getElementById('region').value;
+            const phoneNumber = document.getElementById('phoneNumber').value;
             const submitBtn = form.querySelector('.form-submit');
 
             // UI Feedback
@@ -16,37 +15,35 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.innerText = 'Sending...';
             submitBtn.disabled = true;
 
-            const formData = {
-                companyName,
-                region,
-                phoneNumber
-            };
-
-            console.log('Sending data:', formData);
-
             try {
-                // Send data to the Node.js backend
-                const response = await fetch('http://127.0.0.1:3000/api/distributors', {
+                // Send data via Web3Forms (no backend needed)
+                const response = await fetch('https://api.web3forms.com/submit', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify(formData)
+                    body: JSON.stringify({
+                        access_key: 'ac9cd8de-b3de-413e-a716-99d851070bae',
+                        subject: 'New Distributor Application - RDA Vedanta',
+                        from_name: 'RDA Vedanta Website',
+                        Company_Name: companyName,
+                        Region: region,
+                        Phone_Number: phoneNumber
+                    })
                 });
 
                 const result = await response.json();
 
-                if (response.ok) {
-                    alert('Success: ' + result.message);
-                    form.reset(); // Clear the form
+                if (result.success) {
+                    alert('✅ Thank you! Your application has been submitted successfully. Our team will contact you within 24 hours.');
+                    form.reset();
                 } else {
-                    alert('Error: ' + result.message);
+                    alert('❌ Something went wrong. Please try again or contact us directly.');
                 }
             } catch (error) {
                 console.error('Error submitting form:', error);
-                alert('Failed to connect to the server. Please ensure the backend is running.');
+                alert('❌ Network error. Please check your internet connection and try again.');
             } finally {
-                // Reset button
                 submitBtn.innerText = originalBtnText;
                 submitBtn.disabled = false;
             }
