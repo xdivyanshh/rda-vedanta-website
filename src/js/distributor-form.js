@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     const regionList = document.getElementById('regionList');
     const regionInput = document.getElementById('region');
 
+    const otherRegionGroup = document.getElementById('otherRegionGroup');
+    const otherRegionInput = document.getElementById('otherRegion');
+
     let regionsData = [];
 
     // Load Data
@@ -92,6 +95,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         stateSearch.value = '';
         filterList(stateList, '');
 
+        // Hide "Other" field on state change as region is reset
+        if (otherRegionGroup) {
+            otherRegionGroup.style.display = 'none';
+            otherRegionInput.removeAttribute('required');
+            otherRegionInput.value = '';
+        }
+
         // Reset and enable region
         regionText.textContent = 'Select Region';
         regionInput.value = '';
@@ -109,6 +119,25 @@ document.addEventListener('DOMContentLoaded', async () => {
         regionWrapper.classList.remove('open');
         regionSearch.value = '';
         filterList(regionList, '');
+
+        // Show "Other" input if selected
+        if (regionName === 'Other') {
+            if (otherRegionGroup) {
+                otherRegionGroup.style.display = 'block';
+                if (otherRegionInput) {
+                    otherRegionInput.setAttribute('required', 'required');
+                    otherRegionInput.focus();
+                }
+            }
+        } else {
+            if (otherRegionGroup) {
+                otherRegionGroup.style.display = 'none';
+                if (otherRegionInput) {
+                    otherRegionInput.removeAttribute('required');
+                    otherRegionInput.value = '';
+                }
+            }
+        }
     }
 
     // Search Logic
@@ -151,6 +180,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             const phoneNumber = document.getElementById('phoneNumber').value;
             const submitBtn = form.querySelector('.form-submit');
 
+            let finalRegion = regionInput.value;
+            if (finalRegion === 'Other' && otherRegionInput && otherRegionInput.value.trim() !== '') {
+                finalRegion = otherRegionInput.value.trim();
+            }
+
             const originalBtnText = submitBtn.innerText;
             submitBtn.innerText = 'Sending...';
             submitBtn.disabled = true;
@@ -165,7 +199,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         from_name: 'RDA Vedanta Website',
                         Company_Name: companyName,
                         State: stateInput.value,
-                        Region_District: regionInput.value,
+                        Region_District: finalRegion,
                         Phone_Number: phoneNumber
                     })
                 });
@@ -181,6 +215,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                     regionInput.value = '';
                     regionWrapper.classList.add('disabled');
                     regionList.innerHTML = '';
+                    if (otherRegionGroup) {
+                        otherRegionGroup.style.display = 'none';
+                        if (otherRegionInput) {
+                            otherRegionInput.removeAttribute('required');
+                            otherRegionInput.value = '';
+                        }
+                    }
                 } else {
                     alert('❌ Something went wrong. Please try again or contact us directly.');
                 }
