@@ -1,4 +1,4 @@
-const CACHE_NAME = 'rda-vedanta-v2';
+const CACHE_NAME = 'rda-vedanta-v3';
 const ASSETS_TO_CACHE = [
     '/',
     '/index.html',
@@ -37,16 +37,29 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
+    // Only intercept GET requests
+    if (event.request.method !== 'GET') {
+        return;
+    }
+
     event.respondWith(
-        caches.match(event.request).then((cachedResponse) => {
-            if (cachedResponse) {
-                return cachedResponse;
-            }
-            // Not in cache — fetch from network normally
-            return fetch(event.request);
-        }).catch(() => {
-            // Network failed and no cache — let the browser handle it naturally
-            return new Response('', { status: 408, statusText: 'Offline' });
-        })
+        fetch(event.request)
+            .then((response) => {
+                // Make a clone of the response to put in the cache
+                const responseClone = response.clone();
+                caches.open(CACHE_NAME).then((cache) => {
+                    cache.put(event.request, responseClone);
+                });
+                return response;
+            })
+            .catch(() => {
+                // If network fails (offline), fall back to cache
+                return caches.match(event.request).then((cachedResponse) => {
+                    if (cachedResponse) {
+                        return cachedResponse;
+                    }
+                    return new Response('', { status: 408, statusText: 'Offline' });
+                });
+            })
     );
 });
