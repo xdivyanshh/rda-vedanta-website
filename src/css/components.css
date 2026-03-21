@@ -670,3 +670,116 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* ═══ CHATBOT WIDGET ═══ */
+.chatbot-widget {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.chatbot-toggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+.chatbot-toggle:hover {
+    transform: scale(1.1);
+}
+.chatbot-window {
+    width: 320px;
+    height: 420px;
+    background: var(--color-white);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 15px;
+    transform: translateY(20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid var(--color-border);
+}
+.chatbot-widget.active .chatbot-window {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+.chatbot-header {
+    background: var(--brand-red);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chatbot-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 1;
+}
+.chatbot-body {
+    padding: 15px;
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.chat-message {
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    max-width: 85%;
+}
+.chat-message.bot {
+    background-color: var(--color-off-white);
+    color: var(--color-charcoal);
+    align-self: flex-start;
+    border-bottom-left-radius: 2px;
+}
+.chat-message.user {
+    background-color: var(--brand-red);
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 2px;
+}
+.chat-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 5px;
+}
+.chat-opt-btn {
+    background: transparent;
+    border: 1px solid var(--brand-red);
+    color: var(--brand-red);
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: left;
+}
+.chat-opt-btn:hover {
+    background: var(--brand-red);
+    color: white;
+}

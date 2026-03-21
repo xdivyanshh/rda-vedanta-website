@@ -1,0 +1,26 @@
+{
+    "nav-team": { "en": "Our Team", "hi": "हमारी टीम" },
+    "nav-products": { "en": "Products", "hi": "उत्पाद" },
+    "nav-distributors": { "en": "Distributors", "hi": "वितरक" },
+    "nav-contact": { "en": "Contact", "hi": "संपर्क करें" },
+    "btn-sales": { "en": "Sales Inquiry", "hi": "सेल्स पूछताछ" },
+    
+    "hero-tagline": { "en": "Your Safety is Our Priority", "hi": "आपकी सुरक्षा हमारी प्राथमिकता" },
+    "hero-title": { "en": "India's Lifeline: 99.97% Pure Electrolytic Copper Wiring.", "hi": "भारत की जीवन रेखा: 99.97% शुद्ध कॉपर वायरिंग।" },
+    "hero-desc": { "en": "UPPWD Approved Manufacturer of HRFR House Wires, Multicore Industrial Cables, and Submersible Lines. Engineered for maximum conductivity and fire safety.", "hi": "UPPWD प्रमाणित HRFR हाउस वायर्स और इंडस्ट्रियल केबल्स के निर्माता। अधिकतम चालकता और अग्नि सुरक्षा के लिए डिज़ाइन किए गए।" },
+    "btn-view-products": { "en": "View Products", "hi": "उत्पाद देखें" },
+    
+    "badge-uppwd": { "en": "UPPWD Approved", "hi": "UPPWD प्रमाणित" },
+    "badge-makeinindia": { "en": "Make In India", "hi": "मेक इन इंडिया" },
+    
+    "sec-products-title": { "en": "Premium Electrical Wires, Cables & Switchgears", "hi": "प्रीमियम इलेक्ट्रिकल वायर्स, केबल्स और स्विचगियर्स" },
+    "sec-products-desc": { "en": "From domestic housing to heavy industry, we power the connection.", "hi": "घरेलू आवास से लेकर भारी उद्योग तक, हम आपको पावर देते हैं।" },
+    
+    "sec-brands-title": { "en": "Our Brands", "hi": "हमारे ब्रांड्स" },
+    "sec-brands-desc": { "en": "The house of RDA Vedanta — trusted names powering India's electrical future.", "hi": "RDA वेदांत ग्रुप — भारत के इलेक्ट्रिकल भविष्य को शक्ति देने वाले भरोसेमंद नाम।" },
+    
+    "sec-team-title": { "en": "The Core Leadership", "hi": "हमारी लीडरशिप टीम" },
+    "sec-team-desc": { "en": "Meet the experienced team driving our commitment to quality and safety.", "hi": "मिलिए उस अनुभवी टीम से जो गुणवत्ता और सुरक्षा के प्रति हमारी प्रतिबद्धता को चलाती है।" },
+    "btn-meet-team": { "en": "Meet The Entire Team", "hi": "पूरी टीम से मिलें" },
+    "btn-install": { "en": "Install App", "hi": "ऐप इंस्टॉल करें" }
+}
