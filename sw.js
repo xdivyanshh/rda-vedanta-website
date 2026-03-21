@@ -1,8 +1,10 @@
-const CACHE_NAME = 'rda-vedanta-v3';
+const CACHE_NAME = 'rda-vedanta-v4';
 const ASSETS_TO_CACHE = [
     '/',
     '/index.html',
-    '/our-team.html',
+    '/leadership/',
+    '/products/',
+    '/contact/',
     '/src/css/base.css',
     '/src/css/variables.css',
     '/src/css/layout.css',
@@ -16,7 +18,13 @@ const ASSETS_TO_CACHE = [
 self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open(CACHE_NAME).then((cache) => {
-            return cache.addAll(ASSETS_TO_CACHE);
+            // Cache each asset individually so if one fails (e.g. 404), 
+            // the entire Service Worker installation doesn't abort.
+            return Promise.all(
+                ASSETS_TO_CACHE.map(asset => 
+                    cache.add(asset).catch(err => console.warn('SW Install: Failed to cache asset:', asset, err))
+                )
+            );
         })
     );
     // Activate new service worker immediately instead of waiting
