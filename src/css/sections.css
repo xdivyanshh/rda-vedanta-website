@@ -148,7 +148,6 @@
     padding: 0;
     background-color: var(--color-slate);
     color: var(--color-white);
-    overflow: hidden;
 }
 
 .distributor-grid {
