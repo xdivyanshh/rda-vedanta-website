@@ -18,11 +18,12 @@
     transition: all var(--transition-base);
     cursor: pointer;
     border: 2px solid transparent;
+    white-space: nowrap;
 }
 
 .btn-primary {
     background-color: var(--brand-red);
-    color: var(--color-white);
+    color: #ffffff;
     border-color: var(--brand-red);
 }
 
@@ -52,9 +53,30 @@
 
 .btn-whatsapp:hover {
     background-color: #25D366;
-    color: var(--color-white);
+    color: #ffffff;
     transform: translateY(-1px);
 }
+
+.theme-toggle {
+    background: transparent;
+    border: none;
+    color: var(--color-charcoal);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border-radius: 50%;
+    transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+.theme-toggle:hover {
+    background-color: var(--color-border);
+    color: var(--brand-red);
+}
+
+[data-theme="dark"] .theme-toggle .moon-icon { display: none; }
+[data-theme="dark"] .theme-toggle .sun-icon { display: block !important; }
 
 .btn-sm {
     padding: 6px 16px;
@@ -687,6 +709,21 @@
 @media (max-width: 480px) {
     .catalogue-grid {
         grid-template-columns: 1fr;
+    }
+
+    .btn-sm {
+        padding: 6px 10px;
+        font-size: 0.78rem;
+        gap: 4px;
+    }
+
+    .lang-select {
+        padding: 6px 8px;
+        font-size: 0.8rem;
+    }
+
+    .theme-toggle {
+        padding: 4px;
     }
 }
 
