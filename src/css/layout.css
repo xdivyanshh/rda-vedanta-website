@@ -230,14 +230,20 @@ footer {
         display: block;
     }
 
-    #mainNav,
-    #headerActions {
+    #mainNav {
         display: none;
         width: 100%;
     }
 
-    #mainNav.nav-active,
-    #headerActions.actions-active {
+    #headerActions {
+        width: 100%;
+        justify-content: space-between;
+        padding-top: 12px;
+        margin-top: 4px;
+        border-top: 1px solid var(--color-border);
+    }
+
+    #mainNav.nav-active {
         display: flex;
         flex-direction: column;
         align-items: flex-start;

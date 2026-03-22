@@ -56,6 +56,25 @@
     transform: translateY(-1px);
 }
 
+.btn-sm {
+    padding: 6px 16px;
+    font-size: 0.85rem;
+}
+
+.lang-select {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    font-weight: var(--fw-semibold);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border);
+    background: var(--color-white);
+    color: var(--color-charcoal);
+    cursor: pointer;
+    outline: none;
+    font-family: var(--font-body);
+    height: 38px; /* matching the typical button height visually */
+}
+
 /* ── Section Headers ── */
 .section-header {
     text-align: center;
