@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../src/css/components.css">
     <link rel="stylesheet" href="../src/css/sections.css">
     <script>
-        const storedTheme = localStorage.getItem('rda-theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        const storedTheme = sessionStorage.getItem('rda-theme') || 'light';
         if (storedTheme) document.documentElement.setAttribute('data-theme', storedTheme);
     </script>
 </head>
@@ -36,10 +36,10 @@
             <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
             <nav id="mainNav">
                 <ul>
-                    <li><a href="/leadership/">Our Team</a></li>
-                    <li><a href="/products/">Products</a></li>
-                    <li><a href="/contact/">Distributors</a></li>
-                    <li><a href="/contact/">Contact</a></li>
+                    <li><a href="/leadership/" data-i18n="nav-team">Our Team</a></li>
+                    <li><a href="/products/" data-i18n="nav-products">Products</a></li>
+                    <li><a href="/contact/" data-i18n="nav-distributors">Distributors</a></li>
+                    <li><a href="/contact/" data-i18n="nav-contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-actions" id="headerActions">
@@ -52,7 +52,7 @@
                         <path
                             d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
                     </svg>
-                    Sales Inquiry
+                    <span data-i18n="btn-sales">Sales Inquiry</span>
                 </a>
             </div>
         </div>
@@ -62,56 +62,56 @@
     <main class="team-page-main" style="padding-top: var(--header-height);">
         <div class="container">
             <div class="section-header" style="padding: 80px 0 50px 0;">
-                <h1>Our Core Management Team</h1>
-                <p>The driving force behind RDA Vedanta's commitment to quality and safety.</p>
+                <h1 data-i18n="lead-h1-title">Our Core Management Team</h1>
+                <p data-i18n="sec-team-desc">The driving force behind RDA Vedanta's commitment to quality and safety.</p>
             </div>
 
             <!-- Directors Section -->
-            <h2>Board of Directors & Key Leadership</h2>
+            <h2 data-i18n="lead-h2-title">Board of Directors & Key Leadership</h2>
             <div class="team-grid-full">
                 <!-- Profile Card -->
                 <div class="profile-card-full">
                     <img src="../src/assets/images/team-2.jpg" alt="Managing Director"
                         class="profile-img-placeholder-large">
-                    <h3>Saurabh Agarwal</h3>
-                    <span>Managing Director</span>
-                    <p>Spearheading technological innovation and infrastructure development to maintain our competitive
+                    <h3 data-i18n="team-saurabh">Saurabh Agarwal</h3>
+                    <span data-i18n="team-md">Managing Director</span>
+                    <p data-i18n="lead-saurabh-desc">Spearheading technological innovation and infrastructure development to maintain our competitive
                         edge in industrial wiring.</p>
                 </div>
                 <!-- Profile Card -->
                 <div class="profile-card-full">
                     <img src="../src/assets/images/team-1.jpg" alt="Managing Director"
                         class="profile-img-placeholder-large">
-                    <h3>Ritesh Agarwal</h3>
-                    <span>Managing Director</span>
-                    <p>Leading the strategic vision of RDA Vedanta, ensuring operational excellence and sustainable
+                    <h3 data-i18n="team-ritesh">Ritesh Agarwal</h3>
+                    <span data-i18n="team-md">Managing Director</span>
+                    <p data-i18n="lead-ritesh-desc">Leading the strategic vision of RDA Vedanta, ensuring operational excellence and sustainable
                         growth in the electrical manufacturing sector.</p>
                 </div>
                 <!-- Profile Card -->
                 <div class="profile-card-full">
                     <img src="../src/assets/images/team-3.jpg" alt="All India Distribution Head"
                         class="profile-img-placeholder-large">
-                    <h3>Vineet Tandon</h3>
-                    <span>All India Distribution Head</span>
-                    <p>Responsible for expanding our partner network and ensuring supply chain fluidity across the
+                    <h3 data-i18n="team-vineet">Vineet Tandon</h3>
+                    <span data-i18n="team-dist-head">All India Distribution Head</span>
+                    <p data-i18n="lead-vineet-desc">Responsible for expanding our partner network and ensuring supply chain fluidity across the
                         nation.</p>
                 </div>
                 <!-- Profile Card -->
                 <div class="profile-card-full">
                     <img src="../src/assets/images/team-4.jpg" alt="Managing Director"
                         class="profile-img-placeholder-large">
-                    <h3>Ranjeeta Agarwal</h3>
-                    <span>Managing Director</span>
-                    <p>Overseeing corporate governance and financial strategies to drive long-term value and stability
+                    <h3 data-i18n="team-ranjeeta">Ranjeeta Agarwal</h3>
+                    <span data-i18n="team-md">Managing Director</span>
+                    <p data-i18n="lead-ranjeeta-desc">Overseeing corporate governance and financial strategies to drive long-term value and stability
                         for the organization.</p>
                 </div>
                 <!-- Profile Card -->
                 <div class="profile-card-full">
                     <img src="../src/assets/images/team-5.jpg" alt="Managing Director"
                         class="profile-img-placeholder-large">
-                    <h3>Rachna Agarwal</h3>
-                    <span>Managing Director</span>
-                    <p>Driving organizational culture and human capital strategies to foster a high-performance
+                    <h3 data-i18n="team-rachna">Rachna Agarwal</h3>
+                    <span data-i18n="team-md">Managing Director</span>
+                    <p data-i18n="lead-rachna-desc">Driving organizational culture and human capital strategies to foster a high-performance
                         workforce.</p>
                 </div>
             </div>
@@ -125,56 +125,56 @@
                 <div class="footer-brand-col">
                     <img src="../src/assets/images/vedanta-logo.png" alt="RDA Vedanta Logo" class="footer-logo">
                     <p class="footer-tagline">
-                        <strong>RDA Electricals Pvt Ltd.</strong><br>
-                        <em>Your Safety is Our Priority.</em>
+                        <strong data-i18n="footer-company">RDA Electricals Pvt Ltd.</strong><br>
+                        <em data-i18n="hero-tagline">Your Safety is Our Priority.</em>
                     </p>
-                    <p class="footer-desc">
+                    <p class="footer-desc" data-i18n="footer-desc">
                         One of the reputed names in Wires & Cables, Switchgear, Conduit Pipes and Electrical Products.
                     </p>
                 </div>
                 <div class="footer-col">
-                    <h4>Our Team</h4>
+                    <h4 data-i18n="nav-team">Our Team</h4>
                     <ul>
-                        <li><a href="/leadership/">Management Team</a></li>
-                        <li><a href="/leadership/">Board of Directors</a></li>
-                        <li><a href="/leadership/">Key Leadership</a></li>
+                        <li><a href="/leadership/" data-i18n="footer-management">Management Team</a></li>
+                        <li><a href="/leadership/" data-i18n="footer-board">Board of Directors</a></li>
+                        <li><a href="/leadership/" data-i18n="footer-leadership">Key Leadership</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Products</h4>
+                    <h4 data-i18n="nav-products">Products</h4>
                     <ul>
-                        <li><a href="/products/">HRFR House Wires</a></li>
-                        <li><a href="/products/">Industrial Cables</a></li>
-                        <li><a href="/products/">Submersible Wires</a></li>
-                        <li><a href="/products/">Distribution Boards</a></li>
-                        <li><a href="/products/">Switchgears</a></li>
-                        <li><a href="/products/">Conduit Pipes</a></li>
+                        <li><a href="/products/" data-i18n="footer-prod-1">HRFR House Wires</a></li>
+                        <li><a href="/products/" data-i18n="footer-prod-2">Industrial Cables</a></li>
+                        <li><a href="/products/" data-i18n="footer-prod-3">Submersible Wires</a></li>
+                        <li><a href="/products/" data-i18n="footer-prod-4">Distribution Boards</a></li>
+                        <li><a href="/products/" data-i18n="footer-prod-5">Switchgears</a></li>
+                        <li><a href="/products/" data-i18n="footer-prod-6">Conduit Pipes</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col">
-                    <h4>Distributors</h4>
+                    <h4 data-i18n="nav-distributors">Distributors</h4>
                     <ul>
-                        <li><a href="/contact/">Become a Distributor</a></li>
-                        <li><a href="/contact/">Dealer Network</a></li>
-                        <li><a href="/contact/">Bulk Order Policy</a></li>
-                        <li><a href="/contact/">GST Compliance</a></li>
+                        <li><a href="/contact/" data-i18n="footer-become-dist">Become a Distributor</a></li>
+                        <li><a href="/contact/" data-i18n="footer-dealer">Dealer Network</a></li>
+                        <li><a href="/contact/" data-i18n="footer-bulk">Bulk Order Policy</a></li>
+                        <li><a href="/contact/" data-i18n="footer-gst">GST Compliance</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Contact Us</h4>
+                    <h4 data-i18n="nav-contact">Contact Us</h4>
                     <ul>
-                        <li><a href="mailto:rdaelectricalspvtltd@gmail.com">Email Us</a></li>
+                        <li><a href="mailto:rdaelectricalspvtltd@gmail.com" data-i18n="footer-email">Email Us</a></li>
                         <li><a href="tel:+916392959815">+91-6392959815</a></li>
-                        <li><a href="https://wa.me/916392959815" target="_blank">WhatsApp</a></li>
-                        <li><a href="/contact/">Enquiry Form</a></li>
+                        <li><a href="https://wa.me/916392959815" target="_blank" data-i18n="footer-whatsapp">WhatsApp</a></li>
+                        <li><a href="/contact/" data-i18n="footer-enquiry">Enquiry Form</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-address-row">
                 <div class="footer-address-info">
-                    <h4>Registered Office</h4>
-                    <p class="address-block">
+                    <h4 data-i18n="footer-office">Registered Office</h4>
+                    <p class="address-block" data-i18n="footer-address">
                         F34, Blunt Square,<br>
                         Near Durgapuri Metro Station,<br>
                         Charbagh, Lucknow — 226001,<br>
@@ -189,7 +189,7 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <div class="legal-strip">
+            <div class="legal-strip" data-i18n="footer-legal">
                 © 2026 RDA Electricals Pvt Ltd. All Rights Reserved. | Privacy Policy | Terms of Trade
             </div>
         </div>
@@ -197,6 +197,7 @@
 
     <!-- ═══ SCRIPTS ═══ -->
     <script type="module" src="../src/js/main.js"></script>
+    <script src="../src/js/localization.js"></script>
 
 </body>
 

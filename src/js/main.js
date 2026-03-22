@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const newTheme = currentTheme === 'light' ? 'dark' : 'light';
             
             document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('rda-theme', newTheme);
+            sessionStorage.setItem('rda-theme', newTheme);
         });
     }
 });

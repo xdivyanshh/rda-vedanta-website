@@ -13,13 +13,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         grid.innerHTML = downloads.map((d, i) => `
             <div class="download-card reveal reveal-delay-${i + 1}">
                 <div class="download-card-icon">${pdfIconSVG}</div>
-                <h3>${d.title}</h3>
-                <p class="download-meta">${d.meta}</p>
+                <h3 data-i18n="${d.titleKey}">${d.title}</h3>
+                <p class="download-meta" data-i18n="${d.metaKey}">${d.meta}</p>
                 <a href="/${d.pdf}" class="btn-download-pdf" download>
-                    ${downloadSVG} Download PDF
+                    ${downloadSVG} <span data-i18n="btn-dl-pdf">Download PDF</span>
                 </a>
             </div>
         `).join('');
+
+        if (window.updateDOM) window.updateDOM();
     } catch (err) {
         console.error('Failed to load downloads:', err);
         grid.innerHTML = '<p style="text-align:center;color:#999;">Could not load downloads.</p>';

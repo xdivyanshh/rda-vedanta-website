@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="src/css/components.css">
     <link rel="stylesheet" href="src/css/sections.css">
     <script>
-        const storedTheme = localStorage.getItem('rda-theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        const storedTheme = sessionStorage.getItem('rda-theme') || 'light';
         if (storedTheme) document.documentElement.setAttribute('data-theme', storedTheme);
     </script>
 </head>
@@ -119,13 +119,13 @@
             <div class="brands-grid">
                 <a href="/products/" class="brand-card">
                     <img src="src/assets/images/vedanta-logo.png" alt="RDA Vedanta" class="brand-logo">
-                    <h4>RDA Vedanta</h4>
-                    <p>Premium Wires, Cables & Switchgears</p>
+                    <h4 data-i18n="brand-1-title">RDA Vedanta</h4>
+                    <p data-i18n="brand-1-desc">Premium Wires, Cables & Switchgears</p>
                 </a>
                 <a href="/products/" class="brand-card">
                     <img src="src/assets/images/vd-lite.png" alt="VD Lite" class="brand-logo">
-                    <h4>VD Lite</h4>
-                    <p>Economy Wires & Cables</p>
+                    <h4 data-i18n="brand-2-title">VD Lite</h4>
+                    <p data-i18n="brand-2-desc">Economy Wires & Cables</p>
                 </a>
             </div>
         </div>
@@ -142,20 +142,20 @@
                 <div class="profile-card-preview">
                     <img src="src/assets/images/team-2.jpg" alt="Saurabh Agarwal - Managing Director at RDA Vedanta"
                         class="profile-img-placeholder">
-                    <h4>Saurabh Agarwal</h4>
-                    <p>Managing Director</p>
+                    <h4 data-i18n="team-saurabh">Saurabh Agarwal</h4>
+                    <p data-i18n="team-md">Managing Director</p>
                 </div>
                 <div class="profile-card-preview">
                     <img src="src/assets/images/team-1.jpg" alt="Ritesh Agarwal - Managing Director at RDA Vedanta"
                         class="profile-img-placeholder">
-                    <h4>Ritesh Agarwal</h4>
-                    <p>Managing Director</p>
+                    <h4 data-i18n="team-ritesh">Ritesh Agarwal</h4>
+                    <p data-i18n="team-md">Managing Director</p>
                 </div>
                 <div class="profile-card-preview">
                     <img src="src/assets/images/team-3.jpg" alt="Vineet Tandon - Head of Sales at RDA Vedanta"
                         class="profile-img-placeholder">
-                    <h4>Vineet Tandon</h4>
-                    <p>All India Distribution Head</p>
+                    <h4 data-i18n="team-vineet">Vineet Tandon</h4>
+                    <p data-i18n="team-dist-head">All India Distribution Head</p>
                 </div>
             </div>
             <div class="team-cta">
@@ -168,27 +168,27 @@
     <section class="factsheet-section reveal">
         <div class="container">
             <div class="section-header">
-                <h2>Company Factsheet</h2>
-                <p>Statutory profile and commercial details for vendor registration.</p>
+                <h2 data-i18n="fs-title">Company Factsheet</h2>
+                <p data-i18n="fs-desc">Statutory profile and commercial details for vendor registration.</p>
             </div>
             <div class="factsheet-container">
                 <table class="factsheet-table">
                     <tbody>
-                        <tr><th>Nature of Business</th><td>Wholesaler / Distributor / Trader</td></tr>
-                        <tr><th>Legal Status of Firm</th><td>Limited Company (Private Ltd)</td></tr>
-                        <tr><th>Managing Director / CEO</th><td>Ritesh Agarwal</td></tr>
+                        <tr><th data-i18n="fs-nature">Nature of Business</th><td data-i18n="fs-nature-val">Wholesaler / Distributor / Trader</td></tr>
+                        <tr><th data-i18n="fs-legal">Legal Status of Firm</th><td data-i18n="fs-legal-val">Limited Company (Private Ltd)</td></tr>
+                        <tr><th data-i18n="fs-ceo">Managing Director / CEO</th><td data-i18n="team-ritesh">Ritesh Agarwal</td></tr>
                         <tr>
-                            <th>Registered Address</th>
-                            <td>First Floor, Flat No F1, Green Life Apartment, Utraula, 34 Blunt Square, Pan Dariba,
+                            <th data-i18n="fs-address">Registered Address</th>
+                            <td data-i18n="fs-address-val">First Floor, Flat No F1, Green Life Apartment, Utraula, 34 Blunt Square, Pan Dariba,
                                 Charbagh, Near Durgapuri Metro Station, Lucknow- 226001, Uttar Pradesh, India</td>
                         </tr>
-                        <tr><th>GST Registration No.</th><td>09AAJCR1095E1Z9 (Reg. Date: 29-12-2018)</td></tr>
-                        <tr><th>CIN No.</th><td>U74990UP2018PTC107359</td></tr>
-                        <tr><th>Annual Turnover</th><td>5 - 25 Cr</td></tr>
-                        <tr><th>Bankers</th><td>ICICI Bank, HDFC Bank</td></tr>
+                        <tr><th data-i18n="fs-gst">GST Registration No.</th><td data-i18n="fs-gst-val">09AAJCR1095E1Z9 (Reg. Date: 29-12-2018)</td></tr>
+                        <tr><th data-i18n="fs-cin">CIN No.</th><td>U74990UP2018PTC107359</td></tr>
+                        <tr><th data-i18n="fs-turnover">Annual Turnover</th><td data-i18n="fs-turnover-val">5 - 25 Cr</td></tr>
+                        <tr><th data-i18n="fs-bankers">Bankers</th><td data-i18n="fs-bankers-val">ICICI Bank, HDFC Bank</td></tr>
                         <tr>
-                            <th>Payment & Shipment</th>
-                            <td><strong>Payment:</strong> Cash, Credit Card, Bank Transfer, Cheque, DD, Online<br>
+                            <th data-i18n="fs-payment">Payment & Shipment</th>
+                            <td data-i18n="fs-payment-details"><strong>Payment:</strong> Cash, Credit Card, Bank Transfer, Cheque, DD, Online<br>
                                 <strong>Shipment:</strong> By Road</td>
                         </tr>
                     </tbody>
@@ -205,49 +205,49 @@
                 <div class="footer-brand-col">
                     <img src="src/assets/images/vedanta-logo.png" alt="RDA Vedanta Logo" class="footer-logo">
                     <p class="footer-tagline">
-                        <strong>RDA Electricals Pvt Ltd.</strong><br>
-                        <em>Your Safety is Our Priority.</em>
+                        <strong data-i18n="footer-company">RDA Electricals Pvt Ltd.</strong><br>
+                        <em data-i18n="hero-tagline">Your Safety is Our Priority.</em>
                     </p>
-                    <p class="footer-desc">
+                    <p class="footer-desc" data-i18n="footer-desc">
                         One of the reputed names in Wires & Cables, Switchgear, Conduit Pipes and Electrical Products.
                     </p>
                 </div>
                 <div class="footer-col">
-                    <h4>Our Team</h4>
+                    <h4 data-i18n="nav-team">Our Team</h4>
                     <ul>
-                        <li><a href="/leadership/">Management Team</a></li>
-                        <li><a href="/leadership/">Board of Directors</a></li>
-                        <li><a href="/leadership/">Key Leadership</a></li>
+                        <li><a href="/leadership/" data-i18n="footer-management">Management Team</a></li>
+                        <li><a href="/leadership/" data-i18n="footer-board">Board of Directors</a></li>
+                        <li><a href="/leadership/" data-i18n="footer-leadership">Key Leadership</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Products</h4>
+                    <h4 data-i18n="nav-products">Products</h4>
                     <ul>
-                        <li><a href="/products/">HRFR House Wires</a></li>
-                        <li><a href="/products/">Industrial Cables</a></li>
-                        <li><a href="/products/">Submersible Wires</a></li>
-                        <li><a href="/products/">Distribution Boards</a></li>
-                        <li><a href="/products/">Switchgears</a></li>
-                        <li><a href="/products/">Conduit Pipes</a></li>
+                        <li><a href="/products/" data-i18n="footer-prod-1">HRFR House Wires</a></li>
+                        <li><a href="/products/" data-i18n="footer-prod-2">Industrial Cables</a></li>
+                        <li><a href="/products/" data-i18n="footer-prod-3">Submersible Wires</a></li>
+                        <li><a href="/products/" data-i18n="footer-prod-4">Distribution Boards</a></li>
+                        <li><a href="/products/" data-i18n="footer-prod-5">Switchgears</a></li>
+                        <li><a href="/products/" data-i18n="footer-prod-6">Conduit Pipes</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col">
-                    <h4>Distributors</h4>
+                    <h4 data-i18n="nav-distributors">Distributors</h4>
                     <ul>
-                        <li><a href="/contact/">Become a Distributor</a></li>
-                        <li><a href="/contact/">Dealer Network</a></li>
-                        <li><a href="/contact/">Bulk Order Policy</a></li>
-                        <li><a href="/contact/">GST Compliance</a></li>
+                        <li><a href="/contact/" data-i18n="footer-become-dist">Become a Distributor</a></li>
+                        <li><a href="/contact/" data-i18n="footer-dealer">Dealer Network</a></li>
+                        <li><a href="/contact/" data-i18n="footer-bulk">Bulk Order Policy</a></li>
+                        <li><a href="/contact/" data-i18n="footer-gst">GST Compliance</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Contact Us</h4>
+                    <h4 data-i18n="nav-contact">Contact Us</h4>
                     <ul>
-                        <li><a href="mailto:rdaelectricalspvtltd@gmail.com">Email Us</a></li>
+                        <li><a href="mailto:rdaelectricalspvtltd@gmail.com" data-i18n="footer-email">Email Us</a></li>
                         <li><a href="tel:+916392959815">+91-6392959815</a></li>
-                        <li><a href="https://wa.me/916392959815" target="_blank">WhatsApp</a></li>
-                        <li><a href="/contact/">Enquiry Form</a></li>
+                        <li><a href="https://wa.me/916392959815" target="_blank" data-i18n="footer-whatsapp">WhatsApp</a></li>
+                        <li><a href="/contact/" data-i18n="footer-enquiry">Enquiry Form</a></li>
                     </ul>
                 </div>
             </div>
@@ -255,8 +255,8 @@
             <!-- Bottom row: Address + Map -->
             <div class="footer-address-row">
                 <div class="footer-address-info">
-                    <h4>Registered Office</h4>
-                    <p class="address-block">
+                    <h4 data-i18n="footer-office">Registered Office</h4>
+                    <p class="address-block" data-i18n="footer-address">
                         F34, Blunt Square,<br>
                         Near Durgapuri Metro Station,<br>
                         Charbagh, Lucknow — 226001,<br>
@@ -272,7 +272,7 @@
                 </div>
             </div>
 
-            <div class="legal-strip">
+            <div class="legal-strip" data-i18n="footer-legal">
                 © 2026 RDA Electricals Pvt Ltd. All Rights Reserved. | Privacy Policy | Terms of Trade
             </div>
         </div>
@@ -286,13 +286,13 @@
                 <button class="chatbot-close" id="chatbotClose">×</button>
             </div>
             <div class="chatbot-body" id="chatbotBody">
-                <div class="chat-message bot">
+                <div class="chat-message bot" data-i18n="chat-welcome">
                     Hello! Welcome to RDA Vedanta. How can we help you today?
                 </div>
                 <div class="chat-options">
-                    <button class="chat-opt-btn" data-reply="price">What is the price of 1mm wire?</button>
-                    <button class="chat-opt-btn" data-reply="distributor">How to become a distributor?</button>
-                    <button class="chat-opt-btn" data-reply="human">Talk to Sales (WhatsApp)</button>
+                    <button class="chat-opt-btn" data-reply="price" data-i18n="chat-opt-price">What is the price of 1mm wire?</button>
+                    <button class="chat-opt-btn" data-reply="distributor" data-i18n="chat-opt-dist">How to become a distributor?</button>
+                    <button class="chat-opt-btn" data-reply="human" data-i18n="chat-opt-human">Talk to Sales (WhatsApp)</button>
                 </div>
             </div>
         </div>

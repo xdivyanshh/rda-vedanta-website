@@ -9,10 +9,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         grid.innerHTML = products.map((p, i) => `
             <div class="bento-card reveal reveal-delay-${i + 1}">
                 <div class="card-icon">${p.icon}</div>
-                <h3>${p.title}</h3>
-                <p>${p.description}</p>
+                <h3 data-i18n="${p.titleKey}">${p.title}</h3>
+                <p data-i18n="${p.descKey}">${p.description}</p>
             </div>
         `).join('');
+
+        if (window.updateDOM) window.updateDOM();
     } catch (err) {
         console.error('Failed to load products:', err);
         grid.innerHTML = '<p style="text-align:center;color:#999;">Could not load products.</p>';
