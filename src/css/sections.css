@@ -147,7 +147,7 @@
 .distributor-section {
     padding: 0;
     background-color: var(--color-slate);
-    color: var(--color-white);
+    color: #FFFFFF;
 }
 
 .distributor-grid {
@@ -171,7 +171,7 @@
 .distributor-content h2 {
     font-size: 2.4rem;
     margin-bottom: 20px;
-    color: var(--color-white);
+    color: #FFFFFF;
     font-weight: var(--fw-bold);
 }
 
