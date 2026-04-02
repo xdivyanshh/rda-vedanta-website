@@ -16,6 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealElements.forEach(el => observer.observe(el));
 
+    // Wire cross-section: Toggle peeling animation on click/tap (enables mobile support)
+    const wireContainer = document.getElementById('wireContainer');
+    if (wireContainer) {
+        wireContainer.addEventListener('click', () => {
+            wireContainer.classList.toggle('peeling-active');
+        });
+    }
+
     // Re-observe dynamically added elements (from renderers)
     const grids = document.querySelectorAll('#bentoGrid, #catalogueGrid, #downloadGrid');
     grids.forEach(grid => {
