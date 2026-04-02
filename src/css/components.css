@@ -738,8 +738,8 @@
     align-items: flex-end;
     pointer-events: none; /* Prevents invisible flex wrapper from blocking clicks */
 }
-.chatbot-widget * {
-    pointer-events: auto; /* Restores clicks to children */
+.chatbot-widget > .chatbot-toggle {
+    pointer-events: auto; /* Only the toggle button needs clicks when widget is inactive */
 }
 .chatbot-toggle {
     width: 60px;
@@ -778,6 +778,9 @@
     transform: translateY(0);
     opacity: 1;
     pointer-events: auto !important; /* Re-enable clicks when visible */
+}
+.chatbot-widget.active .chatbot-window * {
+    pointer-events: auto; /* Children clickable only when window is visible */
 }
 .chatbot-header {
     background: var(--brand-red);
