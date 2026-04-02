@@ -136,8 +136,8 @@
     },
     {
         "id": "fan-1",
-        "category": "fans",
-        "parentCategory": "FANS",
+        "category": "ceiling-fans",
+        "parentCategory": "CEILING FANS",
         "name": "COMPASS",
         "specifications": {
             "Wattage": "50 WATT",
@@ -185,8 +185,8 @@
     },
     {
         "id": "fan-2",
-        "category": "fans",
-        "parentCategory": "FANS",
+        "category": "ceiling-fans",
+        "parentCategory": "CEILING FANS",
         "name": "STRIKER",
         "specifications": {
             "Wattage": "50 WATT",
@@ -235,8 +235,8 @@
     },
     {
         "id": "fan-3",
-        "category": "fans",
-        "parentCategory": "FANS",
+        "category": "ceiling-fans",
+        "parentCategory": "CEILING FANS",
         "name": "GLOSTER",
         "specifications": {
             "Wattage": "50 WATT",
@@ -280,8 +280,8 @@
     },
     {
         "id": "fan-4",
-        "category": "fans",
-        "parentCategory": "FANS",
+        "category": "ceiling-fans",
+        "parentCategory": "CEILING FANS",
         "name": "CF-390",
         "specifications": {
             "Wattage": "50 WATT",
@@ -320,8 +320,8 @@
     },
     {
         "id": "fan-5",
-        "category": "fans",
-        "parentCategory": "FANS",
+        "category": "ceiling-fans",
+        "parentCategory": "CEILING FANS",
         "name": "SONATA",
         "specifications": {
             "Wattage": "50 WATT",
@@ -369,8 +369,8 @@
     },
     {
         "id": "fan-6",
-        "category": "fans",
-        "parentCategory": "FANS",
+        "category": "ceiling-fans",
+        "parentCategory": "CEILING FANS",
         "name": "PASSION",
         "specifications": {
             "Wattage": "50 WATT",
@@ -408,8 +408,8 @@
     },
     {
         "id": "fan-7",
-        "category": "fans",
-        "parentCategory": "FANS",
+        "category": "ceiling-fans",
+        "parentCategory": "CEILING FANS",
         "name": "SPEEDO",
         "specifications": {
             "Wattage": "60 WATT",
