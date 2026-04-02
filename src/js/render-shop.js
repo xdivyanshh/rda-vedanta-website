@@ -16,8 +16,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             <div id="productModal" class="product-modal">
                 <div class="modal-content">
                     <button class="modal-close" id="modalClose">&times;</button>
-                    <div class="modal-img-col">
+                    <div class="modal-img-col" style="position: relative;">
                         <img id="modalImg" src="" alt="Product Image">
+                        <div id="modalGalleryControls" style="display: none;">
+                            <button id="modalPrev" class="gallery-nav" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); background: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 24px; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: background 0.2s; color: #333;">&lsaquo;</button>
+                            <button id="modalNext" class="gallery-nav" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); background: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 24px; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: background 0.2s; color: #333;">&rsaquo;</button>
+                        </div>
                     </div>
                     <div class="modal-info-col">
                         <div id="modalCategory" class="modal-category"></div>
@@ -116,19 +120,61 @@ document.addEventListener('DOMContentLoaded', async () => {
         grid.innerHTML = cardsHtml;
 
         // ── 4. Attach Event Listeners for Modal ──
+        let currentGallery = [];
+        let currentGalleryIdx = 0;
+        const modalImgEl = document.getElementById('modalImg');
+        const galleryControls = document.getElementById('modalGalleryControls');
+
+        const updateGalleryImage = () => {
+            if (currentGallery.length > 0) {
+                modalImgEl.classList.add('fade-out');
+                setTimeout(() => {
+                    modalImgEl.src = currentGallery[currentGalleryIdx];
+                    modalImgEl.onload = () => {
+                        modalImgEl.classList.remove('fade-out');
+                    };
+                }, 200);
+            }
+        };
+
+        document.getElementById('modalNext').addEventListener('click', () => {
+            if (currentGallery.length > 1) {
+                currentGalleryIdx = (currentGalleryIdx + 1) % currentGallery.length;
+                updateGalleryImage();
+            }
+        });
+
+        document.getElementById('modalPrev').addEventListener('click', () => {
+            if (currentGallery.length > 1) {
+                currentGalleryIdx = (currentGalleryIdx - 1 + currentGallery.length) % currentGallery.length;
+                updateGalleryImage();
+            }
+        });
+
         const productCards = grid.querySelectorAll('.product-card');
         productCards.forEach(card => {
             card.addEventListener('click', function() {
                 const p = JSON.parse(decodeURIComponent(this.getAttribute('data-product')));
                 
                 // Populate Modal Image
-                const modalImgEl = document.getElementById('modalImg');
-                if (p.image) {
+                if (p.gallery && p.gallery.length > 0) {
+                    currentGallery = p.gallery;
+                    currentGalleryIdx = 0;
+                    modalImgEl.src = currentGallery[0];
+                    modalImgEl.style.display = "block";
+                    galleryControls.style.display = p.gallery.length > 1 ? "block" : "none";
+                } else if (p.image) {
+                    currentGallery = [p.image];
+                    currentGalleryIdx = 0;
                     modalImgEl.src = p.image;
                     modalImgEl.style.display = "block";
+                    galleryControls.style.display = "none";
                 } else {
+                    currentGallery = [];
+                    currentGalleryIdx = 0;
                     modalImgEl.src = "";
                     modalImgEl.style.display = "none";
+                    galleryControls.style.display = "none";
                 }
                 
                 document.getElementById('modalCategory').textContent = p.parentCategory || "PRODUCT";

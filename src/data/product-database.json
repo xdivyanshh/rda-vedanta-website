@@ -26,7 +26,7 @@
         "name": "Green Breeze",
         "model": "RDA75GB1626",
         "specifications": {
-            "Tank Capacity": "75 Liters (Efficient for 12–15 hours)",
+            "Tank Capacity": "75 Liters (Efficient for 12\u201315 hours)",
             "Motor": "Three-Speed Motor (Energy-efficient)",
             "Fan": "16-inch Aerodynamic Plastic Blade",
             "Cooling Media": "High-Efficiency 3-Side Honeycomb Pads",
@@ -227,7 +227,7 @@
         "specifications": {
             "Conductor": "Aluminium (stranded round or compact)",
             "Core Insulation": "FR and Weather proof grade PVC",
-            "Size": "1.5mm – 25.0mm",
+            "Size": "1.5mm \u2013 25.0mm",
             "Colour": "White and Black in 2,3 & 4 cores",
             "Length": "90 meters per coil",
             "Application": "Wiring power grids, overhead power transmission"
@@ -241,7 +241,7 @@
         "specifications": {
             "Conductor": "Aluminium (stranded round or compact)",
             "Core Insulation": "FR and Weather proof grade PVC",
-            "Size": "1.5mm – 70.0mm",
+            "Size": "1.5mm \u2013 70.0mm",
             "Colour": "Black",
             "Length": "90 meters per coil"
         }
@@ -353,12 +353,18 @@
             "Features a dual 2 Heat Setting system for customizable comfort",
             "Provides Wide Heat Dispersion to cover larger areas efficiently",
             "Operates at 500W or 1000W capacities"
+        ],
+        "image": "/src/assets/images/products/heaters/aditya_s4_18_primary.png",
+        "gallery": [
+            "/src/assets/images/products/heaters/aditya_s4_18_primary.png",
+            "/src/assets/images/products/heaters/aditya_s4_18_1.png",
+            "/src/assets/images/products/heaters/aditya_s4_18_2.png"
         ]
     },
     {
         "id": "heater-2",
         "category": "heaters",
-        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
+        "parentCategory": "ROOM HEATERS",
         "name": "Aditya S-11 15\" Sun Heater",
         "specifications": {
             "Size": "15\"",
@@ -374,12 +380,19 @@
             "Housed in a Flame Retardant Housing for maximum operational safety",
             "Offers a Low Running Cost due to its self-regulation capabilities",
             "Compatible with Dehumidifiers & Incubators"
+        ],
+        "image": "/src/assets/images/products/heaters/aditya_s11_primary.png",
+        "gallery": [
+            "/src/assets/images/products/heaters/aditya_s11_primary.png",
+            "/src/assets/images/products/heaters/aditya_s11_1.png",
+            "/src/assets/images/products/heaters/aditya_s11_2.png",
+            "/src/assets/images/products/heaters/aditya_s11_3.png"
         ]
     },
     {
         "id": "heater-3",
         "category": "heaters",
-        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
+        "parentCategory": "ROOM HEATERS",
         "name": "VD Lite Sun Heater",
         "specifications": {
             "Power output": "400W/800W"
@@ -387,12 +400,18 @@
         "features": [
             "Provides instant heating for immediate comfort",
             "Offers dual power modes at 400W and 800W"
+        ],
+        "image": "/src/assets/images/products/heaters/vd_lite_sun_heater_primary.png",
+        "gallery": [
+            "/src/assets/images/products/heaters/vd_lite_sun_heater_primary.png",
+            "/src/assets/images/products/heaters/vd_lite_sun_heater_1.png",
+            "/src/assets/images/products/heaters/vd_lite_sun_heater_2.png"
         ]
     },
     {
         "id": "heater-4",
         "category": "heaters",
-        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
+        "parentCategory": "ROOM HEATERS",
         "name": "Aditya S1 300 Sun Heater",
         "specifications": {
             "Heat Settings": "2 Heating Setting",
@@ -404,12 +423,18 @@
             "Designed as an Energy Saving Heater",
             "Features an Oscillating base for even heat distribution",
             "Constructed from Deform Proof Molding Material"
+        ],
+        "image": "/src/assets/images/products/heaters/aditya_s1_300_primary.png",
+        "gallery": [
+            "/src/assets/images/products/heaters/aditya_s1_300_primary.png",
+            "/src/assets/images/products/heaters/aditya_s1_300_1.png",
+            "/src/assets/images/products/heaters/aditya_s1_300_2.png"
         ]
     },
     {
         "id": "heater-5",
         "category": "heaters",
-        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
+        "parentCategory": "ROOM HEATERS",
         "name": "Aditya S2 400 Sun Heater",
         "specifications": {
             "Heat Settings": "2 Heating Setting",
@@ -421,12 +446,19 @@
             "Provides wide room coverage with an Oscillating mechanism",
             "Focuses on efficiency as an Energy Saving Heater",
             "Built with highly durable Deform Proof Molding Material"
+        ],
+        "image": "/src/assets/images/products/heaters/aditya_s2_400_primary.png",
+        "gallery": [
+            "/src/assets/images/products/heaters/aditya_s2_400_primary.png",
+            "/src/assets/images/products/heaters/aditya_s2_400_1.png",
+            "/src/assets/images/products/heaters/aditya_s2_400_2.png",
+            "/src/assets/images/products/heaters/aditya_s2_400_3.png"
         ]
     },
     {
         "id": "heater-6",
         "category": "heaters",
-        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
+        "parentCategory": "ROOM HEATERS",
         "name": "Aditya Q1",
         "specifications": {
             "Heat Settings": "2 Heating Setting",
@@ -437,12 +469,20 @@
             "Built-in Tip Over Protection Switch for hazard prevention",
             "Equipped with a Power Indicator Light for clear operational status",
             "Includes an Easy Lift Handle for portability"
+        ],
+        "image": "/src/assets/images/products/heaters/aditya_q1_primary.png",
+        "gallery": [
+            "/src/assets/images/products/heaters/aditya_q1_primary.png",
+            "/src/assets/images/products/heaters/aditya_q1_1.png",
+            "/src/assets/images/products/heaters/aditya_q1_2.png",
+            "/src/assets/images/products/heaters/aditya_q1_3.png",
+            "/src/assets/images/products/heaters/aditya_q1_4.png"
         ]
     },
     {
         "id": "heater-7",
         "category": "heaters",
-        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
+        "parentCategory": "ROOM HEATERS",
         "name": "Double Heating Room Heater",
         "specifications": {
             "System Type": "Double Heating",
@@ -453,12 +493,19 @@
             "Features a high-power Double Heating system",
             "Maintains efficiency as an Energy Saving Heater despite its power",
             "Uses Deform Proof Molding Material to withstand high temperatures"
+        ],
+        "image": "/src/assets/images/products/heaters/standard_heater_primary.png",
+        "gallery": [
+            "/src/assets/images/products/heaters/standard_heater_primary.png",
+            "/src/assets/images/products/heaters/standard_heater_1.png",
+            "/src/assets/images/products/heaters/standard_heater_2.png",
+            "/src/assets/images/products/heaters/standard_heater_3.png"
         ]
     },
     {
         "id": "heater-8",
         "category": "heaters",
-        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
+        "parentCategory": "ROOM HEATERS",
         "name": "Aditya B2 (B Type Santro)",
         "specifications": {
             "Model Type": "B Type Santro",
@@ -468,56 +515,53 @@
         "features": [
             "Multi-mode functionality with COOL, WARM, and HOT settings",
             "Operates with an integrated Filter with Autoniko"
+        ],
+        "image": "/src/assets/images/products/heaters/aditya_b2_primary.png",
+        "gallery": [
+            "/src/assets/images/products/heaters/aditya_b2_primary.png",
+            "/src/assets/images/products/heaters/aditya_b2_1.png",
+            "/src/assets/images/products/heaters/aditya_b2_2.png",
+            "/src/assets/images/products/heaters/aditya_b2_3.png",
+            "/src/assets/images/products/heaters/aditya_b2_4.png"
         ]
     },
     {
         "id": "heater-9",
         "category": "heaters",
-        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
+        "parentCategory": "ROOM HEATERS",
         "name": "Bobby Room Heater",
         "specifications": {
             "Configurations": "Single/Double Rod"
         },
         "features": [
             "Available in both Single Rod and Double Rod variations"
+        ],
+        "image": "/src/assets/images/products/heaters/aditya_b1_primary.png",
+        "gallery": [
+            "/src/assets/images/products/heaters/aditya_b1_primary.png",
+            "/src/assets/images/products/heaters/aditya_b1_1.png",
+            "/src/assets/images/products/heaters/aditya_b1_2.png",
+            "/src/assets/images/products/heaters/aditya_b1_3.png",
+            "/src/assets/images/products/heaters/aditya_b1_4.png"
         ]
     },
     {
         "id": "heater-10",
         "category": "heaters",
-        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
+        "parentCategory": "ROOM HEATERS",
         "name": "Priya Room Heater",
         "specifications": {
             "Configurations": "Single/Double Rod"
         },
         "features": [
             "Available in both Single Rod and Double Rod variations"
-        ]
-    },
-    {
-        "id": "heater-11",
-        "category": "heaters",
-        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
-        "name": "Lava Electric Immersion Rod (Lava 2014)",
-        "specifications": {
-            "Model Year/Type": "LAVA 2014"
-        },
-        "features": [
-            "Engineered for Quick heating",
-            "Ensures a Long lasting performance lifespan"
-        ]
-    },
-    {
-        "id": "heater-12",
-        "category": "heaters",
-        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
-        "name": "Vedanta Izzo Immersion Heater",
-        "specifications": {
-            "Product Type": "Immersion Heater"
-        },
-        "features": [
-            "Provides quick and efficient water heating",
-            "Features a powerful design for high performance"
+        ],
+        "image": "/src/assets/images/products/heaters/aditya_b3_u_type_primary.png",
+        "gallery": [
+            "/src/assets/images/products/heaters/aditya_b3_u_type_primary.png",
+            "/src/assets/images/products/heaters/aditya_b3_u_type_1.png",
+            "/src/assets/images/products/heaters/aditya_b3_u_type_2.png",
+            "/src/assets/images/products/heaters/aditya_b3_u_type_3.png"
         ]
     }
 ]
