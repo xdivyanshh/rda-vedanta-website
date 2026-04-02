@@ -348,20 +348,13 @@
                 ]
             },
             {
-                "colorName": "Green",
-                "colorCode": "#2E8B57",
-                "image": "/src/assets/images/products/fans/fan-5_green_main.png",
-                "gallery": [
-                    "/src/assets/images/products/fans/fan-5_green_main.png"
-                ]
-            },
-            {
                 "colorName": "Silver",
                 "colorCode": "#C0C0C0",
                 "image": "/src/assets/images/products/fans/fan-5_silver_main.png",
                 "gallery": [
                     "/src/assets/images/products/fans/fan-5_silver_main.png",
-                    "/src/assets/images/products/fans/fan-5_silver_1.png"
+                    "/src/assets/images/products/fans/fan-5_silver_1.png",
+                    "/src/assets/images/products/fans/fan-5_silver_2.png"
                 ]
             }
         ],
