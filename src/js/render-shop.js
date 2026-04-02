@@ -42,9 +42,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const modal = document.getElementById('productModal');
         const modalClose = document.getElementById('modalClose');
-        modalClose.addEventListener('click', () => modal.classList.remove('show'));
+        modalClose.addEventListener('click', () => {
+            modal.classList.remove('show');
+            document.body.style.overflow = '';
+        });
         modal.addEventListener('click', (e) => {
-            if (e.target === modal) modal.classList.remove('show');
+            if (e.target === modal) {
+                modal.classList.remove('show');
+                document.body.style.overflow = '';
+            }
         });
 
         // ── Removed Sidebar Layout per user request ──
@@ -255,6 +261,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 
                 // Show modal
                 modal.classList.add('show');
+                document.body.style.overflow = 'hidden';
             });
         });
 
