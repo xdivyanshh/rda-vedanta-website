@@ -98,14 +98,17 @@
         </div>
     </div>
 
-    <!-- ═══ PRODUCTS CATEGORIES ═══ -->
+    <!-- ═══ PRODUCT RANGE CAROUSEL ═══ -->
     <section class="product-matrix reveal" id="product-categories">
-        <div class="container">
-            <div class="section-header">
-                <h2 data-i18n="sec-products-title">Premium Electrical Wires, Cables & Switchgears</h2>
-                <p data-i18n="sec-products-desc">From domestic housing to heavy industry, we power the connection.</p>
+        <div class="container text-center">
+            <h2 class="carousel-title" data-i18n="sec-products-title">PRODUCT RANGE</h2>
+        </div>
+        <div class="carousel-container container">
+            <button class="carousel-btn prev-btn" id="carouselPrevBtn" aria-label="Previous">&lsaquo;</button>
+            <div class="carousel-track" id="bentoGrid">
+                <!-- Categories populated by JS -->
             </div>
-            <div class="bento-grid" id="bentoGrid"></div>
+            <button class="carousel-btn next-btn" id="carouselNextBtn" aria-label="Next">&rsaquo;</button>
         </div>
     </section>
 
@@ -138,9 +141,6 @@
                     </div>
                 </div>
                 
-                <!-- Peel Toggle Button -->
-                <button class="btn-peel-toggle" id="peelToggleBtn" data-i18n="btn-peel-open">⚡ Peel Open</button>
-
                 <!-- Mobile Legend -->
                 <div class="mobile-legend">
                     <p><strong class="legend-color-red" data-i18n="tt-legend-outer">Outer:</strong> <span data-i18n="tt-outer-title">HRFR PVC Jacket</span></p>
@@ -150,17 +150,6 @@
             </div>
         </div>
     </section>
-    <script>
-    (function() {
-        var w = document.getElementById('wireContainer');
-        var btn = document.getElementById('peelToggleBtn');
-        if (!w || !btn) return;
-        btn.addEventListener('click', function() {
-            var isOpen = w.classList.toggle('peeling-active');
-            btn.textContent = isOpen ? '✕ Close' : '⚡ Peel Open';
-        });
-    })();
-    </script>
 
     <!-- ═══ OUR BRANDS ═══ -->
     <section class="brands-section reveal">
@@ -367,6 +356,7 @@
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('/sw.js').then((registration) => {
+                    registration.update(); // Force check for new SW version
                     console.log('ServiceWorker registration successful with scope: ', registration.scope);
                 }, (err) => {
                     console.log('ServiceWorker registration failed: ', err);

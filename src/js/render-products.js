@@ -1,22 +1,86 @@
 document.addEventListener('DOMContentLoaded', async () => {
-    const grid = document.getElementById('bentoGrid');
-    if (!grid) return;
+    const track = document.getElementById('bentoGrid');
+    const prevBtn = document.getElementById('carouselPrevBtn');
+    const nextBtn = document.getElementById('carouselNextBtn');
+    if (!track) return;
 
     try {
         const res = await fetch('/src/data/products.json');
-        const products = await res.json();
+        const categories = await res.json();
 
-        grid.innerHTML = products.map((p, i) => `
-            <div class="bento-card reveal reveal-delay-${i + 1}">
-                <div class="card-icon">${p.icon}</div>
-                <h3 data-i18n="${p.titleKey}">${p.title}</h3>
-                <p data-i18n="${p.descKey}">${p.description}</p>
-            </div>
-        `).join('');
+        // Build the card HTML
+        const buildCard = (c) => `
+            <div class="carousel-item">
+                <div class="carousel-image-box">
+                    <img src="${c.image}" alt="${c.title}" loading="lazy">
+                </div>
+                <h3>${c.title}</h3>
+            </div>`;
+
+        // Triple the items for infinite illusion (prev-set | real-set | next-set)
+        const html = categories.map(buildCard).join('');
+        track.innerHTML = html + html + html;
 
         if (window.updateDOM) window.updateDOM();
+
+        // Calculate sizes
+        const gap = 20;
+        const totalOriginal = categories.length;
+        let itemWidth = track.querySelector('.carousel-item').offsetWidth + gap;
+        let currentIndex = totalOriginal; // Start at the beginning of the middle set
+
+        // Jump to the middle set instantly (no transition)
+        track.style.transition = 'none';
+        track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+
+        // Force reflow before re-enabling transitions
+        track.offsetHeight;
+        track.style.transition = 'transform 0.5s ease';
+
+        let isAnimating = false;
+
+        const slide = (direction) => {
+            if (isAnimating) return;
+            isAnimating = true;
+            currentIndex += direction;
+            track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+        };
+
+        // After each transition ends, silently jump if we've gone past the boundaries
+        track.addEventListener('transitionend', () => {
+            isAnimating = false;
+            // If scrolled past the end of the middle set, jump back to middle
+            if (currentIndex >= totalOriginal * 2) {
+                track.style.transition = 'none';
+                currentIndex -= totalOriginal;
+                track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+                track.offsetHeight;
+                track.style.transition = 'transform 0.5s ease';
+            }
+            // If scrolled before the start of the middle set, jump forward to middle
+            if (currentIndex < totalOriginal) {
+                track.style.transition = 'none';
+                currentIndex += totalOriginal;
+                track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+                track.offsetHeight;
+                track.style.transition = 'transform 0.5s ease';
+            }
+        });
+
+        if (prevBtn) prevBtn.addEventListener('click', () => slide(-1));
+        if (nextBtn) nextBtn.addEventListener('click', () => slide(1));
+
+        // Recalculate on resize
+        window.addEventListener('resize', () => {
+            itemWidth = track.querySelector('.carousel-item').offsetWidth + gap;
+            track.style.transition = 'none';
+            track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+            track.offsetHeight;
+            track.style.transition = 'transform 0.5s ease';
+        });
+
     } catch (err) {
         console.error('Failed to load products:', err);
-        grid.innerHTML = '<p style="text-align:center;color:#999;">Could not load products.</p>';
+        track.innerHTML = '<p style="text-align:center;color:#999;">Could not load categories.</p>';
     }
 });

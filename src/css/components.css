@@ -839,3 +839,101 @@
     background: var(--brand-red);
     color: white;
 }
+
+/* ── PRODUCT CAROUSEL ── */
+.carousel-title {
+    font-weight: var(--fw-bold);
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    color: var(--color-charcoal);
+    text-transform: uppercase;
+}
+.carousel-container {
+    position: relative;
+    padding: 0 50px;
+    overflow: hidden;
+}
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+    padding: 10px 0 30px 0;
+    will-change: transform;
+}
+.carousel-item {
+    flex: 0 0 280px;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carousel-image-box {
+    width: 100%;
+    height: 280px;
+    background: #ece3d5;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.carousel-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 8px;
+}
+.carousel-item:hover .carousel-image-box {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.carousel-item h3 {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-charcoal);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.8);
+    border: 1px solid #ddd;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+.carousel-btn:hover {
+    background: var(--brand-red);
+    color: white;
+    border-color: var(--brand-red);
+}
+.prev-btn { left: 5px; }
+.next-btn { right: 5px; }
+
+@media (max-width: 992px) {
+    .carousel-item { flex: 0 0 240px; }
+}
+@media (max-width: 768px) {
+    .carousel-item { flex: 0 0 220px; }
+    .carousel-container { padding: 0 45px; }
+}
+@media (max-width: 480px) {
+    .carousel-item { flex: 0 0 200px; }
+    .carousel-container { padding: 0 40px; }
+}
