@@ -117,27 +117,30 @@
                 <p data-i18n="sec-engineering-desc" class="text-light-gray">Hover or tap to reveal the inner strength of RDA Vedanta HRFR Wires.</p>
             </div>
             <div class="wire-presentation">
-                <div class="wire-container" id="wireContainer" role="button" tabindex="0" style="cursor:pointer; -webkit-tap-highlight-color: transparent;">
-                    <!-- The Wire Pieces — pointer-events:none so taps pass through to container -->
-                    <div class="wire-layer wire-core" style="pointer-events:none;"></div>
-                    <div class="wire-layer wire-inner" style="pointer-events:none;"></div>
-                    <div class="wire-layer wire-outer" style="pointer-events:none;"></div>
+                <div class="wire-container" id="wireContainer">
+                    <!-- The Wire Pieces -->
+                    <div class="wire-layer wire-core"></div>
+                    <div class="wire-layer wire-inner"></div>
+                    <div class="wire-layer wire-outer"></div>
 
                     <!-- Tooltips -->
-                    <div class="layer-tooltip tooltip-outer" style="pointer-events:none;">
+                    <div class="layer-tooltip tooltip-outer">
                         <h4 data-i18n="tt-outer-title">HRFR PVC Jacket</h4>
                         <p data-i18n="tt-outer-desc">Heat Resistant &amp; Flame Retardant coating for ultimate safety.</p>
                     </div>
-                    <div class="layer-tooltip tooltip-inner" style="pointer-events:none;">
+                    <div class="layer-tooltip tooltip-inner">
                         <h4 data-i18n="tt-inner-title">Primary Insulation</h4>
                         <p data-i18n="tt-inner-desc">High-grade PVC for superior electrical resistance.</p>
                     </div>
-                    <div class="layer-tooltip tooltip-core" style="pointer-events:none;">
+                    <div class="layer-tooltip tooltip-core">
                         <h4 data-i18n="tt-core-title">99.97% Pure Copper</h4>
                         <p data-i18n="tt-core-desc">Electrolytic grade bunched copper for maximum conductivity.</p>
                     </div>
                 </div>
                 
+                <!-- Peel Toggle Button -->
+                <button class="btn-peel-toggle" id="peelToggleBtn" data-i18n="btn-peel-open">⚡ Peel Open</button>
+
                 <!-- Mobile Legend -->
                 <div class="mobile-legend">
                     <p><strong class="legend-color-red" data-i18n="tt-legend-outer">Outer:</strong> <span data-i18n="tt-outer-title">HRFR PVC Jacket</span></p>
@@ -148,15 +151,14 @@
         </div>
     </section>
     <script>
-    (function(){
+    (function() {
         var w = document.getElementById('wireContainer');
-        if (!w) return;
-        function toggle(e) {
-            e.preventDefault();
-            w.classList.toggle('peeling-active');
-        }
-        w.addEventListener('touchstart', toggle, {passive: false});
-        w.addEventListener('click', toggle);
+        var btn = document.getElementById('peelToggleBtn');
+        if (!w || !btn) return;
+        btn.addEventListener('click', function() {
+            var isOpen = w.classList.toggle('peeling-active');
+            btn.textContent = isOpen ? '✕ Close' : '⚡ Peel Open';
+        });
     })();
     </script>
 

@@ -459,6 +459,29 @@
 .wire-container:hover .tooltip-core,
 .wire-container.peeling-active .tooltip-core { right: -60px; }
 
+/* Peel Toggle Button */
+.btn-peel-toggle {
+    display: block;
+    margin: 28px auto 0;
+    padding: 12px 32px;
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: var(--fw-semibold);
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-peel-toggle:hover {
+    border-color: var(--brand-red);
+    color: var(--brand-red);
+    box-shadow: 0 0 20px rgba(211, 47, 47, 0.3);
+}
+
 /* Mobile Legend Base (Hidden on Desktop) */
 .mobile-legend {
     display: none;
