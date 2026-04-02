@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggleBtn.addEventListener('click', () => {
             const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
             const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            
+
             document.documentElement.setAttribute('data-theme', newTheme);
             sessionStorage.setItem('rda-theme', newTheme);
         });
@@ -36,7 +36,7 @@ window.addEventListener('load', () => {
     if (loader) {
         // Start fade out transition
         loader.classList.add('loader-hidden');
-        
+
         // Remove from DOM flow after transition completes
         setTimeout(() => {
             loader.style.display = 'none';
@@ -56,7 +56,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
     // Update UI notify the user they can install the PWA
     if (installBtn) {
         installBtn.style.display = 'inline-flex';
-        
+
         installBtn.addEventListener('click', () => {
             // Hide the app provided install promotion
             installBtn.style.display = 'none';
@@ -77,8 +77,8 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
 // iOS Manual PWA Prompt Fallback
 const isIos = () => {
-  const userAgent = window.navigator.userAgent.toLowerCase();
-  return /iphone|ipad|ipod/.test(userAgent);
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    return /iphone|ipad|ipod/.test(userAgent);
 };
 // Detect if running inside the installed PWA
 const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
@@ -86,7 +86,7 @@ const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.n
 if (isIos() && !isInStandaloneMode()) {
     if (installBtn) {
         installBtn.style.display = 'inline-flex';
-        
+
         installBtn.onclick = () => {
             const iosModal = document.createElement('div');
             iosModal.style.position = 'fixed';
@@ -102,7 +102,7 @@ if (isIos() && !isInStandaloneMode()) {
             iosModal.style.width = '90%';
             iosModal.style.maxWidth = '350px';
             iosModal.style.border = '1px solid var(--color-border)';
-            
+
             const shareIcon = `<svg style="display:inline; width:16px; transform:translateY(3px); margin:0 4px;" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M336 192L256 112l-80 80M256 112v256"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M192 208v128c0 35.35 28.65 64 64 64h0c35.35 0 64-28.65 64-64V208"/></svg>`;
 
             iosModal.innerHTML = `
@@ -114,7 +114,7 @@ if (isIos() && !isInStandaloneMode()) {
                 </ol>
                 <button id="closeIosModal" style="background:var(--brand-red); color:white; border:none; padding:10px 16px; border-radius:6px; cursor:pointer; width:100%; font-weight:bold;">Got it!</button>
             `;
-            
+
             document.body.appendChild(iosModal);
             document.getElementById('closeIosModal').addEventListener('click', () => {
                 iosModal.remove();
