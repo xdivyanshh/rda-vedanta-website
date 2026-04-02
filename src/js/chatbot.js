@@ -62,11 +62,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 const responseData = responses[replyType];
                 appendMessage(responseData.text, 'bot', responseData.key);
                 
-                // For all options right now, we offer a redirect to WhatsApp after a short delay since it's a B2B site
-                setTimeout(() => {
-                    window.open('https://wa.me/916392959815', '_blank');
-                    // Reset widget state occasionally if needed
-                }, 1800);
+                // Only redirect to WhatsApp when explicitly requested
+                if (replyType === 'human') {
+                    setTimeout(() => {
+                        window.open('https://wa.me/916392959815', '_blank');
+                    }, 1800);
+                }
             }, 800);
         });
     });
