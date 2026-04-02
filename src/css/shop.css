@@ -1,0 +1,293 @@
+/* ═══════════════════════════════════
+   SHOP MODULE (RR Kabel Style)
+   ═══════════════════════════════════ */
+
+.shop-section {
+    padding: var(--section-py) 0;
+    min-height: 80vh;
+    background-color: #ffffff;
+}
+
+.shop-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.shop-header h1 {
+    font-size: 2.5rem;
+    color: var(--color-charcoal);
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+.shop-header p {
+    color: var(--color-mid-gray);
+    font-size: 1.1rem;
+}
+
+/* ── LAYOUT ── */
+.shop-container {
+    display: flex;
+    gap: 40px;
+}
+
+/* ── SIDEBAR ── */
+.shop-sidebar {
+    width: 260px;
+    flex-shrink: 0;
+}
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.sidebar-header h3 {
+    font-size: 1.1rem;
+    color: var(--color-charcoal);
+    font-weight: 700;
+}
+.sidebar-clear {
+    color: var(--brand-red);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.filter-group {
+    border-bottom: 1px solid var(--color-border);
+}
+.filter-toggle {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #444;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.filter-toggle::after {
+    content: "▼";
+    font-size: 0.7rem;
+    color: #888;
+}
+
+/* ── MAIN CONTENT ── */
+.shop-main {
+    flex-grow: 1;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* ── PRODUCT CARD ── */
+.product-card {
+    background: #f4f4f4;
+    border: 1px solid #f4f4f4;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+.product-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-color: #ddd;
+}
+.product-card:hover .product-title {
+    color: var(--brand-red);
+}
+
+.product-image-box {
+    width: 100%;
+    aspect-ratio: 1/1;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-image-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    mix-blend-mode: multiply; /* Removes white bg if any */
+}
+
+.product-title {
+    font-size: 1rem;
+    color: #222;
+    text-align: center;
+    margin: 0;
+    padding: 0 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+/* ── QUICK VIEW MODAL ── */
+.product-modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.product-modal.show {
+    display: flex;
+    opacity: 1;
+}
+.modal-content {
+    background: white;
+    width: 90%;
+    max-width: 900px;
+    max-height: 90vh;
+    border-radius: 8px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+.product-modal.show .modal-content {
+    transform: translateY(0);
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    z-index: 10;
+}
+.modal-close:hover {
+    color: var(--brand-red);
+}
+
+.modal-img-col {
+    flex: 1;
+    background: #f4f4f4;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-img-col img {
+    max-width: 100%;
+}
+
+.modal-info-col {
+    flex: 1;
+    padding: 40px 30px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+.modal-category {
+    font-size: 0.8rem;
+    color: var(--brand-red);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+.modal-title {
+    font-size: 1.8rem;
+    color: var(--color-charcoal);
+    margin: 0 0 20px 0;
+}
+
+.modal-section-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.modal-features {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+.modal-features li {
+    margin-bottom: 5px;
+}
+
+.modal-specs {
+    margin-bottom: 25px;
+}
+.modal-spec-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+    font-size: 0.9rem;
+}
+.modal-spec-key {
+    color: #666;
+    font-weight: 500;
+}
+.modal-spec-val {
+    color: #222;
+    font-weight: 700;
+    text-align: right;
+    max-width: 50%;
+}
+
+.btn-whatsapp-inquiry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    background-color: #25D366;
+    color: white;
+    padding: 14px;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    font-weight: var(--fw-bold);
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+.btn-whatsapp-inquiry:hover {
+    background-color: #128C7E;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+    .products-grid { grid-template-columns: repeat(2, 1fr); }
+    .modal-content { flex-direction: column; overflow-y: auto;}
+    .modal-img-col { padding: 30px; }
+}
+@media (max-width: 768px) {
+    .shop-container { flex-direction: column; }
+    .shop-sidebar { width: 100%; margin-bottom: 30px; }
+    .products-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 500px) {
+    .products-grid { grid-template-columns: 1fr; }
+}

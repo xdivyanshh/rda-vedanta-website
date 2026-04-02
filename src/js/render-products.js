@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // Build the card HTML
         const buildCard = (c) => `
-            <div class="carousel-item">
+            <a href="${c.href || '#'}" class="carousel-item" style="text-decoration:none;">
                 <div class="carousel-image-box">
                     <img src="${c.image}" alt="${c.title}" loading="lazy">
                 </div>
                 <h3>${c.title}</h3>
-            </div>`;
+            </a>`;
 
         // Triple the items for infinite illusion (prev-set | real-set | next-set)
         const html = categories.map(buildCard).join('');

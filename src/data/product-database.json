@@ -1,0 +1,523 @@
+[
+    {
+        "id": "cooler-1",
+        "category": "coolers",
+        "parentCategory": "COOLERS",
+        "name": "Go Cool",
+        "model": "RDA35GC1226",
+        "specifications": {
+            "Tank Capacity": "35 Liters (Ideal for 150-250 sq. ft.)",
+            "Motor": "High-Efficiency Three-Speed Motor",
+            "Fan": "12-inch High-Flow Plastic Blade",
+            "Cooling Media": "Long-Life Honeycomb Pads",
+            "Body Material": "High-Impact ABS Plastic"
+        },
+        "features": [
+            "Aerodynamic Blades",
+            "Premium Build (ABS Plastic)",
+            "Precision Water Monitoring",
+            "Wide-Angle Coverage"
+        ]
+    },
+    {
+        "id": "cooler-2",
+        "category": "coolers",
+        "parentCategory": "COOLERS",
+        "name": "Green Breeze",
+        "model": "RDA75GB1626",
+        "specifications": {
+            "Tank Capacity": "75 Liters (Efficient for 12–15 hours)",
+            "Motor": "Three-Speed Motor (Energy-efficient)",
+            "Fan": "16-inch Aerodynamic Plastic Blade",
+            "Cooling Media": "High-Efficiency 3-Side Honeycomb Pads",
+            "Body Material": "High-Gloss, Rust-Free ABS Plastic"
+        },
+        "features": [
+            "Optimized Air Throw",
+            "Inverter Ready",
+            "Auto Swing Technology",
+            "Whisper-Quiet Operation"
+        ]
+    },
+    {
+        "id": "cooler-3",
+        "category": "coolers",
+        "parentCategory": "COOLERS",
+        "name": "Natural Fresh",
+        "model": "RDA85NF1626",
+        "specifications": {
+            "Tank Capacity": "85 Liters",
+            "Motor": "High-Efficiency Three-Speed Motor",
+            "Fan": "16-inch High-Flow Plastic Blade",
+            "Cooling Media": "High-Density Honeycomb Pads (3-Side)",
+            "Body Material": "Rust-Free ABS Plastic"
+        },
+        "features": [
+            "Enhanced Air Reach (35-48 feet)",
+            "Multi-Layer Filtration",
+            "Dual-Cooling System",
+            "Inverter Compatibility"
+        ]
+    },
+    {
+        "id": "cooler-4",
+        "category": "coolers",
+        "parentCategory": "COOLERS",
+        "name": "Ice Blaster",
+        "model": "RDA80IB1626",
+        "specifications": {
+            "Tank Capacity": "80 Liters",
+            "Motor": "High-Efficiency Three-Speed Motor",
+            "Fan": "16-inch Aerodynamic Plastic Blades",
+            "Cooling Media": "High-density Honeycomb Pads (3-Side)",
+            "Body Material": "Shock-proof, Corrosion-resistant ABS Plastic"
+        },
+        "features": [
+            "Ice Blaster Technology",
+            "3-Side Dust Protection",
+            "Powerful Air Throw (30-45 feet)"
+        ]
+    },
+    {
+        "id": "cooler-5",
+        "category": "coolers",
+        "parentCategory": "COOLERS",
+        "name": "Atlas",
+        "model": "RDA95AT1626",
+        "specifications": {
+            "Tank Capacity": "95 Liters",
+            "Motor": "High-Efficiency Three-Speed 110 Motor",
+            "Fan": "16-inch Aerodynamic Plastic Blades",
+            "Cooling Media": "High-Density Honeycomb Pads",
+            "Body Material": "Rust-Free ABS Plastic"
+        },
+        "features": [
+            "Powerful Air Throw (35-50 feet)",
+            "Maximum Mobility"
+        ]
+    },
+    {
+        "id": "cooler-6",
+        "category": "coolers",
+        "parentCategory": "COOLERS",
+        "name": "Thunder Wave",
+        "model": "RDA140TW1826",
+        "specifications": {
+            "Tank Capacity": "140 Liters",
+            "Motor": "E-Frame ACW Motor",
+            "Fan": "18-inch Metal Fan Blade",
+            "Cooling Media": "Extra-thick 3-Side Honeycomb Pads",
+            "Body Material": "High-Impact ABS Plastic"
+        },
+        "features": [
+            "Industrial Cooling Power (60-80 ft throw)",
+            "ACW (Air Cooled Water) Technology",
+            "Heavy-Duty Stability"
+        ]
+    },
+    {
+        "id": "cooler-7",
+        "category": "coolers",
+        "parentCategory": "COOLERS",
+        "name": "Cyclone",
+        "model": "RDA150CY2226",
+        "specifications": {
+            "Tank Capacity": "160 Liters",
+            "Motor": "High-Torque Three-Speed Industrial Motor",
+            "Fan": "22-inch Heavy-Duty Metal Blade",
+            "Pump System": "Double Pump Technology",
+            "Body Material": "Engineering-grade ABS, Shock-proof, UV-Stabilized"
+        },
+        "features": [
+            "Cyclone Airflow Technology (80-100 ft)",
+            "Dual-Locking Safety Brakes",
+            "Dual-Pump Reliability"
+        ]
+    },
+    {
+        "id": "fan-1",
+        "category": "fans",
+        "parentCategory": "FANS",
+        "name": "COMPASS",
+        "specifications": {
+            "Wattage": "50 WATT",
+            "RPM": "370 RPM",
+            "Sweep": "1200MM",
+            "Air Delivery": "210"
+        }
+    },
+    {
+        "id": "fan-2",
+        "category": "fans",
+        "parentCategory": "FANS",
+        "name": "STRIKER",
+        "specifications": {
+            "Wattage": "50 WATT",
+            "RPM": "550 / 370 RPM",
+            "Sweep": "900 / 1200MM",
+            "Air Delivery": "155 / 210"
+        }
+    },
+    {
+        "id": "fan-3",
+        "category": "fans",
+        "parentCategory": "FANS",
+        "name": "GLOSTER",
+        "specifications": {
+            "Wattage": "50 WATT",
+            "RPM": "370 RPM",
+            "Sweep": "1200MM",
+            "Air Delivery": "210",
+            "Motor Type": "Oil Capacitor"
+        }
+    },
+    {
+        "id": "fan-4",
+        "category": "fans",
+        "parentCategory": "FANS",
+        "name": "CF-390",
+        "specifications": {
+            "Wattage": "50 WATT",
+            "RPM": "370 RPM",
+            "Sweep": "1200MM",
+            "Air Delivery": "210"
+        }
+    },
+    {
+        "id": "fan-5",
+        "category": "fans",
+        "parentCategory": "FANS",
+        "name": "SONATA",
+        "specifications": {
+            "Wattage": "50 WATT",
+            "RPM": "370 RPM",
+            "Sweep": "1200MM",
+            "Air Delivery": "210"
+        }
+    },
+    {
+        "id": "fan-6",
+        "category": "fans",
+        "parentCategory": "FANS",
+        "name": "PASSION",
+        "specifications": {
+            "Wattage": "50 WATT",
+            "RPM": "370 RPM",
+            "Sweep": "1200MM",
+            "Air Delivery": "210"
+        }
+    },
+    {
+        "id": "fan-7",
+        "category": "fans",
+        "parentCategory": "FANS",
+        "name": "SPEEDO",
+        "specifications": {
+            "Wattage": "60 WATT",
+            "RPM": "550 RPM",
+            "Sweep": "600MM",
+            "Air Delivery": "110"
+        }
+    },
+    {
+        "id": "wire-1",
+        "category": "wires",
+        "parentCategory": "WIRES & CABLES",
+        "name": "ALUMINIUM TWIN CABLE",
+        "specifications": {
+            "Conductor": "Aluminium (stranded round or compact)",
+            "Core Insulation": "FR and Weather proof grade PVC",
+            "Size": "1.5mm – 25.0mm",
+            "Colour": "White and Black in 2,3 & 4 cores",
+            "Length": "90 meters per coil",
+            "Application": "Wiring power grids, overhead power transmission"
+        }
+    },
+    {
+        "id": "wire-2",
+        "category": "wires",
+        "parentCategory": "WIRES & CABLES",
+        "name": "ALUMINIUM SINGLE CORE CABLE",
+        "specifications": {
+            "Conductor": "Aluminium (stranded round or compact)",
+            "Core Insulation": "FR and Weather proof grade PVC",
+            "Size": "1.5mm – 70.0mm",
+            "Colour": "Black",
+            "Length": "90 meters per coil"
+        }
+    },
+    {
+        "id": "wire-3",
+        "category": "wires",
+        "parentCategory": "WIRES & CABLES",
+        "name": "TWISTED FLEXIBLE WIRE",
+        "specifications": {
+            "Conductor": "Bare annealed electrolytic grade copper",
+            "Core Insulation": "Virgin grade natural PVC",
+            "Size": "10/76, 14/76, 18/76, 23/76, 30/76, 40/76",
+            "Colour": "White with colour lining",
+            "Length": "90 meters per coil",
+            "Application": "Light load connections and electrical appliances"
+        }
+    },
+    {
+        "id": "pipe-1",
+        "category": "pipes",
+        "parentCategory": "CONDUIT PIPES",
+        "name": "RDA VEDANTA uPVC PIPE",
+        "specifications": {
+            "Sizes Available": "20mm, 25mm, 32mm, 40mm, 50mm, 63mm",
+            "Color": "White",
+            "Properties": "Fire-retardant (FR), Lightweight, Flexible, Safe"
+        }
+    },
+    {
+        "id": "pipe-2",
+        "category": "pipes",
+        "parentCategory": "CONDUIT PIPES",
+        "name": "VEDANTA SUPREME uPVC PIPE",
+        "specifications": {
+            "Sizes Available": "25mm",
+            "Color": "Orange",
+            "Quality": "Corrosion-Free, Superior Rigidity"
+        }
+    },
+    {
+        "id": "accs-1",
+        "category": "accessories",
+        "parentCategory": "SIGNATURE SERIES",
+        "name": "RDA VEDANTA PENDANT HOLDER",
+        "specifications": {
+            "Ports": "3 Ports",
+            "Packing": "Pack of 20 pieces in a box",
+            "Material": "Fire retardant polycarbonate outer housing",
+            "Properties": "Heavy brass parts, Heat dissipation ducts"
+        }
+    },
+    {
+        "id": "accs-2",
+        "category": "accessories",
+        "parentCategory": "SIGNATURE SERIES",
+        "name": "2 Pin Plastic Plug Top",
+        "specifications": {
+            "Voltage": "240V",
+            "Material": "Plastic",
+            "Colors Available": "Red, Blue, Green, Yellow"
+        }
+    },
+    {
+        "id": "accs-3",
+        "category": "accessories",
+        "parentCategory": "SIGNATURE SERIES",
+        "name": "CRYSTAL 3 PIN TOP RANGE",
+        "specifications": {
+            "Rating": "6A, 16A",
+            "Design": "Transparent look with LED indicator",
+            "Quality": "Best quality parts"
+        }
+    },
+    {
+        "id": "accs-4",
+        "category": "accessories",
+        "parentCategory": "SIGNATURE SERIES",
+        "name": "6A 3 Pin Multiplug Travel Adapter",
+        "specifications": {
+            "Socket Type": "Universal Socket",
+            "Color": "White"
+        }
+    },
+    {
+        "id": "iron-1",
+        "category": "irons",
+        "parentCategory": "HOME APPLIANCES",
+        "name": "ROCKY 550"
+    },
+    {
+        "id": "iron-2",
+        "category": "irons",
+        "parentCategory": "HOME APPLIANCES",
+        "name": "PLANCHA SMART"
+    },
+    {
+        "id": "heater-1",
+        "category": "heaters",
+        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
+        "name": "Aditya S-4 18\" Sun Heater",
+        "specifications": {
+            "Size": "18\"",
+            "Heat Settings": "2 Heat Setting",
+            "Power output": "500W/1000W",
+            "Heat Distribution": "Wide Heat Dispersion"
+        },
+        "features": [
+            "Features a dual 2 Heat Setting system for customizable comfort",
+            "Provides Wide Heat Dispersion to cover larger areas efficiently",
+            "Operates at 500W or 1000W capacities"
+        ]
+    },
+    {
+        "id": "heater-2",
+        "category": "heaters",
+        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
+        "name": "Aditya S-11 15\" Sun Heater",
+        "specifications": {
+            "Size": "15\"",
+            "Element Type": "PTC Element",
+            "Heat Settings": "2 Heat Setting",
+            "Power output": "400W/800W",
+            "Distribution": "Wide Heat Dispersion",
+            "Movement": "Oscillation System"
+        },
+        "features": [
+            "Utilizes a PTC Element resulting in No Oxygen Consumption",
+            "Equipped with safety features including a Safety Grill, Safety Switch, and Cool Body Touch",
+            "Housed in a Flame Retardant Housing for maximum operational safety",
+            "Offers a Low Running Cost due to its self-regulation capabilities",
+            "Compatible with Dehumidifiers & Incubators"
+        ]
+    },
+    {
+        "id": "heater-3",
+        "category": "heaters",
+        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
+        "name": "VD Lite Sun Heater",
+        "specifications": {
+            "Power output": "400W/800W"
+        },
+        "features": [
+            "Provides instant heating for immediate comfort",
+            "Offers dual power modes at 400W and 800W"
+        ]
+    },
+    {
+        "id": "heater-4",
+        "category": "heaters",
+        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
+        "name": "Aditya S1 300 Sun Heater",
+        "specifications": {
+            "Heat Settings": "2 Heating Setting",
+            "Power output": "400W/800W",
+            "Material Build": "Deform Proof Molding Material",
+            "Movement": "Oscillating"
+        },
+        "features": [
+            "Designed as an Energy Saving Heater",
+            "Features an Oscillating base for even heat distribution",
+            "Constructed from Deform Proof Molding Material"
+        ]
+    },
+    {
+        "id": "heater-5",
+        "category": "heaters",
+        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
+        "name": "Aditya S2 400 Sun Heater",
+        "specifications": {
+            "Heat Settings": "2 Heating Setting",
+            "Power output": "400W/800W",
+            "Material Build": "Deform Proof Molding Material",
+            "Movement": "Oscillating"
+        },
+        "features": [
+            "Provides wide room coverage with an Oscillating mechanism",
+            "Focuses on efficiency as an Energy Saving Heater",
+            "Built with highly durable Deform Proof Molding Material"
+        ]
+    },
+    {
+        "id": "heater-6",
+        "category": "heaters",
+        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
+        "name": "Aditya Q1",
+        "specifications": {
+            "Heat Settings": "2 Heating Setting",
+            "Power output": "400W/800W",
+            "Safety Measure": "Tip Over Protection Switch"
+        },
+        "features": [
+            "Built-in Tip Over Protection Switch for hazard prevention",
+            "Equipped with a Power Indicator Light for clear operational status",
+            "Includes an Easy Lift Handle for portability"
+        ]
+    },
+    {
+        "id": "heater-7",
+        "category": "heaters",
+        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
+        "name": "Double Heating Room Heater",
+        "specifications": {
+            "System Type": "Double Heating",
+            "Power output": "1000W/2000W",
+            "Material Build": "Deform Proof Molding Material"
+        },
+        "features": [
+            "Features a high-power Double Heating system",
+            "Maintains efficiency as an Energy Saving Heater despite its power",
+            "Uses Deform Proof Molding Material to withstand high temperatures"
+        ]
+    },
+    {
+        "id": "heater-8",
+        "category": "heaters",
+        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
+        "name": "Aditya B2 (B Type Santro)",
+        "specifications": {
+            "Model Type": "B Type Santro",
+            "Modes": "OFF, COOL, WARM, HOT",
+            "Core Technology": "Filter with Autoniko"
+        },
+        "features": [
+            "Multi-mode functionality with COOL, WARM, and HOT settings",
+            "Operates with an integrated Filter with Autoniko"
+        ]
+    },
+    {
+        "id": "heater-9",
+        "category": "heaters",
+        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
+        "name": "Bobby Room Heater",
+        "specifications": {
+            "Configurations": "Single/Double Rod"
+        },
+        "features": [
+            "Available in both Single Rod and Double Rod variations"
+        ]
+    },
+    {
+        "id": "heater-10",
+        "category": "heaters",
+        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
+        "name": "Priya Room Heater",
+        "specifications": {
+            "Configurations": "Single/Double Rod"
+        },
+        "features": [
+            "Available in both Single Rod and Double Rod variations"
+        ]
+    },
+    {
+        "id": "heater-11",
+        "category": "heaters",
+        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
+        "name": "Lava Electric Immersion Rod (Lava 2014)",
+        "specifications": {
+            "Model Year/Type": "LAVA 2014"
+        },
+        "features": [
+            "Engineered for Quick heating",
+            "Ensures a Long lasting performance lifespan"
+        ]
+    },
+    {
+        "id": "heater-12",
+        "category": "heaters",
+        "parentCategory": "ROOM HEATERS & IMMERSION RODS",
+        "name": "Vedanta Izzo Immersion Heater",
+        "specifications": {
+            "Product Type": "Immersion Heater"
+        },
+        "features": [
+            "Provides quick and efficient water heating",
+            "Features a powerful design for high performance"
+        ]
+    }
+]
