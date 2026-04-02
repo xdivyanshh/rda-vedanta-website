@@ -38,13 +38,35 @@ document.addEventListener('DOMContentLoaded', async () => {
         track.style.transition = 'transform 0.5s ease';
 
         let isAnimating = false;
+        let animationSafetyTimer;
 
         const slide = (direction) => {
             if (isAnimating) return;
             isAnimating = true;
             currentIndex += direction;
             track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+            
+            // Safety fallback in case transitionend does not fire (e.g. due to resize)
+            clearTimeout(animationSafetyTimer);
+            animationSafetyTimer = setTimeout(() => {
+                isAnimating = false;
+            }, 600);
         };
+
+        // Auto-scroll logic
+        let autoScrollInterval;
+        const startAutoScroll = () => {
+            autoScrollInterval = setInterval(() => {
+                slide(1);
+            }, 3000); // 3 seconds interval
+        };
+        const resetAutoScroll = () => {
+            clearInterval(autoScrollInterval);
+            startAutoScroll();
+        };
+
+        // Start initially
+        startAutoScroll();
 
         // After each transition ends, silently jump if we've gone past the boundaries
         track.addEventListener('transitionend', () => {
@@ -67,8 +89,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         });
 
-        if (prevBtn) prevBtn.addEventListener('click', () => slide(-1));
-        if (nextBtn) nextBtn.addEventListener('click', () => slide(1));
+        if (prevBtn) prevBtn.addEventListener('click', () => {
+            slide(-1);
+            resetAutoScroll();
+        });
+        if (nextBtn) nextBtn.addEventListener('click', () => {
+            slide(1);
+            resetAutoScroll();
+        });
 
         // Recalculate on resize
         window.addEventListener('resize', () => {
