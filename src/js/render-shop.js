@@ -47,42 +47,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (e.target === modal) modal.classList.remove('show');
         });
 
-        // ── 2. Inject Sidebar Layout ──
-        // Instead of having just the grid, we wrap it in RR style layout
-        const parentContainer = grid.parentElement;
-        const layoutWrapper = document.createElement('div');
-        layoutWrapper.className = 'shop-container';
+        // ── Removed Sidebar Layout per user request ──
         
-        const sidebarHtml = `
-            <div class="shop-sidebar">
-                <div class="sidebar-header">
-                    <h3>Product Categories</h3>
-                    <span class="sidebar-clear">Clear</span>
-                </div>
-                <div class="filter-group">
-                    <button class="filter-toggle">BY TYPE</button>
-                </div>
-                <div class="filter-group">
-                    <button class="filter-toggle">BY TANK CAPACITY</button>
-                </div>
-                <div class="filter-group">
-                    <button class="filter-toggle">BY BODY TYPE</button>
-                </div>
-                <div class="filter-group">
-                    <button class="filter-toggle">BY WATTAGE</button>
-                </div>
-            </div>
-        `;
-        layoutWrapper.insertAdjacentHTML('afterbegin', sidebarHtml);
-        
-        const mainWrapper = document.createElement('div');
-        mainWrapper.className = 'shop-main';
-        
-        // Move grid into main wrapper
-        parentContainer.insertBefore(layoutWrapper, grid);
-        mainWrapper.appendChild(grid);
-        layoutWrapper.appendChild(mainWrapper);
-
         // ── 3. Render Cards ──
         const filtered = targetCategory === 'all' 
             ? products 
@@ -98,11 +64,43 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         const cardsHtml = filtered.map((p, i) => {
-            // Keep safe product data for modal
-            const safeProductJson = encodeURIComponent(JSON.stringify(p));
-            // Show image if provided, else just an empty container
-            const imageHtml = p.image 
-                ? `<img src="${p.image}" alt="${p.name}" loading="lazy">` 
+            // Determine initial image
+            let initialImage = p.image || "";
+            let baseVariantIdx = 0;
+            
+            // Find true default variant based on database routing
+            if (p.variants && p.variants.length > 0) {
+                const matchIdx = p.variants.findIndex(v => v.image === initialImage);
+                if (matchIdx !== -1) {
+                    baseVariantIdx = matchIdx;
+                } else if (!initialImage) {
+                    initialImage = p.variants[0].image || "";
+                }
+            }
+
+            // Build color swatches
+            let swatchesHtml = '';
+            if (p.variants && p.variants.length > 0) {
+                swatchesHtml = '<div class="color-swatches" style="margin-top: 10px; justify-content: center;">';
+                p.variants.forEach((v, idx) => {
+                    swatchesHtml += `<button class="swatch-btn ${idx === baseVariantIdx ? 'active' : ''}" 
+                        style="background-color: ${v.colorCode};" 
+                        data-variant-idx="${idx}"
+                        title="${v.colorName}"></button>`;
+                });
+                swatchesHtml += '</div>';
+            }
+
+            // Encode product safely for modal
+            const initialProductData = { ...p };
+            if (p.variants && p.variants.length > 0) {
+                if (p.variants[baseVariantIdx].image) initialProductData.image = p.variants[baseVariantIdx].image;
+                if (p.variants[baseVariantIdx].gallery) initialProductData.gallery = p.variants[baseVariantIdx].gallery;
+            }
+            const safeProductJson = encodeURIComponent(JSON.stringify(initialProductData));
+
+            const imageHtml = initialImage 
+                ? `<img src="${initialImage}" alt="${p.name}" loading="lazy">` 
                 : `<div style="width: 100%; height: 100%; color: #ccc; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; text-transform: uppercase;">Image Pending</div>`;
 
             return `
@@ -112,12 +110,58 @@ document.addEventListener('DOMContentLoaded', async () => {
                     </div>
                     <div class="product-info-minimal">
                         <h3 class="product-title">${p.name}</h3>
+                        ${swatchesHtml}
                     </div>
                 </div>
             `;
         }).join('');
 
         grid.innerHTML = cardsHtml;
+
+        // ── 3.5. Attach Event Listeners for Color Swatches ──
+        grid.querySelectorAll('.product-card').forEach(card => {
+            const swatchBtns = card.querySelectorAll('.swatch-btn');
+            if (swatchBtns.length === 0) return;
+
+            const imgBox = card.querySelector('.product-image-box');
+            // Extract the original JSON out of the original state array to avoid encoding mutation bugs
+            const originalProductDataStr = decodeURIComponent(card.getAttribute('data-product'));
+            const originalProductData = JSON.parse(originalProductDataStr); // It's currently mapped to variant 0
+
+            // But we actually need the real unmutated product to fetch all galleries
+            const baseProductData = filtered.find(item => item.id === originalProductData.id);
+
+            swatchBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation(); // Stop card click (modal)
+                    
+                    // Update active state
+                    swatchBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    // Update Image
+                    const vIdx = parseInt(btn.getAttribute('data-variant-idx'), 10);
+                    const variant = baseProductData.variants[vIdx];
+                    
+                    if (variant && variant.image) {
+                        imgBox.innerHTML = `<img src="${variant.image}" alt="${baseProductData.name}" loading="lazy">`;
+                    } else {
+                        imgBox.innerHTML = `<div style="width: 100%; height: 100%; color: #ccc; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; text-transform: uppercase;">Image Pending</div>`;
+                    }
+                    
+                    // Mutate the local attribute so the modal sees the new variant's gallery
+                    let updatedData = { ...baseProductData };
+                    if (variant && variant.image) updatedData.image = variant.image;
+                    if (variant && variant.gallery && variant.gallery.length > 0) {
+                        updatedData.gallery = variant.gallery;
+                    } else if (variant && variant.image) {
+                        updatedData.gallery = [variant.image];
+                    }
+                    
+                    card.setAttribute('data-product', encodeURIComponent(JSON.stringify(updatedData)));
+                });
+            });
+        });
 
         // ── 4. Attach Event Listeners for Modal ──
         let currentGallery = [];

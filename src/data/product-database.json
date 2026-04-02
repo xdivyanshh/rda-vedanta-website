@@ -144,7 +144,44 @@
             "RPM": "370 RPM",
             "Sweep": "1200MM",
             "Air Delivery": "210"
-        }
+        },
+        "features": [
+            "Engineered with 100% Copper Winding for superior motor efficiency.",
+            "Delivers a high-performance 210 Air Delivery rate.",
+            "Operates at a consistent 370 RPM for optimal airflow."
+        ],
+        "variants": [
+            {
+                "colorName": "Brown",
+                "colorCode": "#5C4033",
+                "image": "/src/assets/images/products/fans/fan-1_brown_main.png",
+                "gallery": [
+                    "/src/assets/images/products/fans/fan-1_brown_main.png",
+                    "/src/assets/images/products/fans/fan-1_brown_1.png",
+                    "/src/assets/images/products/fans/fan-1_brown_2.png"
+                ]
+            },
+            {
+                "colorName": "Pink",
+                "colorCode": "#FFB6C1",
+                "image": "/src/assets/images/products/fans/fan-1_pink_main.png",
+                "gallery": [
+                    "/src/assets/images/products/fans/fan-1_pink_main.png",
+                    "/src/assets/images/products/fans/fan-1_pink_1.png",
+                    "/src/assets/images/products/fans/fan-1_pink_2.png"
+                ]
+            },
+            {
+                "colorName": "White",
+                "colorCode": "#f0f0f0",
+                "image": "/src/assets/images/products/fans/fan-1_white_main.png",
+                "gallery": [
+                    "/src/assets/images/products/fans/fan-1_white_main.png",
+                    "/src/assets/images/products/fans/fan-1_white_1.png"
+                ]
+            }
+        ],
+        "image": "/src/assets/images/products/fans/fan-1_white_main.png"
     },
     {
         "id": "fan-2",
@@ -156,7 +193,45 @@
             "RPM": "550 / 370 RPM",
             "Sweep": "900 / 1200MM",
             "Air Delivery": "155 / 210"
-        }
+        },
+        "features": [
+            "Features robust 100% Copper Winding for long-lasting durability.",
+            "Available in dual configurations for tailored performance.",
+            "Capable of reaching up to 550 RPM for rapid cooling."
+        ],
+        "variants": [
+            {
+                "colorName": "Blue",
+                "colorCode": "#0047AB",
+                "image": "/src/assets/images/products/fans/fan-2_blue_main.png",
+                "gallery": [
+                    "/src/assets/images/products/fans/fan-2_blue_main.png",
+                    "/src/assets/images/products/fans/fan-2_blue_1.png",
+                    "/src/assets/images/products/fans/fan-2_blue_2.png"
+                ]
+            },
+            {
+                "colorName": "Brown",
+                "colorCode": "#5C4033",
+                "image": "/src/assets/images/products/fans/fan-2_brown_main.png",
+                "gallery": [
+                    "/src/assets/images/products/fans/fan-2_brown_main.png",
+                    "/src/assets/images/products/fans/fan-2_brown_1.png",
+                    "/src/assets/images/products/fans/fan-2_brown_2.png"
+                ]
+            },
+            {
+                "colorName": "White",
+                "colorCode": "#f0f0f0",
+                "image": "/src/assets/images/products/fans/fan-2_white_main.png",
+                "gallery": [
+                    "/src/assets/images/products/fans/fan-2_white_main.png",
+                    "/src/assets/images/products/fans/fan-2_white_1.png",
+                    "/src/assets/images/products/fans/fan-2_white_2.png"
+                ]
+            }
+        ],
+        "image": "/src/assets/images/products/fans/fan-2_white_main.png"
     },
     {
         "id": "fan-3",
@@ -169,7 +244,39 @@
             "Sweep": "1200MM",
             "Air Delivery": "210",
             "Motor Type": "Oil Capacitor"
-        }
+        },
+        "features": [
+            "Built with an Oil Capacitor for enhanced operational stability.",
+            "Powered by a highly efficient 100% Copper Winding motor.",
+            "Achieves a solid 210 Air Delivery output."
+        ],
+        "variants": [
+            {
+                "colorName": "Dark Brown",
+                "colorCode": "#3E2723",
+                "image": "/src/assets/images/products/fans/fan-3_dark_brown_main.png",
+                "gallery": [
+                    "/src/assets/images/products/fans/fan-3_dark_brown_main.png"
+                ]
+            },
+            {
+                "colorName": "Light Brown",
+                "colorCode": "#C4A484",
+                "image": "/src/assets/images/products/fans/fan-3_light_brown_main.png",
+                "gallery": [
+                    "/src/assets/images/products/fans/fan-3_light_brown_main.png"
+                ]
+            },
+            {
+                "colorName": "White",
+                "colorCode": "#f0f0f0",
+                "image": "/src/assets/images/products/fans/fan-3_white_main.png",
+                "gallery": [
+                    "/src/assets/images/products/fans/fan-3_white_main.png"
+                ]
+            }
+        ],
+        "image": "/src/assets/images/products/fans/fan-3_white_main.png"
     },
     {
         "id": "fan-4",
@@ -181,7 +288,35 @@
             "RPM": "370 RPM",
             "Sweep": "1200MM",
             "Air Delivery": "210"
-        }
+        },
+        "features": [
+            "Equipped with 100% Copper Winding to ensure maximum electrical efficiency.",
+            "Generates a steady speed of 370 RPM.",
+            "Provides extensive room coverage with a 1200MM Sweep."
+        ],
+        "variants": [
+            {
+                "colorName": "Green",
+                "colorCode": "#2E8B57",
+                "image": "/src/assets/images/products/fans/fan-4_green_main.png",
+                "gallery": [
+                    "/src/assets/images/products/fans/fan-4_green_main.png",
+                    "/src/assets/images/products/fans/fan-4_green_1.png",
+                    "/src/assets/images/products/fans/fan-4_green_2.png"
+                ]
+            },
+            {
+                "colorName": "White",
+                "colorCode": "#f0f0f0",
+                "image": "/src/assets/images/products/fans/fan-4_white_main.png",
+                "gallery": [
+                    "/src/assets/images/products/fans/fan-4_white_main.png",
+                    "/src/assets/images/products/fans/fan-4_white_1.png",
+                    "/src/assets/images/products/fans/fan-4_white_2.png"
+                ]
+            }
+        ],
+        "image": "/src/assets/images/products/fans/fan-4_white_main.png"
     },
     {
         "id": "fan-5",
@@ -193,7 +328,44 @@
             "RPM": "370 RPM",
             "Sweep": "1200MM",
             "Air Delivery": "210"
-        }
+        },
+        "features": [
+            "Incorporates 100% Copper Winding for reliable internal mechanics.",
+            "Delivers effective airflow with a 210 Air Delivery rating.",
+            "Sustains an optimal rotation speed of 370 RPM."
+        ],
+        "variants": [
+            {
+                "colorName": "Brown",
+                "colorCode": "#5C4033",
+                "image": "/src/assets/images/products/fans/fan-5_brown_main.png",
+                "gallery": [
+                    "/src/assets/images/products/fans/fan-5_brown_main.png",
+                    "/src/assets/images/products/fans/fan-5_brown_1.png",
+                    "/src/assets/images/products/fans/fan-5_brown_2.png",
+                    "/src/assets/images/products/fans/fan-5_brown_3.png",
+                    "/src/assets/images/products/fans/fan-5_brown_4.png"
+                ]
+            },
+            {
+                "colorName": "Green",
+                "colorCode": "#2E8B57",
+                "image": "/src/assets/images/products/fans/fan-5_green_main.png",
+                "gallery": [
+                    "/src/assets/images/products/fans/fan-5_green_main.png"
+                ]
+            },
+            {
+                "colorName": "Silver",
+                "colorCode": "#C0C0C0",
+                "image": "/src/assets/images/products/fans/fan-5_silver_main.png",
+                "gallery": [
+                    "/src/assets/images/products/fans/fan-5_silver_main.png",
+                    "/src/assets/images/products/fans/fan-5_silver_1.png"
+                ]
+            }
+        ],
+        "image": "/src/assets/images/products/fans/fan-5_brown_main.png"
     },
     {
         "id": "fan-6",
@@ -205,7 +377,34 @@
             "RPM": "370 RPM",
             "Sweep": "1200MM",
             "Air Delivery": "210"
-        }
+        },
+        "features": [
+            "Constructed using premium 100% Copper Winding.",
+            "Ensures broad air distribution via a 1200MM Sweep.",
+            "Maintains a consistent output of 210 Air Delivery."
+        ],
+        "variants": [
+            {
+                "colorName": "Golden",
+                "colorCode": "#D4AF37",
+                "image": "/src/assets/images/products/fans/fan-6_golden_main.png",
+                "gallery": [
+                    "/src/assets/images/products/fans/fan-6_golden_main.png",
+                    "/src/assets/images/products/fans/fan-6_golden_1.png"
+                ]
+            },
+            {
+                "colorName": "White",
+                "colorCode": "#f0f0f0",
+                "image": "/src/assets/images/products/fans/fan-6_white_main.png",
+                "gallery": [
+                    "/src/assets/images/products/fans/fan-6_white_main.png",
+                    "/src/assets/images/products/fans/fan-6_white_1.png",
+                    "/src/assets/images/products/fans/fan-6_white_2.png"
+                ]
+            }
+        ],
+        "image": "/src/assets/images/products/fans/fan-6_white_main.png"
     },
     {
         "id": "fan-7",
@@ -217,7 +416,35 @@
             "RPM": "550 RPM",
             "Sweep": "600MM",
             "Air Delivery": "110"
-        }
+        },
+        "features": [
+            "Features a high-velocity motor running at 550 RPM.",
+            "Built with highly conductive 100% Copper Winding.",
+            "Designed with a compact 600MM Sweep for targeted airflow."
+        ],
+        "variants": [
+            {
+                "colorName": "Brown",
+                "colorCode": "#5C4033",
+                "image": "/src/assets/images/products/fans/fan-7_brown_main.png",
+                "gallery": [
+                    "/src/assets/images/products/fans/fan-7_brown_main.png",
+                    "/src/assets/images/products/fans/fan-7_brown_1.png",
+                    "/src/assets/images/products/fans/fan-7_brown_2.png"
+                ]
+            },
+            {
+                "colorName": "White",
+                "colorCode": "#f0f0f0",
+                "image": "/src/assets/images/products/fans/fan-7_white_main.png",
+                "gallery": [
+                    "/src/assets/images/products/fans/fan-7_white_main.png",
+                    "/src/assets/images/products/fans/fan-7_white_1.png",
+                    "/src/assets/images/products/fans/fan-7_white_2.png"
+                ]
+            }
+        ],
+        "image": "/src/assets/images/products/fans/fan-7_white_main.png"
     },
     {
         "id": "wire-1",
@@ -562,6 +789,51 @@
             "/src/assets/images/products/heaters/aditya_b3_u_type_1.png",
             "/src/assets/images/products/heaters/aditya_b3_u_type_2.png",
             "/src/assets/images/products/heaters/aditya_b3_u_type_3.png"
+        ]
+    },
+    {
+        "id": "immersion-1",
+        "category": "immersion-rods",
+        "parentCategory": "IMMERSION RODS",
+        "name": "VEDANTA LAVA ELECTRIC IMMERSION ROD",
+        "specifications": {
+            "Brand": "RDA VEDANTA",
+            "Model": "LAVA 2014",
+            "Cable Type": "VD Lite Wires & Cables"
+        },
+        "features": [
+            "Engineered to deliver quick heating for rapid results.",
+            "Built to ensure reliable and long lasting performance.",
+            "Equipped with VD Lite Wires & Cables for secure power delivery."
+        ],
+        "image": "/src/assets/images/products/immersion-rods/lava_electric_primary.png",
+        "gallery": [
+            "/src/assets/images/products/immersion-rods/lava_electric_primary.png",
+            "/src/assets/images/products/immersion-rods/lava_electric_1.png",
+            "/src/assets/images/products/immersion-rods/lava_electric_2.png",
+            "/src/assets/images/products/immersion-rods/lava_electric_3.png"
+        ]
+    },
+    {
+        "id": "immersion-2",
+        "category": "immersion-rods",
+        "parentCategory": "IMMERSION RODS",
+        "name": "VEDANTA IZZO IMMERSION HEATER",
+        "specifications": {
+            "Brand": "RDA VEDANTA",
+            "Cable Type": "VD Lite Wires & Cables"
+        },
+        "features": [
+            "Provides quick and efficient water heating capabilities.",
+            "Features a powerful overall design for optimal temperature control.",
+            "Utilizes high-quality VD Lite Wires & Cables."
+        ],
+        "image": "/src/assets/images/products/immersion-rods/izzo_primary.png",
+        "gallery": [
+            "/src/assets/images/products/immersion-rods/izzo_primary.png",
+            "/src/assets/images/products/immersion-rods/izzo_1.png",
+            "/src/assets/images/products/immersion-rods/izzo_2.png",
+            "/src/assets/images/products/immersion-rods/izzo_3.png"
         ]
     }
 ]

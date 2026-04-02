@@ -33,5 +33,10 @@
         "image": "src/assets/images/categories/heaters.png",
         "title": "ROOM HEATERS",
         "href": "/heaters/"
+    },
+    {
+        "image": "src/assets/images/categories/immersion_rod.png",
+        "title": "IMMERSION RODS",
+        "href": "/immersion-rods/"
     }
 ]

@@ -23,70 +23,11 @@
     font-size: 1.1rem;
 }
 
-/* ── LAYOUT ── */
-.shop-container {
-    display: flex;
-    gap: 40px;
-}
-
-/* ── SIDEBAR ── */
-.shop-sidebar {
-    width: 260px;
-    flex-shrink: 0;
-}
-.sidebar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid var(--color-primary);
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-.sidebar-header h3 {
-    font-size: 1.1rem;
-    color: var(--color-charcoal);
-    font-weight: 700;
-}
-.sidebar-clear {
-    color: var(--brand-red);
-    font-size: 0.8rem;
-    font-weight: 600;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-
-.filter-group {
-    border-bottom: 1px solid var(--color-border);
-}
-.filter-toggle {
-    width: 100%;
-    text-align: left;
-    background: none;
-    border: none;
-    padding: 15px 0;
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: #444;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-}
-.filter-toggle::after {
-    content: "▼";
-    font-size: 0.7rem;
-    color: #888;
-}
-
 /* ── MAIN CONTENT ── */
-.shop-main {
-    flex-grow: 1;
-}
-
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
 }
 
 /* ── PRODUCT CARD ── */
@@ -133,6 +74,31 @@
     text-transform: uppercase;
     line-height: 1.4;
     transition: color 0.3s ease;
+}
+
+.color-swatches {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.swatch-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 0;
+}
+.swatch-btn:hover {
+    transform: scale(1.1);
+}
+.swatch-btn.active {
+    outline-color: var(--brand-red);
+    border-color: #fff;
+    transform: scale(1.1);
 }
 
 /* ── QUICK VIEW MODAL ── */
