@@ -16,7 +16,7 @@
     },
     {
         "image": "src/assets/images/categories/MCB_boxes.png",
-        "title": "MCB BOXES",
+        "title": "DISTRIBUTION BOARDS",
         "href": "/mcb/"
     },
     {
@@ -38,5 +38,10 @@
         "image": "src/assets/images/categories/immersion_rod.png",
         "title": "IMMERSION RODS",
         "href": "/immersion-rods/"
+    },
+    {
+        "image": "src/assets/images/categories/other_accessories.jpg",
+        "title": "OTHER ACCESSORIES",
+        "href": "/other-accessories/"
     }
 ]

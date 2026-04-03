@@ -503,50 +503,6 @@
         }
     },
     {
-        "id": "accs-1",
-        "category": "accessories",
-        "parentCategory": "SIGNATURE SERIES",
-        "name": "RDA VEDANTA PENDANT HOLDER",
-        "specifications": {
-            "Ports": "3 Ports",
-            "Packing": "Pack of 20 pieces in a box",
-            "Material": "Fire retardant polycarbonate outer housing",
-            "Properties": "Heavy brass parts, Heat dissipation ducts"
-        }
-    },
-    {
-        "id": "accs-2",
-        "category": "accessories",
-        "parentCategory": "SIGNATURE SERIES",
-        "name": "2 Pin Plastic Plug Top",
-        "specifications": {
-            "Voltage": "240V",
-            "Material": "Plastic",
-            "Colors Available": "Red, Blue, Green, Yellow"
-        }
-    },
-    {
-        "id": "accs-3",
-        "category": "accessories",
-        "parentCategory": "SIGNATURE SERIES",
-        "name": "CRYSTAL 3 PIN TOP RANGE",
-        "specifications": {
-            "Rating": "6A, 16A",
-            "Design": "Transparent look with LED indicator",
-            "Quality": "Best quality parts"
-        }
-    },
-    {
-        "id": "accs-4",
-        "category": "accessories",
-        "parentCategory": "SIGNATURE SERIES",
-        "name": "6A 3 Pin Multiplug Travel Adapter",
-        "specifications": {
-            "Socket Type": "Universal Socket",
-            "Color": "White"
-        }
-    },
-    {
         "id": "iron-1",
         "category": "irons",
         "parentCategory": "HOME APPLIANCES",
@@ -827,6 +783,310 @@
             "/src/assets/images/products/immersion-rods/izzo_1.png",
             "/src/assets/images/products/immersion-rods/izzo_2.png",
             "/src/assets/images/products/immersion-rods/izzo_3.png"
+        ]
+    },
+    {
+        "id": "db-spn",
+        "category": "mcb",
+        "parentCategory": "DISTRIBUTION BOARDS",
+        "name": "SPN (Single Phase Neutral)",
+        "model": "Compact DBs for minimal space requirements",
+        "specifications": {
+            "Range Variations": "4, 6, 8, 10, 12, 16 Ways",
+            "Colour": "Glossy Grey"
+        },
+        "features": [
+            "Designed as compact DBs which occupy minimum space in electrical setups.",
+            "Features a raised neutral link to allow for fast and easy wiring.",
+            "Equipped with a scratch-resistant surface due to a durable glossy finish."
+        ],
+        "image": "/src/assets/images/products/mcb/db-spn/primary.png",
+        "gallery": [
+            "/src/assets/images/products/mcb/db-spn/primary.png",
+            "/src/assets/images/products/mcb/db-spn/pomelli-image (16).png",
+            "/src/assets/images/products/mcb/db-spn/pomelli-image (18).png",
+            "/src/assets/images/products/mcb/db-spn/pomelli-image (19).png"
+        ]
+    },
+    {
+        "id": "db-tpn",
+        "category": "mcb",
+        "parentCategory": "DISTRIBUTION BOARDS",
+        "name": "TPN (Triple Phase Neutral)",
+        "model": "Multi-Phase Compact Distribution Board",
+        "specifications": {
+            "Range Variations": "4, 6, 8 Ways"
+        },
+        "features": [
+            "Engineered as compact DBs which occupy minimum mounting space.",
+            "Includes a raised neutral link to facilitate easy and organized wiring.",
+            "Features a highly scratch-resistant surface made to last, protected by a glossy finish."
+        ],
+        "image": "/src/assets/images/products/mcb/db-tpn/primary.png",
+        "gallery": [
+            "/src/assets/images/products/mcb/db-tpn/primary.png",
+            "/src/assets/images/products/mcb/db-tpn/pomelli-image (20).png",
+            "/src/assets/images/products/mcb/db-tpn/pomelli-image (22).png",
+            "/src/assets/images/products/mcb/db-tpn/pomelli-image (23).png"
+        ]
+    },
+    {
+        "id": "switchgear-std-changeover",
+        "category": "mcb",
+        "parentCategory": "CHANGEOVER SWITCHES",
+        "name": "Standard Changeover",
+        "model": "Reliable Power Transfer Enclosure",
+        "specifications": {
+            "Double Pole Range": "16, 32, 63, 100, 200, 400, 630 Amp",
+            "Four Pole Range": "16, 32, 63, 100, 200, 400, 630 Amp",
+            "Colour": "Glossy Grey"
+        },
+        "features": [
+            "Constructed from sturdy CRCA sheet material.",
+            "Features an epoxy powder-coated enclosure protecting highly efficient brass current carrying parts.",
+            "Maintained easily due to its scratch-resistant glossy finish."
+        ],
+        "image": "/src/assets/images/products/mcb/switchgear-std-changeover/primary.png",
+        "gallery": [
+            "/src/assets/images/products/mcb/switchgear-std-changeover/primary.png",
+            "/src/assets/images/products/mcb/switchgear-std-changeover/pomelli-image (24).png",
+            "/src/assets/images/products/mcb/switchgear-std-changeover/pomelli-image (26).png",
+            "/src/assets/images/products/mcb/switchgear-std-changeover/pomelli-image (27).png"
+        ]
+    },
+    {
+        "id": "switchgear-dlx-changeover",
+        "category": "mcb",
+        "parentCategory": "CHANGEOVER SWITCHES",
+        "name": "Deluxe Changeover",
+        "model": "Premium Anti-Corrosion Power Transfer",
+        "specifications": {
+            "Double Pole Range": "16, 32, 63, 100, 200, 400, 630 Amp",
+            "Four Pole Range": "16, 32, 63, 100, 200, 400, 630 Amp",
+            "Colour": "Matty White"
+        },
+        "features": [
+            "Encased in a robust CRCA sheet and fully epoxy powder coated.",
+            "The only brand utilizing pure electrolytic copper parts specifically to prevent corrosion.",
+            "Features a high-quality, scratch-resistant surface designed with a sophisticated matt finish."
+        ],
+        "image": "/src/assets/images/products/mcb/switchgear-dlx-changeover/primary.png",
+        "gallery": [
+            "/src/assets/images/products/mcb/switchgear-dlx-changeover/primary.png",
+            "/src/assets/images/products/mcb/switchgear-dlx-changeover/pomelli-image (28).png",
+            "/src/assets/images/products/mcb/switchgear-dlx-changeover/pomelli-image (30).png",
+            "/src/assets/images/products/mcb/switchgear-dlx-changeover/pomelli-image (31).png"
+        ]
+    },
+    {
+        "id": "switchgear-knife-changeover",
+        "category": "mcb",
+        "parentCategory": "CHANGEOVER SWITCHES",
+        "name": "Knife Type Changeover",
+        "model": "Heavy-Duty Making & Breaking Mechanism",
+        "specifications": {
+            "Range": "32, 63, 100, 200, 400, 630 Amp",
+            "Colour": "Glossy Grey"
+        },
+        "features": [
+            "Features current conducting parts in a knife shape optimized for making and breaking mechanisms.",
+            "Built with a state-of-the-art design to ensure maximum current carrying capacity.",
+            "Fitted with strong operation handles for secure manual engagement."
+        ],
+        "image": "/src/assets/images/products/mcb/switchgear-knife-changeover/primary.png",
+        "gallery": [
+            "/src/assets/images/products/mcb/switchgear-knife-changeover/primary.png",
+            "/src/assets/images/products/mcb/switchgear-knife-changeover/pomelli-image (12).png",
+            "/src/assets/images/products/mcb/switchgear-knife-changeover/pomelli-image (14).png",
+            "/src/assets/images/products/mcb/switchgear-knife-changeover/pomelli-image (15).png"
+        ]
+    },
+    {
+        "id": "switchgear-busbar",
+        "category": "mcb",
+        "parentCategory": "BUSBAR CHAMBERS",
+        "name": "Busbar Chamber",
+        "model": "High Conductivity Distribution Unit",
+        "specifications": {
+            "Range": "32, 63, 100, 200, 400, 630 Amp",
+            "Colour": "Matt Grey"
+        },
+        "features": [
+            "Built with a pure electrolytic grade of copper to ensure distinctly better conductivity.",
+            "Features heavy bars to guarantee operational safety on heavy electrical loads.",
+            "Equipped with both side detachable gland plates featuring knockouts.",
+            "Designed with an elegant aesthetic and high electricity resistant gland plates for maximum safety."
+        ],
+        "image": "/src/assets/images/products/mcb/switchgear-busbar/primary.png",
+        "gallery": [
+            "/src/assets/images/products/mcb/switchgear-busbar/primary.png",
+            "/src/assets/images/products/mcb/switchgear-busbar/pomelli-image (1).png",
+            "/src/assets/images/products/mcb/switchgear-busbar/pomelli-image (3).png",
+            "/src/assets/images/products/mcb/switchgear-busbar/pomelli-image.png"
+        ]
+    },
+    {
+        "id": "switchgear-auto-changeover",
+        "category": "mcb",
+        "parentCategory": "AUTOMATIC CHANGEOVER SWITCHES",
+        "name": "Automatic Changeover Switch",
+        "model": "Smart Power Restoration System",
+        "specifications": {
+            "Range Capacity": "32 Amp",
+            "Phase / Voltage": "Single Phase 32A / Input Voltage Range 160V-250AC",
+            "Genset Capability": "Suitable for portable gensets up to 32 Amp (Capacity 8.2 KVA)",
+            "Colour": "Grey"
+        },
+        "features": [
+            "Designed to carry current continuously while actively monitoring the main line.",
+            "Automatically detects power failures and successfully initiates the alternate source.",
+            "Capable of transferring load to an emergency source and instantly sensing restoration of power to retransfer back to normal."
+        ],
+        "image": "/src/assets/images/products/mcb/switchgear-auto-changeover/primary.png",
+        "gallery": [
+            "/src/assets/images/products/mcb/switchgear-auto-changeover/primary.png",
+            "/src/assets/images/products/mcb/switchgear-auto-changeover/pomelli-image (4).png",
+            "/src/assets/images/products/mcb/switchgear-auto-changeover/pomelli-image (6).png",
+            "/src/assets/images/products/mcb/switchgear-auto-changeover/pomelli-image (7).png"
+        ]
+    },
+    {
+        "id": "mcb-pvc-box",
+        "category": "mcb",
+        "parentCategory": "ENCLOSURES & BOXES",
+        "name": "PVC MCB Box",
+        "model": "Compact Circuit Protection Enclosure",
+        "specifications": {
+            "Range Variations": "2 & 4 Way",
+            "Colour": "White"
+        },
+        "features": [
+            "Streamlined PVC MCB Box designed for secure breaker housing.",
+            "Scalable installation options with multiple internal circuit configurations."
+        ],
+        "image": "/src/assets/images/products/mcb/mcb-pvc-box/primary.png",
+        "gallery": [
+            "/src/assets/images/products/mcb/mcb-pvc-box/primary.png",
+            "/src/assets/images/products/mcb/mcb-pvc-box/pomelli-image (10).png",
+            "/src/assets/images/products/mcb/mcb-pvc-box/pomelli-image (11).png",
+            "/src/assets/images/products/mcb/mcb-pvc-box/pomelli-image (9).png"
+        ]
+    },
+    {
+        "id": "accs-sig-enclosure",
+        "category": "accessories",
+        "parentCategory": "SIGNATURE SERIES",
+        "name": "RDA Vedanta Signature Series Enclosure",
+        "model": "Exclusive Range",
+        "specifications": {
+            "Included Links": "Neutral & Earth Link",
+            "Design Plates": "Top & Bottom Detachable Plates",
+            "Range Variations": "4WAY, 6WAY, 8WAY, 10WAY, 12WAY, 16WAY"
+        },
+        "features": [
+            "Features a grandiose design to elevate architectural aesthetics.",
+            "Constructed from CRCA sheets that are epoxy powder coated to effectively prevent rust, dust, and rain damage.",
+            "Innovatively supplied with a specific lug to actively prevent loose contact."
+        ],
+        "image": "/src/assets/images/products/accessories/accs-sig-enclosure/primary.png",
+        "gallery": [
+            "/src/assets/images/products/accessories/accs-sig-enclosure/primary.png",
+            "/src/assets/images/products/accessories/accs-sig-enclosure/pomelli-image (1).png",
+            "/src/assets/images/products/accessories/accs-sig-enclosure/pomelli-image (2).png",
+            "/src/assets/images/products/accessories/accs-sig-enclosure/pomelli-image.png"
+        ]
+    },
+    {
+        "id": "accs-other-cable-tie",
+        "category": "other-accessories",
+        "parentCategory": "CABLE MANAGEMENT",
+        "name": "RDA VEDANTA CABLE TIE",
+        "model": "Ideal for Bundling",
+        "specifications": {
+            "Product Type": "Cable Tie",
+            "Primary Application": "Bundling"
+        },
+        "features": [
+            "Explicitly designed as ideal for bundling various wires and cables.",
+            "Manufactured by RDA VEDANTA ELECTRICALS."
+        ],
+        "image": "/src/assets/images/products/other-accessories/accs-other-cable-tie/cable ties.png",
+        "gallery": [
+            "/src/assets/images/products/other-accessories/accs-other-cable-tie/cable ties.png",
+            "/src/assets/images/products/other-accessories/accs-other-cable-tie/cable ties 2.png",
+            "/src/assets/images/products/other-accessories/accs-other-cable-tie/cable ties 3.png"
+        ]
+    },
+    {
+        "id": "accs-other-sig-tape",
+        "category": "other-accessories",
+        "parentCategory": "ELECTRICAL INSULATION TAPES",
+        "name": "VEDANTA SIGNATURE SERIES PVC TAPE",
+        "model": "Self Adhesive PVC Electrical Insulated Tape",
+        "specifications": {
+            "Nominal Width": "17mm",
+            "Nominal Length": "7.00 meters",
+            "Nominal Thickness": "0.125 mm (0.135 mm nominal variant)"
+        },
+        "features": [
+            "Formulated as a reliable Self Adhesive PVC Electrical Insulated Tape.",
+            "Recognized as a Quality Product ensuring a Safe & Sensible application.",
+            "Standard bulk packaging contains 30 ROLLS."
+        ],
+        "image": "/src/assets/images/products/other-accessories/accs-other-sig-tape/signature series.png",
+        "gallery": [
+            "/src/assets/images/products/other-accessories/accs-other-sig-tape/signature series.png",
+            "/src/assets/images/products/other-accessories/accs-other-sig-tape/red_signature.png"
+        ]
+    },
+    {
+        "id": "accs-other-vogue-tape",
+        "category": "other-accessories",
+        "parentCategory": "ELECTRICAL INSULATION TAPES",
+        "name": "VEDANTA VOGUE SERIES PVC TAPE",
+        "model": "Self Adhesive PVC Electrical Insulated Tape",
+        "specifications": {
+            "Nominal Width": "17mm",
+            "Nominal Length": "7.00 meters",
+            "Nominal Thickness": "0.125 mm"
+        },
+        "features": [
+            "Designed as a robust Self Adhesive PVC Electrical Insulated Tape.",
+            "Marketed under the banner of India's Trust for dependable performance."
+        ],
+        "image": "/src/assets/images/products/other-accessories/accs-other-vogue-tape/yellow_primary.png",
+        "gallery": [
+            "/src/assets/images/products/other-accessories/accs-other-vogue-tape/yellow_primary.png",
+            "/src/assets/images/products/other-accessories/accs-other-vogue-tape/yellow2.png"
+        ],
+        "variants": [
+            {
+                "colorCode": "#ffd800",
+                "colorName": "Yellow",
+                "image": "/src/assets/images/products/other-accessories/accs-other-vogue-tape/yellow_primary.png",
+                "gallery": [
+                    "/src/assets/images/products/other-accessories/accs-other-vogue-tape/yellow_primary.png",
+                    "/src/assets/images/products/other-accessories/accs-other-vogue-tape/yellow2.png"
+                ]
+            },
+            {
+                "colorCode": "#2eb82e",
+                "colorName": "Green",
+                "image": "/src/assets/images/products/other-accessories/accs-other-vogue-tape/green_primary.png",
+                "gallery": [
+                    "/src/assets/images/products/other-accessories/accs-other-vogue-tape/green_primary.png",
+                    "/src/assets/images/products/other-accessories/accs-other-vogue-tape/green2.png"
+                ]
+            },
+            {
+                "colorCode": "#1a1a1a",
+                "colorName": "Black",
+                "image": "/src/assets/images/products/other-accessories/accs-other-vogue-tape/black_primary.png",
+                "gallery": [
+                    "/src/assets/images/products/other-accessories/accs-other-vogue-tape/black_primary.png",
+                    "/src/assets/images/products/other-accessories/accs-other-vogue-tape/black2.png"
+                ]
+            }
         ]
     }
 ]
