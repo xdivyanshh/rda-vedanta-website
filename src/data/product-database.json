@@ -988,18 +988,22 @@
             "Constructed from CRCA sheets that are epoxy powder coated to effectively prevent rust, dust, and rain damage.",
             "Innovatively supplied with a specific lug to actively prevent loose contact."
         ],
-        "image": "/src/assets/images/products/accessories/accs-sig-enclosure/primary.png",
+        "image": "/src/assets/images/products/signature_series/accs-sig-enclosure_primary.png",
         "gallery": [
-            "/src/assets/images/products/accessories/accs-sig-enclosure/primary.png",
-            "/src/assets/images/products/accessories/accs-sig-enclosure/pomelli-image (1).png",
-            "/src/assets/images/products/accessories/accs-sig-enclosure/pomelli-image (2).png",
-            "/src/assets/images/products/accessories/accs-sig-enclosure/pomelli-image.png"
+            "/src/assets/images/products/signature_series/accs-sig-enclosure_pomelli-image_(1).png",
+            "/src/assets/images/products/signature_series/accs-sig-enclosure_pomelli-image_(2).png",
+            "/src/assets/images/products/signature_series/accs-sig-enclosure_pomelli-image.png",
+            "/src/assets/images/products/signature_series/accs-sig-enclosure_primary.png",
+            "/src/assets/images/products/signature_series/accs-sig-enclosure_signature1.png",
+            "/src/assets/images/products/signature_series/accs-sig-enclosure_signature2.png",
+            "/src/assets/images/products/signature_series/accs-sig-enclosure_signature3.png",
+            "/src/assets/images/products/signature_series/accs-sig-enclosure_signature4.png"
         ]
     },
     {
         "id": "accs-other-cable-tie",
         "category": "other-accessories",
-        "parentCategory": "CABLE MANAGEMENT",
+        "parentCategory": "OTHER ACCESSORIES",
         "name": "RDA VEDANTA CABLE TIE",
         "model": "Ideal for Bundling",
         "specifications": {
@@ -1010,17 +1014,17 @@
             "Explicitly designed as ideal for bundling various wires and cables.",
             "Manufactured by RDA VEDANTA ELECTRICALS."
         ],
-        "image": "/src/assets/images/products/other-accessories/accs-other-cable-tie/cable ties.png",
+        "image": "/src/assets/images/products/cable_ties/accs-other-cable-tie_cable_ties.png",
         "gallery": [
-            "/src/assets/images/products/other-accessories/accs-other-cable-tie/cable ties.png",
-            "/src/assets/images/products/other-accessories/accs-other-cable-tie/cable ties 2.png",
-            "/src/assets/images/products/other-accessories/accs-other-cable-tie/cable ties 3.png"
+            "/src/assets/images/products/cable_ties/accs-other-cable-tie_cable_ties_2.png",
+            "/src/assets/images/products/cable_ties/accs-other-cable-tie_cable_ties_3.png",
+            "/src/assets/images/products/cable_ties/accs-other-cable-tie_cable_ties.png"
         ]
     },
     {
         "id": "accs-other-sig-tape",
         "category": "other-accessories",
-        "parentCategory": "ELECTRICAL INSULATION TAPES",
+        "parentCategory": "OTHER ACCESSORIES",
         "name": "VEDANTA SIGNATURE SERIES PVC TAPE",
         "model": "Self Adhesive PVC Electrical Insulated Tape",
         "specifications": {
@@ -1033,16 +1037,16 @@
             "Recognized as a Quality Product ensuring a Safe & Sensible application.",
             "Standard bulk packaging contains 30 ROLLS."
         ],
-        "image": "/src/assets/images/products/other-accessories/accs-other-sig-tape/signature series.png",
+        "image": "/src/assets/images/products/pvc_tapes/accs-other-sig-tape_signature_series.png",
         "gallery": [
-            "/src/assets/images/products/other-accessories/accs-other-sig-tape/signature series.png",
-            "/src/assets/images/products/other-accessories/accs-other-sig-tape/red_signature.png"
+            "/src/assets/images/products/pvc_tapes/accs-other-sig-tape_red_signature.png",
+            "/src/assets/images/products/pvc_tapes/accs-other-sig-tape_signature_series.png"
         ]
     },
     {
         "id": "accs-other-vogue-tape",
         "category": "other-accessories",
-        "parentCategory": "ELECTRICAL INSULATION TAPES",
+        "parentCategory": "OTHER ACCESSORIES",
         "name": "VEDANTA VOGUE SERIES PVC TAPE",
         "model": "Self Adhesive PVC Electrical Insulated Tape",
         "specifications": {
@@ -1054,39 +1058,190 @@
             "Designed as a robust Self Adhesive PVC Electrical Insulated Tape.",
             "Marketed under the banner of India's Trust for dependable performance."
         ],
-        "image": "/src/assets/images/products/other-accessories/accs-other-vogue-tape/yellow_primary.png",
+        "image": "/src/assets/images/products/pvc_tapes/accs-other-vogue-tape_yellow_primary.png",
         "gallery": [
-            "/src/assets/images/products/other-accessories/accs-other-vogue-tape/yellow_primary.png",
-            "/src/assets/images/products/other-accessories/accs-other-vogue-tape/yellow2.png"
+            "/src/assets/images/products/pvc_tapes/accs-other-vogue-tape_black2.png",
+            "/src/assets/images/products/pvc_tapes/accs-other-vogue-tape_black_primary.png",
+            "/src/assets/images/products/pvc_tapes/accs-other-vogue-tape_green2.png",
+            "/src/assets/images/products/pvc_tapes/accs-other-vogue-tape_green_primary.png",
+            "/src/assets/images/products/pvc_tapes/accs-other-vogue-tape_yellow2.png",
+            "/src/assets/images/products/pvc_tapes/accs-other-vogue-tape_yellow_primary.png"
         ],
         "variants": [
             {
                 "colorCode": "#ffd800",
                 "colorName": "Yellow",
-                "image": "/src/assets/images/products/other-accessories/accs-other-vogue-tape/yellow_primary.png",
+                "image": "/src/assets/images/products/pvc_tapes/accs-other-vogue-tape_yellow_primary.png",
                 "gallery": [
-                    "/src/assets/images/products/other-accessories/accs-other-vogue-tape/yellow_primary.png",
-                    "/src/assets/images/products/other-accessories/accs-other-vogue-tape/yellow2.png"
+                    "/src/assets/images/products/pvc_tapes/accs-other-vogue-tape_yellow_primary.png",
+                    "/src/assets/images/products/pvc_tapes/accs-other-vogue-tape_yellow2.png"
                 ]
             },
             {
                 "colorCode": "#2eb82e",
                 "colorName": "Green",
-                "image": "/src/assets/images/products/other-accessories/accs-other-vogue-tape/green_primary.png",
+                "image": "/src/assets/images/products/pvc_tapes/accs-other-vogue-tape_green_primary.png",
                 "gallery": [
-                    "/src/assets/images/products/other-accessories/accs-other-vogue-tape/green_primary.png",
-                    "/src/assets/images/products/other-accessories/accs-other-vogue-tape/green2.png"
+                    "/src/assets/images/products/pvc_tapes/accs-other-vogue-tape_green_primary.png",
+                    "/src/assets/images/products/pvc_tapes/accs-other-vogue-tape_green2.png"
                 ]
             },
             {
                 "colorCode": "#1a1a1a",
                 "colorName": "Black",
-                "image": "/src/assets/images/products/other-accessories/accs-other-vogue-tape/black_primary.png",
+                "image": "/src/assets/images/products/pvc_tapes/accs-other-vogue-tape_black_primary.png",
                 "gallery": [
-                    "/src/assets/images/products/other-accessories/accs-other-vogue-tape/black_primary.png",
-                    "/src/assets/images/products/other-accessories/accs-other-vogue-tape/black2.png"
+                    "/src/assets/images/products/pvc_tapes/accs-other-vogue-tape_black_primary.png",
+                    "/src/assets/images/products/pvc_tapes/accs-other-vogue-tape_black2.png"
                 ]
             }
+        ]
+    },
+    {
+        "id": "plug-2pin-plastic",
+        "category": "switchgears",
+        "parentCategory": "SWITCHGEARS",
+        "name": "2 Pin Plastic Plug Top",
+        "specifications": {
+            "Voltage": "240V",
+            "Material": "Plastic",
+            "Color Options": "Red, Blue, Green, Yellow"
+        },
+        "features": [
+            "Durable Plastic construction.",
+            "Operates efficiently at a standard 240V capacity.",
+            "Available in multiple vibrant color options."
+        ],
+        "image": "/src/assets/images/products/switchgears/plug-2pin-plastic_2_Pin_Plastic_Plug_Top_2pinsocket2_primary.png",
+        "gallery": [
+            "/src/assets/images/products/switchgears/plug-2pin-plastic_2_Pin_Plastic_Plug_Top_2pinsocket1.png",
+            "/src/assets/images/products/switchgears/plug-2pin-plastic_2_Pin_Plastic_Plug_Top_2pinsocket2_primary.png",
+            "/src/assets/images/products/switchgears/plug-2pin-plastic_2_Pin_Plastic_Plug_Top_2pinsocket3.png",
+            "/src/assets/images/products/switchgears/plug-2pin-plastic_2_Pin_Plastic_Plug_Top_2pinsocket4.png"
+        ]
+    },
+    {
+        "id": "plug-crystal-3pin",
+        "category": "switchgears",
+        "parentCategory": "SWITCHGEARS",
+        "name": "RDA VEDANTA CRYSTAL 3 PIN TOP RANGE",
+        "specifications": {
+            "Current Rating": "6A, 16A",
+            "Special Feature": "LED Indicator"
+        },
+        "features": [
+            "Features a modern transparent look built with the best quality parts used.",
+            "Equipped with an integrated LED Indicator for visual power confirmation.",
+            "Available in two standard current ratings to handle different appliance loads."
+        ],
+        "image": "/src/assets/images/products/switchgears/plug-crystal-3pin_RDA_VEDANTA_6A_3pinsocket1_primary.png",
+        "gallery": [
+            "/src/assets/images/products/switchgears/plug-crystal-3pin_RDA_VEDANTA_6A_3pinsocket1_primary.png"
+        ]
+    },
+    {
+        "id": "plug-multiplug-adapter",
+        "category": "switchgears",
+        "parentCategory": "SWITCHGEARS",
+        "name": "6A 3 Pin Multiplug Travel Adapter",
+        "specifications": {
+            "Current Rating": "6A",
+            "Socket Type": "Universal Socket",
+            "Color": "White"
+        },
+        "features": [
+            "Features a highly versatile Universal Socket.",
+            "Designed as a compact 3 Pin Multi Plug ideal for travel."
+        ],
+        "image": "/src/assets/images/products/switchgears/plug-multiplug-adapter_Multiplug_Travel_3plug3_primary.png",
+        "gallery": [
+            "/src/assets/images/products/switchgears/plug-multiplug-adapter_Multiplug_Travel_3plug1.png",
+            "/src/assets/images/products/switchgears/plug-multiplug-adapter_Multiplug_Travel_3plug2.png",
+            "/src/assets/images/products/switchgears/plug-multiplug-adapter_Multiplug_Travel_3plug3_primary.png"
+        ]
+    },
+    {
+        "id": "holder-pendant",
+        "category": "switchgears",
+        "parentCategory": "SWITCHGEARS",
+        "name": "RDA VEDANTA PENDANT HOLDER",
+        "specifications": {
+            "Port Count": "3 Ports",
+            "Packaging": "Pack of 20 Pcs in a Box"
+        },
+        "features": [
+            "Designed with a highly appealing fancy look to make rooms look better.",
+            "Features a 3 ports configuration.",
+            "Engineered to easily hide messy wiring and provide a safe connection for your light.",
+            "Available in lots of styles and designed to be easy to install yourself."
+        ],
+        "image": "/src/assets/images/products/switchgears/holder-pendant_PENDANT_HOLDER_bulb_holder_new3_primary.png",
+        "gallery": [
+            "/src/assets/images/products/switchgears/holder-pendant_PENDANT_HOLDER_bulb_holder_new1.png",
+            "/src/assets/images/products/switchgears/holder-pendant_PENDANT_HOLDER_bulb_holder_new2.png",
+            "/src/assets/images/products/switchgears/holder-pendant_PENDANT_HOLDER_bulb_holder_new3_primary.png",
+            "/src/assets/images/products/switchgears/holder-pendant_PENDANT_HOLDER_bulb_holder_new4.png",
+            "/src/assets/images/products/switchgears/holder-pendant_RDA_VEDANTA_PENDANT_HOLDER_new_holder1.png",
+            "/src/assets/images/products/switchgears/holder-pendant_RDA_VEDANTA_PENDANT_HOLDER_new_holder2_primary.png",
+            "/src/assets/images/products/switchgears/holder-pendant_messy_wiring_hider_messy_wiring_hider.png",
+            "/src/assets/images/products/switchgears/holder-pendant_messy_wiring_hider_messy_wiring_hider2_primary.png",
+            "/src/assets/images/products/switchgears/holder-pendant_messy_wiring_hider_messy_wiring_hider3.png"
+        ]
+    },
+    {
+        "id": "holder-multi",
+        "category": "switchgears",
+        "parentCategory": "SWITCHGEARS",
+        "name": "RDA VEDANTA MULTI HOLDER",
+        "specifications": {
+            "Port Count": "3 Ports",
+            "Packaging": "Pack of 20 Pcs in a Box"
+        },
+        "features": [
+            "Designed with a highly appealing fancy look.",
+            "Features a convenient 3 ports configuration."
+        ],
+        "image": "/src/assets/images/products/switchgears/holder-multi_vedanta_multi_holder_holder2_primary.png",
+        "gallery": [
+            "/src/assets/images/products/switchgears/holder-multi_vedanta_multi_holder_holder1.png",
+            "/src/assets/images/products/switchgears/holder-multi_vedanta_multi_holder_holder2_primary.png"
+        ]
+    },
+    {
+        "id": "ext-fire-retardant",
+        "category": "switchgears",
+        "parentCategory": "SWITCHGEARS",
+        "name": "Fire Retardant Polycarbonate",
+        "image": "/src/assets/images/products/switchgears/ext-fire-retardant_FeaFire_retardant_polycarbonate_primary_bulb_holder3.png",
+        "gallery": [
+            "/src/assets/images/products/switchgears/ext-fire-retardant_FeaFire_retardant_polycarbonate_bulb_holder.png",
+            "/src/assets/images/products/switchgears/ext-fire-retardant_FeaFire_retardant_polycarbonate_bulb_holder2.png",
+            "/src/assets/images/products/switchgears/ext-fire-retardant_FeaFire_retardant_polycarbonate_bulb_holder4.png",
+            "/src/assets/images/products/switchgears/ext-fire-retardant_FeaFire_retardant_polycarbonate_primary_bulb_holder3.png"
+        ]
+    },
+    {
+        "id": "ext-fr-grade",
+        "category": "switchgears",
+        "parentCategory": "SWITCHGEARS",
+        "name": "FR Grade Engineering",
+        "image": "/src/assets/images/products/switchgears/ext-fr-grade_FR_GRADE_ENGINEERING_primary_switchboard2.png",
+        "gallery": [
+            "/src/assets/images/products/switchgears/ext-fr-grade_FR_GRADE_ENGINEERING_primary_switchboard2.png",
+            "/src/assets/images/products/switchgears/ext-fr-grade_FR_GRADE_ENGINEERING_switchboard.png",
+            "/src/assets/images/products/switchgears/ext-fr-grade_FR_GRADE_ENGINEERING_switchboard3.png"
+        ]
+    },
+    {
+        "id": "ext-messy-wiring",
+        "category": "switchgears",
+        "parentCategory": "SWITCHGEARS",
+        "name": "Messy Wiring Hider",
+        "image": "/src/assets/images/products/switchgears/ext-messy-wiring_messy_wiring_hider_messy_wiring_hider2_primary.png",
+        "gallery": [
+            "/src/assets/images/products/switchgears/ext-messy-wiring_messy_wiring_hider_messy_wiring_hider.png",
+            "/src/assets/images/products/switchgears/ext-messy-wiring_messy_wiring_hider_messy_wiring_hider2_primary.png",
+            "/src/assets/images/products/switchgears/ext-messy-wiring_messy_wiring_hider_messy_wiring_hider3.png"
         ]
     }
 ]

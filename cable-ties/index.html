@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cable Ties | RDA Vedanta</title>
+    <link rel="manifest" href="../manifest.json">
+    <meta name="theme-color" content="#d32f2f">
+    <meta name="description" content="Browse the complete range of RDA Vedanta Other Accessories.">
+    <link rel="icon" href="../src/assets/images/icon-192x192.png" type="image/png">
+    <link rel="apple-touch-icon" href="../src/assets/images/icon-192x192.png">
+    <link rel="stylesheet" href="../src/css/variables.css">
+    <link rel="stylesheet" href="../src/css/base.css">
+    <link rel="stylesheet" href="../src/css/layout.css">
+    <link rel="stylesheet" href="../src/css/components.css">
+    <link rel="stylesheet" href="../src/css/sections.css">
+    <link rel="stylesheet" href="../src/css/shop.css">
+    <script>
+        const storedTheme = sessionStorage.getItem('rda-theme') || 'light';
+        if (storedTheme) document.documentElement.setAttribute('data-theme', storedTheme);
+    </script>
+</head>
+
+<body>
+
+    <div id="global-loader" class="global-loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- ═══ HEADER ═══ -->
+    <header>
+        <div class="container nav-wrapper">
+            <a href="/">
+                <img src="../src/assets/images/vedanta-logo.png" alt="RDA Vedanta Electricals Logo" class="header-logo">
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="/leadership/" data-i18n="nav-team">Our Team</a></li>
+                    <li><a href="/products/" data-i18n="nav-products">Products</a></li>
+                    <li><a href="/contact/" data-i18n="nav-distributors">Distributors</a></li>
+                    <li><a href="/contact/" data-i18n="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions" id="headerActions">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <select id="langSelect" class="lang-select">
+                    <option value="en">English</option>
+                    <option value="hi">हिंदी (Hindi)</option>
+                    <option value="bn">বাংলা (Bengali)</option>
+                    <option value="mr">मराठी (Marathi)</option>
+                    <option value="te">తెలుగు (Telugu)</option>
+                    <option value="pa">ਪੰਜਾਬੀ (Punjabi)</option>
+                </select>
+                <a href="https://wa.me/916392959815" class="btn btn-whatsapp btn-sm" target="_blank">
+                    <span data-i18n="btn-sales">Sales Inquiry</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ═══ SHOPPING GRID ═══ -->
+    <section class="shop-section" style="padding-top: calc(var(--header-height) + 40px);">
+        <div class="container">
+            <div class="shop-header">
+                <h1 id="shopCategoryTitle">Cable Ties</h1>
+                <p>Secure your wiring with our premium range of Cable Ties.</p>
+            </div>
+            <div id="shopGrid" class="products-grid" data-category="cable-ties"></div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer>
+        <div class="container">
+            <div class="footer-nav-grid">
+                <div class="footer-brand-col">
+                    <img src="../src/assets/images/vedanta-logo.png" alt="RDA Vedanta Logo" class="footer-logo">
+                    <p class="footer-tagline">
+                        <strong data-i18n="footer-company">RDA Electricals Pvt Ltd.</strong><br>
+                        <em data-i18n="hero-tagline">Your Safety is Our Priority.</em>
+                    </p>
+                </div>
+            </div>
+            <div class="legal-strip" data-i18n="footer-legal">
+                © 2026 RDA Electricals Pvt Ltd. All Rights Reserved. | Privacy Policy | Terms of Trade
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══ SCRIPTS ═══ -->
+    <script type="module" src="../src/js/main.js"></script>
+    <script src="../src/js/localization.js"></script>
+    <script src="../src/js/render-shop.js"></script>
+    <script src="../src/js/scroll-animations.js"></script>
+
+</body>
+
+</html>

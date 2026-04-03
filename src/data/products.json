@@ -15,7 +15,7 @@
         "href": "/switchgears/"
     },
     {
-        "image": "src/assets/images/categories/MCB_boxes.png",
+        "image": "src/assets/images/categories/change_the_white.jpg",
         "title": "DISTRIBUTION BOARDS",
         "href": "/mcb/"
     },
@@ -43,5 +43,15 @@
         "image": "src/assets/images/categories/other_accessories.jpg",
         "title": "OTHER ACCESSORIES",
         "href": "/other-accessories/"
+    },
+    {
+        "image": "src/assets/images/categories/cable_ties.png",
+        "title": "CABLE TIES",
+        "href": "/cable-ties/"
+    },
+    {
+        "image": "src/assets/images/categories/pvc_tape.png",
+        "title": "PVC TAPES",
+        "href": "/pvc-tapes/"
     }
 ]
