@@ -48,5 +48,10 @@
         "image": "src/assets/images/categories/dry_irons.png",
         "title": "DRY IRONS",
         "href": "/irons/"
+    },
+    {
+        "image": "src/assets/images/categories/conduit_pipes.png",
+        "title": "CONDUIT PVC PIPES & FITTINGS",
+        "href": "/pipes/"
     }
 ]

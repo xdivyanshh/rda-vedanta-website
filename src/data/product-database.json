@@ -440,28 +440,6 @@
         "image": "/src/assets/images/products/fans/fan-7_white_main.png"
     },
     {
-        "id": "pipe-1",
-        "category": "pipes",
-        "parentCategory": "CONDUIT PIPES",
-        "name": "RDA VEDANTA uPVC PIPE",
-        "specifications": {
-            "Sizes Available": "20mm, 25mm, 32mm, 40mm, 50mm, 63mm",
-            "Color": "White",
-            "Properties": "Fire-retardant (FR), Lightweight, Flexible, Safe"
-        }
-    },
-    {
-        "id": "pipe-2",
-        "category": "pipes",
-        "parentCategory": "CONDUIT PIPES",
-        "name": "VEDANTA SUPREME uPVC PIPE",
-        "specifications": {
-            "Sizes Available": "25mm",
-            "Color": "Orange",
-            "Quality": "Corrosion-Free, Superior Rigidity"
-        }
-    },
-    {
         "id": "heater-1",
         "category": "heaters",
         "parentCategory": "ROOM HEATERS & IMMERSION RODS",
@@ -1926,6 +1904,218 @@
         "gallery": [
             "/src/assets/images/products/irons/bullet_primary.png",
             "/src/assets/images/products/irons/bullet_pomelli-image (1).png"
+        ]
+    },
+    {
+        "id": "pipe-1",
+        "category": "pipes",
+        "parentCategory": "PVC CONDUIT PIPES",
+        "name": "RDA VEDANTA UPVC PIPE",
+        "model": "Your Safety is Our Priority",
+        "features": [
+            "Features exceptional resistance to breakdown under high electrical voltage, making it a highly reliable solution.",
+            "Exhibits extreme durability with resistance to weathering, chemical rotting, corrosion, shock, and abrasion.",
+            "Manufactured on fully automated machines by mixing insulating compounds at 140 C in high-speed mixers for enhanced mechanical properties.",
+            "Passes the Spring Test to verify its ability to bend and flex without breaking, cracking, or sagging.",
+            "Designed with utility features including Laser Printing, Smooth Finishing, and being Socketed on One End."
+        ],
+        "specifications": {
+            "Sizes Available": "20mm, 25mm, 32mm, 40mm, 50mm, 63mm",
+            "Colour": "White",
+            "Material Properties": "Fire-retardant (FR), Corrosion-Free, Lightweight, Good Insulator"
+        },
+        "image": "/src/assets/images/products/pipes/upvc_pipe_primary.png",
+        "gallery": [
+            "/src/assets/images/products/pipes/upvc_pipe_primary.png",
+            "/src/assets/images/products/pipes/upvc_pipe_pomelli-image (1).png",
+            "/src/assets/images/products/pipes/upvc_pipe_pomelli-image (3).png",
+            "/src/assets/images/products/pipes/upvc_pipe_pomelli-image.png"
+        ]
+    },
+    {
+        "id": "pipe-2",
+        "category": "pipes",
+        "parentCategory": "PVC CONDUIT PIPES",
+        "name": "VEDANTA SUPREME UPVC PIPE",
+        "model": "Your Safety is Our Priority",
+        "features": [
+            "Provides exceptional defense against high electrical voltage and acts as an ideal material for electrical insulation.",
+            "Highly resistant to harsh weather conditions, chemical rotting, corrosion, shock, and abrasion.",
+            "Tested via the Spring Test to confirm flexibility, stiffness, and overall suitability for safe electrical applications."
+        ],
+        "specifications": {
+            "Sizes Available": "25mm",
+            "Colour": "Orange"
+        },
+        "image": "/src/assets/images/products/pipes/supreme_upvc_pipe_primary.png",
+        "gallery": [
+            "/src/assets/images/products/pipes/supreme_upvc_pipe_primary.png",
+            "/src/assets/images/products/pipes/supreme_upvc_pipe_pomelli-image (4).png",
+            "/src/assets/images/products/pipes/supreme_upvc_pipe_pomelli-image (6).png",
+            "/src/assets/images/products/pipes/supreme_upvc_pipe_pomelli-image (7).png"
+        ]
+    },
+    {
+        "id": "pipe-3",
+        "category": "pipes",
+        "parentCategory": "CONDUIT PIPE FITTINGS",
+        "name": "DEEP JUNCTION BOX",
+        "model": "Conduit Pipe Fittings",
+        "features": [
+            "Serves as an essential component within the Conduit Pipe Fittings range.",
+            "Built to integrate safely into PVC conduit systems, prioritizing secure electrical connections."
+        ],
+        "specifications": {
+            "Category": "Conduit Pipe Fittings"
+        },
+        "image": "/src/assets/images/products/pipes/deep_junction_box_primary.png",
+        "gallery": [
+            "/src/assets/images/products/pipes/deep_junction_box_primary.png",
+            "/src/assets/images/products/pipes/deep_junction_box_pomelli-image (20).png",
+            "/src/assets/images/products/pipes/deep_junction_box_pomelli-image (21).png"
+        ]
+    },
+    {
+        "id": "pipe-4",
+        "category": "pipes",
+        "parentCategory": "CONDUIT PIPE FITTINGS",
+        "name": "JUNCTION BOX",
+        "model": "Conduit Pipe Fittings",
+        "features": [
+            "Functions as a core component in the Conduit Pipe Fittings ecosystem.",
+            "Contributes to the overall safety and organization of electrical conduit applications."
+        ],
+        "specifications": {
+            "Category": "Conduit Pipe Fittings"
+        },
+        "image": "/src/assets/images/products/pipes/junction_box_primary.png",
+        "gallery": [
+            "/src/assets/images/products/pipes/junction_box_primary.png",
+            "/src/assets/images/products/pipes/junction_box_pomelli-image (15).png",
+            "/src/assets/images/products/pipes/junction_box_pomelli-image (17).png",
+            "/src/assets/images/products/pipes/junction_box_pomelli-image (18).png"
+        ]
+    },
+    {
+        "id": "pipe-5",
+        "category": "pipes",
+        "parentCategory": "CONDUIT PIPE FITTINGS",
+        "name": "SUPER LONG BEND",
+        "model": "Conduit Pipe Fittings",
+        "features": [
+            "Specifically designed as a Super Long Bend to accommodate routing in conduit systems.",
+            "Available in multiple structural qualities to meet diverse installation demands."
+        ],
+        "specifications": {
+            "Quality Variations": "Light, Medium, Heavy, Super Heavy"
+        },
+        "image": "/src/assets/images/products/pipes/super_long_bend_primary.png",
+        "gallery": [
+            "/src/assets/images/products/pipes/super_long_bend_primary.png",
+            "/src/assets/images/products/pipes/super_long_bend_pomelli-image (10).png",
+            "/src/assets/images/products/pipes/super_long_bend_pomelli-image (8).png"
+        ]
+    },
+    {
+        "id": "pipe-6",
+        "category": "pipes",
+        "parentCategory": "CONDUIT PIPE FITTINGS",
+        "name": "CONCEALED LIGHT BOX",
+        "model": "Conduit Pipe Fittings",
+        "features": [
+            "Integrates seamlessly as a Concealed Light Box within PVC conduit networks.",
+            "Designed to maintain the secure routing of electrical components."
+        ],
+        "specifications": {
+            "Category": "Conduit Pipe Fittings"
+        },
+        "image": "/src/assets/images/products/pipes/concealed_light_box_primary.png",
+        "gallery": [
+            "/src/assets/images/products/pipes/concealed_light_box_primary.png",
+            "/src/assets/images/products/pipes/concealed_light_box_pomelli-image (12).png",
+            "/src/assets/images/products/pipes/concealed_light_box_pomelli-image (13).png",
+            "/src/assets/images/products/pipes/concealed_light_box_pomelli-image (14).png"
+        ]
+    },
+    {
+        "id": "pipe-7",
+        "category": "pipes",
+        "parentCategory": "PVC ACCESSORIES",
+        "name": "ROUND SHEET",
+        "model": "PVC Accessories",
+        "features": [
+            "Functions as a fundamental piece within the PVC Accessories catalog.",
+            "Engineered to support and finalize PVC conduit installations safely."
+        ],
+        "specifications": {
+            "Category": "PVC Accessories"
+        },
+        "image": "/src/assets/images/products/pipes/round_sheet_primary.png",
+        "gallery": [
+            "/src/assets/images/products/pipes/round_sheet_primary.png",
+            "/src/assets/images/products/pipes/round_sheet_pomelli-image (32).png",
+            "/src/assets/images/products/pipes/round_sheet_pomelli-image (33).png"
+        ]
+    },
+    {
+        "id": "pipe-8",
+        "category": "pipes",
+        "parentCategory": "PVC ACCESSORIES",
+        "name": "FAN SHEET",
+        "model": "PVC Accessories",
+        "features": [
+            "Classified under the dedicated PVC Accessories product range.",
+            "Designed to safely support electrical components when used with conduit systems."
+        ],
+        "specifications": {
+            "Category": "PVC Accessories"
+        },
+        "image": "/src/assets/images/products/pipes/fan_sheet_primary.png",
+        "gallery": [
+            "/src/assets/images/products/pipes/fan_sheet_primary.png",
+            "/src/assets/images/products/pipes/fan_sheet_pomelli-image (28).png",
+            "/src/assets/images/products/pipes/fan_sheet_pomelli-image (30).png",
+            "/src/assets/images/products/pipes/fan_sheet_pomelli-image (31).png"
+        ]
+    },
+    {
+        "id": "pipe-9",
+        "category": "pipes",
+        "parentCategory": "PVC ACCESSORIES",
+        "name": "GULLI (GITTI)",
+        "model": "PVC Accessories",
+        "features": [
+            "Provided as a standard mounting accessory within the PVC Accessories line.",
+            "Aids in the secure physical anchoring of conduit pipes."
+        ],
+        "specifications": {
+            "Category": "PVC Accessories"
+        },
+        "image": "/src/assets/images/products/pipes/gully_gitti__primary.png",
+        "gallery": [
+            "/src/assets/images/products/pipes/gully_gitti__primary.png",
+            "/src/assets/images/products/pipes/gully_gitti__pomelli-image (24).png",
+            "/src/assets/images/products/pipes/gully_gitti__pomelli-image (26).png",
+            "/src/assets/images/products/pipes/gully_gitti__pomelli-image (27).png"
+        ]
+    },
+    {
+        "id": "pipe-10",
+        "category": "pipes",
+        "parentCategory": "PVC ACCESSORIES",
+        "name": "WIRE CLIP",
+        "model": "PVC Accessories",
+        "features": [
+            "Included in the comprehensive PVC Accessories selection.",
+            "Specifically designed to organize and secure exposed electrical wiring safely."
+        ],
+        "specifications": {
+            "Category": "PVC Accessories"
+        },
+        "image": "/src/assets/images/products/pipes/wire_clips_primary.png",
+        "gallery": [
+            "/src/assets/images/products/pipes/wire_clips_primary.png",
+            "/src/assets/images/products/pipes/wire_clips_pomelli-image (22).png"
         ]
     }
 ]
