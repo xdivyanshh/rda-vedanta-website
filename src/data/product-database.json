@@ -440,47 +440,6 @@
         "image": "/src/assets/images/products/fans/fan-7_white_main.png"
     },
     {
-        "id": "wire-1",
-        "category": "wires",
-        "parentCategory": "WIRES & CABLES",
-        "name": "ALUMINIUM TWIN CABLE",
-        "specifications": {
-            "Conductor": "Aluminium (stranded round or compact)",
-            "Core Insulation": "FR and Weather proof grade PVC",
-            "Size": "1.5mm \u2013 25.0mm",
-            "Colour": "White and Black in 2,3 & 4 cores",
-            "Length": "90 meters per coil",
-            "Application": "Wiring power grids, overhead power transmission"
-        }
-    },
-    {
-        "id": "wire-2",
-        "category": "wires",
-        "parentCategory": "WIRES & CABLES",
-        "name": "ALUMINIUM SINGLE CORE CABLE",
-        "specifications": {
-            "Conductor": "Aluminium (stranded round or compact)",
-            "Core Insulation": "FR and Weather proof grade PVC",
-            "Size": "1.5mm \u2013 70.0mm",
-            "Colour": "Black",
-            "Length": "90 meters per coil"
-        }
-    },
-    {
-        "id": "wire-3",
-        "category": "wires",
-        "parentCategory": "WIRES & CABLES",
-        "name": "TWISTED FLEXIBLE WIRE",
-        "specifications": {
-            "Conductor": "Bare annealed electrolytic grade copper",
-            "Core Insulation": "Virgin grade natural PVC",
-            "Size": "10/76, 14/76, 18/76, 23/76, 30/76, 40/76",
-            "Colour": "White with colour lining",
-            "Length": "90 meters per coil",
-            "Application": "Light load connections and electrical appliances"
-        }
-    },
-    {
         "id": "pipe-1",
         "category": "pipes",
         "parentCategory": "CONDUIT PIPES",
@@ -1243,5 +1202,407 @@
             "/src/assets/images/products/switchgears/ext-messy-wiring_messy_wiring_hider_messy_wiring_hider2_primary.png",
             "/src/assets/images/products/switchgears/ext-messy-wiring_messy_wiring_hider_messy_wiring_hider3.png"
         ]
+    },
+    {
+        "id": "other-fan-1",
+        "category": "other-fans",
+        "parentCategory": "OTHER FANS",
+        "name": "Titan",
+        "model": "Farrata Fans (Standard Range)",
+        "specifications": {
+            "Volt/Watts": "220/150",
+            "Speed (RPM)": "2800",
+            "Sweep": "590 MM",
+            "AD CMM": "25"
+        },
+        "features": [
+            "Engineered for high-speed performance at 2800 RPM.",
+            "Delivers robust airflow with a 590 MM sweep.",
+            "Operates efficiently at a standard 220 Volts."
+        ],
+        "image": "/src/assets/images/products/other-fans/farrata_fans_model_titan_primary.png",
+        "gallery": [
+            "/src/assets/images/products/other-fans/farrata_fans_model_titan_primary.png",
+            "/src/assets/images/products/other-fans/farrata_fans_model_titan2.png",
+            "/src/assets/images/products/other-fans/farrata_fans_model_titan3.png"
+        ]
+    },
+    {
+        "id": "other-fan-2",
+        "category": "other-fans",
+        "parentCategory": "OTHER FANS",
+        "name": "Tez",
+        "model": "Farrata Fans (Standard Range)",
+        "specifications": {
+            "Volt/Watts": "220/115",
+            "Speed (RPM)": "2800",
+            "Sweep": "400 MM",
+            "AD CMM": "75"
+        },
+        "features": [
+            "Features a high-velocity motor running at 2800 RPM.",
+            "Designed with a compact 400 MM sweep for targeted airflow.",
+            "Provides a solid 75 AD CMM air delivery output."
+        ],
+        "image": "/src/assets/images/products/other-fans/farrata_fans_model_tez_primary.png",
+        "gallery": [
+            "/src/assets/images/products/other-fans/farrata_fans_model_tez_primary.png",
+            "/src/assets/images/products/other-fans/farrata_fans_model_tez2.png",
+            "/src/assets/images/products/other-fans/farrata_fans_model_tez3.png"
+        ]
+    },
+    {
+        "id": "other-fan-3",
+        "category": "other-fans",
+        "parentCategory": "OTHER FANS",
+        "name": "Supreme NS",
+        "model": "Pedestal Fans (Premium Range)",
+        "specifications": {
+            "Volt/Watts": "220/55",
+            "Speed (RPM)": "1350",
+            "Sweep": "400 MM",
+            "AD CMM": "75"
+        },
+        "features": [
+            "Designed for steady, premium cooling at 1350 RPM.",
+            "Provides broad coverage with a 400 MM sweep.",
+            "Operates with an energy-efficient 55 Watts power consumption."
+        ],
+        "image": "/src/assets/images/products/other-fans/pedestal_fans_model_supreme_ns_primary.png",
+        "gallery": [
+            "/src/assets/images/products/other-fans/pedestal_fans_model_supreme_ns_primary.png",
+            "/src/assets/images/products/other-fans/pedestal_fans_model_supreme_ns2.png",
+            "/src/assets/images/products/other-fans/pedestal_fans_model_supreme_ns3.png",
+            "/src/assets/images/products/other-fans/pedestal_fans_model_supreme_ns4.png"
+        ]
+    },
+    {
+        "id": "other-fan-4",
+        "category": "other-fans",
+        "parentCategory": "OTHER FANS",
+        "name": "Supreme HS",
+        "model": "Pedestal Fans (Premium Range)",
+        "specifications": {
+            "Volt/Watts": "220/55",
+            "Speed (RPM)": "2100",
+            "Sweep": "400 MM",
+            "AD CMM": "75"
+        },
+        "features": [
+            "Engineered for rapid air circulation with a 2100 RPM motor.",
+            "Maintains broad room coverage with a 400 MM sweep.",
+            "Delivers high performance while utilizing an efficient 55 Watts."
+        ],
+        "image": "/src/assets/images/products/other-fans/pedestal_fans_model_supreme_hs_primary.png",
+        "gallery": [
+            "/src/assets/images/products/other-fans/pedestal_fans_model_supreme_hs_primary.png",
+            "/src/assets/images/products/other-fans/pedestal_fans_model_supreme_hs2.png",
+            "/src/assets/images/products/other-fans/pedestal_fans_model_supreme_hs3.png",
+            "/src/assets/images/products/other-fans/pedestal_fans_model_supreme_hs4.png"
+        ]
+    },
+    {
+        "id": "other-fan-5",
+        "category": "other-fans",
+        "parentCategory": "OTHER FANS",
+        "name": "Supreme NS",
+        "model": "Table Fans (Premium Range)",
+        "specifications": {
+            "Volt/Watts": "220/55",
+            "Speed (RPM)": "1350",
+            "Sweep": "400 MM",
+            "AD CMM": "75"
+        },
+        "features": [
+            "Operates at a stable 1350 RPM for consistent desktop airflow.",
+            "Features a standard 400 MM sweep suitable for direct cooling.",
+            "Highly efficient, running on just 55 Watts."
+        ],
+        "image": "/src/assets/images/products/other-fans/table_fans_supreme_ns_primary.png",
+        "gallery": [
+            "/src/assets/images/products/other-fans/table_fans_supreme_ns_primary.png",
+            "/src/assets/images/products/other-fans/table_fans_supreme_ns2.png",
+            "/src/assets/images/products/other-fans/table_fans_supreme_ns3.png"
+        ]
+    },
+    {
+        "id": "other-fan-6",
+        "category": "other-fans",
+        "parentCategory": "OTHER FANS",
+        "name": "Supreme HS",
+        "model": "Table Fans (Premium Range)",
+        "specifications": {
+            "Volt/Watts": "220/75",
+            "Speed (RPM)": "2100",
+            "Sweep": "400 MM",
+            "AD CMM": "75"
+        },
+        "features": [
+            "Features a high-speed motor achieving 2100 RPM.",
+            "Designed to maximize airflow on surfaces with a 400 MM sweep.",
+            "Runs on a more powerful 75 Watts system for enhanced performance."
+        ],
+        "image": "/src/assets/images/products/other-fans/table_fans_supreme_hs_primary.png",
+        "gallery": [
+            "/src/assets/images/products/other-fans/table_fans_supreme_hs_primary.png",
+            "/src/assets/images/products/other-fans/table_fans_supreme_hs2.png",
+            "/src/assets/images/products/other-fans/table_fans_supreme_hs3.png",
+            "/src/assets/images/products/other-fans/table_fans_supreme_hs4.png"
+        ]
+    },
+    {
+        "id": "other-fan-7",
+        "category": "other-fans",
+        "parentCategory": "OTHER FANS",
+        "name": "All Purpose Fan",
+        "model": "Premium Range",
+        "specifications": {
+            "Volt/Watts": "220/75",
+            "Speed (RPM)": "2000",
+            "Sweep": "300 MM",
+            "AD CMM": "35"
+        },
+        "features": [
+            "Highly versatile design intended for all-purpose cooling applications.",
+            "Features a high-velocity 2000 RPM motor.",
+            "Compact 300 MM sweep allows for flexible placement."
+        ],
+        "image": "/src/assets/images/products/other-fans/all_purpose_fans_all_purpose_fan_primary.png",
+        "gallery": [
+            "/src/assets/images/products/other-fans/all_purpose_fans_all_purpose_fan_primary.png",
+            "/src/assets/images/products/other-fans/all_purpose_fans_all_purpose_fan2.png",
+            "/src/assets/images/products/other-fans/all_purpose_fans_all_purpose_fan3.png"
+        ]
+    },
+    {
+        "id": "other-fan-8",
+        "category": "other-fans",
+        "parentCategory": "OTHER FANS",
+        "name": "Stormy Fan",
+        "specifications": {
+            "Volt/Watts": "220/40",
+            "Speed (RPM)": "2700",
+            "Sweep": "225",
+            "AD CMM": "25"
+        },
+        "features": [
+            "Engineered with an ultra-high-speed motor reaching 2700 RPM.",
+            "Highly compact form factor featuring a 225 Sweep.",
+            "Exceptional energy efficiency, consuming only 40 Watts."
+        ],
+        "image": "/src/assets/images/products/other-fans/stormy_fans_stormy_fan_blue_primary.png",
+        "gallery": [
+            "/src/assets/images/products/other-fans/stormy_fans_stormy_fan_blue_primary.png",
+            "/src/assets/images/products/other-fans/stormy_fans_stormy_fan_yellow_primary.png",
+            "/src/assets/images/products/other-fans/stormy_fans_stormy_fan_blue2.png",
+            "/src/assets/images/products/other-fans/stormy_fans_stormy_fan_blue3.png",
+            "/src/assets/images/products/other-fans/stormy_fans_stormy_fan_yellow2.png",
+            "/src/assets/images/products/other-fans/stormy_fans_stormy_fan_yellow3.png",
+            "/src/assets/images/products/other-fans/stormy_fans_stormy_fan_yellow4.png"
+        ]
+    },
+    {
+        "id": "other-fan-9",
+        "category": "other-fans",
+        "parentCategory": "OTHER FANS",
+        "name": "Ventilation Fan Range",
+        "specifications": {
+            "Volt/Watts": "220/33, 220/34, 220/39",
+            "Speed (RPM)": "1400, 1350, 1300",
+            "Sweep (MM)": "150, 200, 250",
+            "AD CMM": "270, 500, 800"
+        },
+        "features": [
+            "Specifically engineered for ventilation and air extraction.",
+            "Available in multiple size variations (150 MM, 200 MM, 250 MM) to fit diverse installation requirements.",
+            "Scalable air delivery options ranging from 270 to 800 AD CMM."
+        ],
+        "image": "/src/assets/images/products/other-fans/ventilation_fans_ventilation_fans_primary.png",
+        "gallery": [
+            "/src/assets/images/products/other-fans/ventilation_fans_ventilation_fans_primary.png",
+            "/src/assets/images/products/other-fans/ventilation_fans_ventilation_fans2.png",
+            "/src/assets/images/products/other-fans/ventilation_fans_ventilation_fans3.png",
+            "/src/assets/images/products/other-fans/ventilation_fans_ventilation_fans4.png"
+        ]
+    },
+    {
+        "id": "other-fan-10",
+        "category": "other-fans",
+        "parentCategory": "OTHER FANS",
+        "name": "Fresh Air Fan Range",
+        "specifications": {
+            "Volt/Watts": "220/55, 220/60, 220/50",
+            "Speed (RPM)": "1350, 2400, 2600",
+            "Sweep (MM)": "300, 225, 150",
+            "AD CMM": "1250, 700, 350"
+        },
+        "features": [
+            "Designed to promote fresh air circulation within interior spaces.",
+            "Offers high-speed operation, with models reaching up to 2600 RPM.",
+            "Achieves significant air delivery, peaking at 1250 AD CMM in larger models."
+        ],
+        "image": "/src/assets/images/products/other-fans/fresh_air_fans_fresh_air_fans_primary.png",
+        "gallery": [
+            "/src/assets/images/products/other-fans/fresh_air_fans_fresh_air_fans_primary.png",
+            "/src/assets/images/products/other-fans/fresh_air_fans_fresh_air_fans2.png",
+            "/src/assets/images/products/other-fans/fresh_air_fans_fresh_air_fans3.png"
+        ]
+    },
+    {
+        "id": "other-fan-11",
+        "category": "other-fans",
+        "parentCategory": "OTHER FANS",
+        "name": "Heavy Duty Exhausts",
+        "specifications": {
+            "Volt/Watts": "220/410, 220/145, 220/160, 220/100, 220/90, 220/55",
+            "Speed (RPM)": "1400, 900, 1400, 900, 1400, 900",
+            "Sweep (MM)": "450 (18\"), 450 (18\"), 380 (15\"), 380 (15\"), 300 (12\"), 300 (12\")",
+            "AD CMM": "6120, 3900, 3200, 2000, 1710, 1145"
+        },
+        "features": [
+            "Built for Heavy Duty performance in demanding environments.",
+            "Massive air delivery capabilities, ranging up to an immense 6120 AD CMM.",
+            "Wide array of sizes from compact 300 MM (12\") to large 450 MM (18\") units.",
+            "Offers both standard (900 RPM) and high-speed (1400 RPM) configurations."
+        ],
+        "image": "/src/assets/images/products/other-fans/heavy_duty_exhaust_fans_heavy_duty_exhaust_fan_grey_primary.png",
+        "gallery": [
+            "/src/assets/images/products/other-fans/heavy_duty_exhaust_fans_heavy_duty_exhaust_fan_grey_primary.png",
+            "/src/assets/images/products/other-fans/heavy_duty_exhaust_fans_heavy_duty_exhaust_fan_primary_black.png",
+            "/src/assets/images/products/other-fans/heavy_duty_exhaust_fans_heavy_duty_exhaust_fan_black2.png",
+            "/src/assets/images/products/other-fans/heavy_duty_exhaust_fans_heavy_duty_exhaust_fan_black3.png",
+            "/src/assets/images/products/other-fans/heavy_duty_exhaust_fans_heavy_duty_exhaust_fan_black4.png",
+            "/src/assets/images/products/other-fans/heavy_duty_exhaust_fans_heavy_duty_exhaust_fan_grey2.png",
+            "/src/assets/images/products/other-fans/heavy_duty_exhaust_fans_heavy_duty_exhaust_fan_grey3.png",
+            "/src/assets/images/products/other-fans/heavy_duty_exhaust_fans_heavy_duty_exhaust_fan_grey4.png"
+        ]
+    },
+    {
+        "id": "other-fan-12",
+        "category": "other-fans",
+        "parentCategory": "OTHER FANS",
+        "name": "Model- Udaan",
+        "model": "Farrata Fans (Standard Range)",
+        "features": [
+            "Reliable high-speed farrata fan designed for consistent performance.",
+            "Durable build suitable for standard household cooling needs."
+        ],
+        "image": "/src/assets/images/products/other-fans/farrata_fans_model_udaan_primary.png",
+        "gallery": [
+            "/src/assets/images/products/other-fans/farrata_fans_model_udaan_primary.png",
+            "/src/assets/images/products/other-fans/farrata_fans_model_udaan2.png",
+            "/src/assets/images/products/other-fans/farrata_fans_model_udaan3.png",
+            "/src/assets/images/products/other-fans/farrata_fans_model_udaan4.png"
+        ]
+    },
+    {
+        "id": "wire-4",
+        "category": "wires",
+        "parentCategory": "WIRES & CABLES",
+        "name": "Single Core Copper Cable (FR)",
+        "model": "Flame Retardant PVC Insulated Multi-Strand Unsheathed",
+        "features": [
+            "Engineered with an electrolytic grade bright annealed copper conductor for high conductivity.",
+            "Safely insulated with FR grade PVC, possessing an Oxygen Index of Minimum 29%.",
+            "Delivers high thermal stability with a Temperature Index of Minimum 250\u00b0C at 21% Oxygen Index."
+        ],
+        "specifications": {
+            "Conductor Material": "Electrolytic grade bright annealed copper",
+            "Sizes": "From 0.5mm\u00b2 up to 25mm\u00b2",
+            "Colours": "Red, Yellow, Blue, Green, Black, Grey, White",
+            "Packaging": "90 meters (box packing), 200 meters (polybag packing)"
+        }
+    },
+    {
+        "id": "wire-5",
+        "category": "wires",
+        "parentCategory": "WIRES & CABLES",
+        "name": "Multi Core Cables (Round)",
+        "model": "Multiphase Industrial & Commercial Cable",
+        "features": [
+            "Features a high-quality electrolytic grade bright annealed copper conductor.",
+            "Encased in a Flame retardant PVC Jacket combined with individual single core insulation.",
+            "Highly scalable design supporting up to 19 cores."
+        ],
+        "specifications": {
+            "Conductor Material": "Electrolytic grade bright annealed copper",
+            "Core Configurations": "Up to 19 core (Maximum size limit 240 mm\u00b2)",
+            "Available Packaged Sizes": "0.5mm\u00b2 to 10.0mm\u00b2 (in 2 core, 3 core, 4 core)",
+            "Sheath Colours": "Black, White (any colour on demand)",
+            "Core Insulation Colours": "Red, Yellow, Blue, Green, Black (or as per BIS Norms)"
+        }
+    },
+    {
+        "id": "wire-6",
+        "category": "wires",
+        "parentCategory": "WIRES & CABLES",
+        "name": "Multi Core Cables (Flat)",
+        "model": "Submersible Pump Motor Cable",
+        "features": [
+            "Built with an electrolytic grade bright annealed copper conductor specifically designed for low conductor resistance.",
+            "Inner cores are protected by a special grade PVC formulated compound.",
+            "The tough robust outer PVC Jacket offers superior defense against oils, greases, and various chemicals."
+        ],
+        "specifications": {
+            "Conductor Material": "Electrolytic grade bright annealed copper",
+            "Core Configurations": "3 and 4 core",
+            "Sizes": "1.50mm\u00b2, 2.50mm\u00b2, 4.0mm\u00b2, 6.0mm\u00b2, 10.0mm\u00b2",
+            "Sheath Colours": "Black, Grey (any other colour on demand)",
+            "Core Insulation Colours": "Red, Yellow, Blue, Green, Black"
+        }
+    },
+    {
+        "id": "wire-3",
+        "category": "wires",
+        "parentCategory": "WIRES & CABLES",
+        "name": "Twisted Flexible Wire",
+        "model": "Light Load Flexible Connection Wire",
+        "features": [
+            "Utilizes a highly flexible bare annealed electrolytic grade copper conductor.",
+            "Features virgin grade natural PVC for core insulation.",
+            "Designed for exceptional flexibility to navigate tight appliance connections."
+        ],
+        "specifications": {
+            "Conductor Material": "Bare annealed electrolytic grade copper",
+            "Sizes": "10/76, 14/76, 18/76, 23/76, 30/76, 40/76",
+            "Colours": "White with colour lining",
+            "Packaging": "90 meters per coil"
+        }
+    },
+    {
+        "id": "wire-1",
+        "category": "wires",
+        "parentCategory": "WIRES & CABLES",
+        "name": "Aluminium Twin Cable",
+        "model": "Overhead Power Transmission Cable",
+        "features": [
+            "Constructed with Aluminium conductors that are stranded round or compact.",
+            "Built to withstand the elements utilizing FR and Weather proof grade PVC core insulation.",
+            "Available in multiple configurations including 2, 3 & 4 cores."
+        ],
+        "specifications": {
+            "Conductor Material": "Stranded round or compact Aluminium",
+            "Sizes": "1.5mm - 25.0mm",
+            "Colours": "White and Black",
+            "Packaging": "90 meters per coil"
+        }
+    },
+    {
+        "id": "wire-2",
+        "category": "wires",
+        "parentCategory": "WIRES & CABLES",
+        "name": "Aluminium Single Core Cable",
+        "model": "Standard Power Distribution Cable",
+        "features": [
+            "Driven by a robust Aluminium conductor available in stranded round or compact forms.",
+            "Protected by high-grade FR and Weather proof grade PVC insulation.",
+            "Features a broad scalability range supporting sizes up to 70.0mm."
+        ],
+        "specifications": {
+            "Conductor Material": "Stranded round or compact Aluminium",
+            "Sizes": "1.5mm - 70.0mm",
+            "Colours": "Black",
+            "Packaging": "90 meters per coil"
+        }
     }
 ]
