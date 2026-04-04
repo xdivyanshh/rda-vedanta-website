@@ -43,5 +43,10 @@
         "image": "src/assets/images/categories/other_accessories.jpg",
         "title": "OTHER ACCESSORIES",
         "href": "/other-accessories/"
+    },
+    {
+        "image": "src/assets/images/categories/dry_irons.png",
+        "title": "DRY IRONS",
+        "href": "/irons/"
     }
 ]

@@ -462,18 +462,6 @@
         }
     },
     {
-        "id": "iron-1",
-        "category": "irons",
-        "parentCategory": "HOME APPLIANCES",
-        "name": "ROCKY 550"
-    },
-    {
-        "id": "iron-2",
-        "category": "irons",
-        "parentCategory": "HOME APPLIANCES",
-        "name": "PLANCHA SMART"
-    },
-    {
         "id": "heater-1",
         "category": "heaters",
         "parentCategory": "ROOM HEATERS & IMMERSION RODS",
@@ -1511,7 +1499,15 @@
             "Sizes": "From 0.5mm\u00b2 up to 25mm\u00b2",
             "Colours": "Red, Yellow, Blue, Green, Black, Grey, White",
             "Packaging": "90 meters (box packing), 200 meters (polybag packing)"
-        }
+        },
+        "image": "/src/assets/images/products/wires/single_core_multi_strand_primary.png",
+        "gallery": [
+            "/src/assets/images/products/wires/single_core_multi_strand_primary.png",
+            "/src/assets/images/products/wires/single_core_multi_strand_pomelli-image (16).png",
+            "/src/assets/images/products/wires/single_core_multi_strand_pomelli-image (17).png",
+            "/src/assets/images/products/wires/single_core_multi_strand_pomelli-image (18).png",
+            "/src/assets/images/products/wires/pomelli-image.png"
+        ]
     },
     {
         "id": "wire-5",
@@ -1530,7 +1526,15 @@
             "Available Packaged Sizes": "0.5mm\u00b2 to 10.0mm\u00b2 (in 2 core, 3 core, 4 core)",
             "Sheath Colours": "Black, White (any colour on demand)",
             "Core Insulation Colours": "Red, Yellow, Blue, Green, Black (or as per BIS Norms)"
-        }
+        },
+        "image": "/src/assets/images/products/wires/multi_core_round_primary.png",
+        "gallery": [
+            "/src/assets/images/products/wires/multi_core_round_primary.png",
+            "/src/assets/images/products/wires/multi_core_round_pomelli-image (12).png",
+            "/src/assets/images/products/wires/multi_core_round_pomelli-image (13).png",
+            "/src/assets/images/products/wires/multi_core_round_pomelli-image (14).png",
+            "/src/assets/images/products/wires/pomelli-image.png"
+        ]
     },
     {
         "id": "wire-6",
@@ -1549,7 +1553,15 @@
             "Sizes": "1.50mm\u00b2, 2.50mm\u00b2, 4.0mm\u00b2, 6.0mm\u00b2, 10.0mm\u00b2",
             "Sheath Colours": "Black, Grey (any other colour on demand)",
             "Core Insulation Colours": "Red, Yellow, Blue, Green, Black"
-        }
+        },
+        "image": "/src/assets/images/products/wires/multi_core_flat_primary.png",
+        "gallery": [
+            "/src/assets/images/products/wires/multi_core_flat_primary.png",
+            "/src/assets/images/products/wires/multi_core_flat_pomelli-image (10).png",
+            "/src/assets/images/products/wires/multi_core_flat_pomelli-image (7).png",
+            "/src/assets/images/products/wires/multi_core_flat_pomelli-image (8).png",
+            "/src/assets/images/products/wires/pomelli-image.png"
+        ]
     },
     {
         "id": "wire-3",
@@ -1567,7 +1579,14 @@
             "Sizes": "10/76, 14/76, 18/76, 23/76, 30/76, 40/76",
             "Colours": "White with colour lining",
             "Packaging": "90 meters per coil"
-        }
+        },
+        "image": "/src/assets/images/products/wires/twisted_flexible_wires_primary.png",
+        "gallery": [
+            "/src/assets/images/products/wires/twisted_flexible_wires_primary.png",
+            "/src/assets/images/products/wires/twisted_flexible_wires_pomelli-image (2).png",
+            "/src/assets/images/products/wires/twisted_flexible_wires_pomelli-image.png",
+            "/src/assets/images/products/wires/pomelli-image.png"
+        ]
     },
     {
         "id": "wire-1",
@@ -1585,7 +1604,15 @@
             "Sizes": "1.5mm - 25.0mm",
             "Colours": "White and Black",
             "Packaging": "90 meters per coil"
-        }
+        },
+        "image": "/src/assets/images/products/wires/aluminium_twin_cables_primary.png",
+        "gallery": [
+            "/src/assets/images/products/wires/aluminium_twin_cables_primary.png",
+            "/src/assets/images/products/wires/aluminium_twin_cables_pomelli-image (3).png",
+            "/src/assets/images/products/wires/aluminium_twin_cables_pomelli-image (5).png",
+            "/src/assets/images/products/wires/aluminium_twin_cables_pomelli-image (6).png",
+            "/src/assets/images/products/wires/pomelli-image.png"
+        ]
     },
     {
         "id": "wire-2",
@@ -1603,6 +1630,302 @@
             "Sizes": "1.5mm - 70.0mm",
             "Colours": "Black",
             "Packaging": "90 meters per coil"
-        }
+        },
+        "image": "/src/assets/images/products/wires/aluminium_single_core_primary.png",
+        "gallery": [
+            "/src/assets/images/products/wires/aluminium_single_core_primary.png",
+            "/src/assets/images/products/wires/aluminium_single_core_pomelli-image (20).png",
+            "/src/assets/images/products/wires/aluminium_single_core_pomelli-image (21).png",
+            "/src/assets/images/products/wires/aluminium_single_core_pomelli-image (22).png",
+            "/src/assets/images/products/wires/pomelli-image.png"
+        ]
+    },
+    {
+        "id": "iron-1",
+        "category": "irons",
+        "parentCategory": "DRY IRONS",
+        "name": "ROCKY",
+        "model": "Efficient Heating Dry Iron (550W Series)",
+        "features": [
+            "Designed with a 550 W base while incorporating a 750 Watt mechanism for faster heating.",
+            "Engineered for efficiency, resulting in lower power consumption.",
+            "Built with a 100% aluminium soleplate to guarantee uniform heating across garments.",
+            "Equipped with an iron temperature-ready light that switches off automatically when the desired heat is reached."
+        ],
+        "specifications": {
+            "Power Output": "550W / 750W",
+            "Soleplate Material": "100% Aluminium",
+            "Indicator": "Temperature-Ready Light"
+        },
+        "image": "/src/assets/images/products/irons/rocky_primary.png",
+        "gallery": [
+            "/src/assets/images/products/irons/rocky_primary.png",
+            "/src/assets/images/products/irons/rocky_pomelli-image (42).png",
+            "/src/assets/images/products/irons/rocky_pomelli-image (44).png",
+            "/src/assets/images/products/irons/rocky_pomelli-image (45).png"
+        ]
+    },
+    {
+        "id": "iron-2",
+        "category": "irons",
+        "parentCategory": "DRY IRONS",
+        "name": "DELUXE",
+        "model": "Model No. VDP501 (750W Series)",
+        "features": [
+            "Operates at 750 Watts to ensure faster heating alongside lower power consumption.",
+            "Features a high-quality 100% aluminium soleplate for consistent and uniform heating.",
+            "Integrated with an iron temperature-ready light for optimal thermal control."
+        ],
+        "specifications": {
+            "Power Output": "750W",
+            "Soleplate Material": "100% Aluminium",
+            "Indicator": "Temperature-Ready Light"
+        },
+        "image": "/src/assets/images/products/irons/deluxe_primary.png",
+        "gallery": [
+            "/src/assets/images/products/irons/deluxe_primary.png",
+            "/src/assets/images/products/irons/deluxe_pomelli-image (38).png",
+            "/src/assets/images/products/irons/deluxe_pomelli-image (40).png",
+            "/src/assets/images/products/irons/deluxe_pomelli-image (41).png"
+        ]
+    },
+    {
+        "id": "iron-3",
+        "category": "irons",
+        "parentCategory": "DRY IRONS",
+        "name": "CRYSTA",
+        "model": "Standard 750W Dry Iron (750W Series)",
+        "features": [
+            "Powered by a 750 Watt element for faster heating and lower power consumption.",
+            "Utilizes a 100% aluminium soleplate to provide highly uniform heating.",
+            "Features an automatic iron temperature-ready light."
+        ],
+        "specifications": {
+            "Power Output": "750W",
+            "Soleplate Material": "100% Aluminium",
+            "Indicator": "Temperature-Ready Light"
+        },
+        "image": "/src/assets/images/products/irons/crysta_primary.png",
+        "gallery": [
+            "/src/assets/images/products/irons/crysta_primary.png",
+            "/src/assets/images/products/irons/crysta_pomelli-image (34).png",
+            "/src/assets/images/products/irons/crysta_pomelli-image (35).png",
+            "/src/assets/images/products/irons/crysta_pomelli-image (37).png"
+        ]
+    },
+    {
+        "id": "iron-4",
+        "category": "irons",
+        "parentCategory": "DRY IRONS",
+        "name": "VIVA",
+        "model": "Model No. VDP502 (750W Series)",
+        "features": [
+            "Optimized for faster heating with a 750 Watt energy-saving architecture.",
+            "Ensures smooth performance via a 100% aluminium soleplate designed for uniform heating.",
+            "Includes a smart iron temperature-ready light that turns off when ready."
+        ],
+        "specifications": {
+            "Power Output": "750W",
+            "Soleplate Material": "100% Aluminium",
+            "Indicator": "Temperature-Ready Light"
+        },
+        "image": "/src/assets/images/products/irons/viva_primary.png",
+        "gallery": [
+            "/src/assets/images/products/irons/viva_primary.png",
+            "/src/assets/images/products/irons/viva_pomelli-image (30).png",
+            "/src/assets/images/products/irons/viva_pomelli-image (32).png",
+            "/src/assets/images/products/irons/viva_pomelli-image (33).png"
+        ]
+    },
+    {
+        "id": "iron-5",
+        "category": "irons",
+        "parentCategory": "DRY IRONS",
+        "name": "MAXX",
+        "model": "Model No. VDP511 (750W Series)",
+        "features": [
+            "Draws 750 Watts for quick operation and lower power consumption.",
+            "Delivers edge-to-edge uniform heating through its 100% aluminium soleplate.",
+            "Features a built-in iron temperature-ready light."
+        ],
+        "specifications": {
+            "Power Output": "750W",
+            "Soleplate Material": "100% Aluminium",
+            "Indicator": "Temperature-Ready Light"
+        },
+        "image": "/src/assets/images/products/irons/maxx_primary.png",
+        "gallery": [
+            "/src/assets/images/products/irons/maxx_primary.png",
+            "/src/assets/images/products/irons/maxx_pomelli-image (27).png",
+            "/src/assets/images/products/irons/maxx_pomelli-image (28).png",
+            "/src/assets/images/products/irons/maxx_pomelli-image (29).png"
+        ]
+    },
+    {
+        "id": "iron-6",
+        "category": "irons",
+        "parentCategory": "DRY IRONS",
+        "name": "MAJESTIC",
+        "model": "Premium 750W Heating Iron (750W Series)",
+        "features": [
+            "Achieves faster heating and lower power consumption using a 750 Watt core.",
+            "Features a durable 100% aluminium soleplate for strict uniform heating.",
+            "Equipped with an automated iron temperature-ready light."
+        ],
+        "specifications": {
+            "Power Output": "750W",
+            "Soleplate Material": "100% Aluminium",
+            "Indicator": "Temperature-Ready Light"
+        },
+        "image": "/src/assets/images/products/irons/majestic_primary.png",
+        "gallery": [
+            "/src/assets/images/products/irons/majestic_primary.png",
+            "/src/assets/images/products/irons/majestic_pomelli-image (23).png",
+            "/src/assets/images/products/irons/majestic_pomelli-image (24).png",
+            "/src/assets/images/products/irons/majestic_pomelli-image (25).png"
+        ]
+    },
+    {
+        "id": "iron-7",
+        "category": "irons",
+        "parentCategory": "DRY IRONS",
+        "name": "BMW",
+        "model": "Model No. VDP510 (750W Series)",
+        "features": [
+            "Highly efficient 750 Watt system built for faster heating and lower power consumption.",
+            "Maintains strict uniform heating utilizing a 100% aluminium soleplate.",
+            "Smart iron temperature-ready light goes off when the target temperature is reached."
+        ],
+        "specifications": {
+            "Power Output": "750W",
+            "Soleplate Material": "100% Aluminium",
+            "Indicator": "Temperature-Ready Light"
+        },
+        "image": "/src/assets/images/products/irons/bmw_primary.png",
+        "gallery": [
+            "/src/assets/images/products/irons/bmw_primary.png",
+            "/src/assets/images/products/irons/bmw_pomelli-image (18).png",
+            "/src/assets/images/products/irons/bmw_pomelli-image (20).png",
+            "/src/assets/images/products/irons/bmw_pomelli-image (21).png"
+        ]
+    },
+    {
+        "id": "iron-8",
+        "category": "irons",
+        "parentCategory": "DRY IRONS",
+        "name": "PLANCHA SILVER",
+        "model": "Classic Silver Dry Iron (750W Series)",
+        "features": [
+            "Features a 750 Watt core for faster heating and lower power consumption.",
+            "Equipped with a 100% aluminium soleplate to ensure uniform heating.",
+            "Includes an iron temperature-ready light for visual heat confirmation."
+        ],
+        "specifications": {
+            "Power Output": "750W",
+            "Soleplate Material": "100% Aluminium",
+            "Indicator": "Temperature-Ready Light"
+        },
+        "image": "/src/assets/images/products/irons/plancha_silver_primary.png",
+        "gallery": [
+            "/src/assets/images/products/irons/plancha_silver_primary.png",
+            "/src/assets/images/products/irons/plancha_silver_pomelli-image (14).png",
+            "/src/assets/images/products/irons/plancha_silver_pomelli-image (16).png",
+            "/src/assets/images/products/irons/plancha_silver_pomelli-image (17).png"
+        ]
+    },
+    {
+        "id": "iron-9",
+        "category": "irons",
+        "parentCategory": "DRY IRONS",
+        "name": "PLANCHA SMART (GOLD)",
+        "model": "Model No. VDP508 (750W Series)",
+        "features": [
+            "Optimized 750 Watt operation for faster heating and lower power consumption.",
+            "Features an exclusive American Heritage Golden soleplate designed specifically for easy gliding on all fabrics.",
+            "Integrated iron temperature-ready light automatically turns off when optimal heat is reached."
+        ],
+        "specifications": {
+            "Power Output": "750W",
+            "Soleplate Material": "American Heritage Golden Soleplate",
+            "Indicator": "Temperature-Ready Light"
+        },
+        "image": "/src/assets/images/products/irons/plancha_smart_primary.png",
+        "gallery": [
+            "/src/assets/images/products/irons/plancha_smart_primary.png",
+            "/src/assets/images/products/irons/plancha_smart_pomelli-image (10).png",
+            "/src/assets/images/products/irons/plancha_smart_pomelli-image (12).png",
+            "/src/assets/images/products/irons/plancha_smart_pomelli-image (13).png"
+        ]
+    },
+    {
+        "id": "iron-10",
+        "category": "irons",
+        "parentCategory": "DRY IRONS",
+        "name": "STEELCO",
+        "model": "High-Capacity 1000W Iron (1000W Series)",
+        "features": [
+            "Powered by a high-capacity 1000 Watt system that enables significantly faster heating.",
+            "Ensures robust and uniform heat distribution across the entire base.",
+            "Constructed with a highly conductive 100% aluminium soleplate.",
+            "Features an iron temperature-ready light for accurate heat management."
+        ],
+        "specifications": {
+            "Power Output": "1000W",
+            "Soleplate Material": "100% Aluminium",
+            "Indicator": "Temperature-Ready Light"
+        },
+        "image": "/src/assets/images/products/irons/steelco_primary.png",
+        "gallery": [
+            "/src/assets/images/products/irons/steelco_primary.png",
+            "/src/assets/images/products/irons/steelco_pomelli-image (7).png",
+            "/src/assets/images/products/irons/steelco_pomelli-image (8).png",
+            "/src/assets/images/products/irons/steelco_pomelli-image (9).png"
+        ]
+    },
+    {
+        "id": "iron-11",
+        "category": "irons",
+        "parentCategory": "DRY IRONS",
+        "name": "PLATINI",
+        "model": "High-Capacity 1000W Iron (1000W Series)",
+        "features": [
+            "Utilizes a 1000 Watt heating element to enable faster heating and uniform heat distribution.",
+            "Equipped with a high-grade 100% aluminium soleplate.",
+            "Includes a reliable iron temperature-ready light that switches off when ready."
+        ],
+        "specifications": {
+            "Power Output": "1000W",
+            "Soleplate Material": "100% Aluminium",
+            "Indicator": "Temperature-Ready Light"
+        },
+        "image": "/src/assets/images/products/irons/platini_primary.png",
+        "gallery": [
+            "/src/assets/images/products/irons/platini_primary.png",
+            "/src/assets/images/products/irons/platini_pomelli-image (3).png",
+            "/src/assets/images/products/irons/platini_pomelli-image (4).png",
+            "/src/assets/images/products/irons/platini_pomelli-image (5).png"
+        ]
+    },
+    {
+        "id": "iron-12",
+        "category": "irons",
+        "parentCategory": "DRY IRONS",
+        "name": "BULLET",
+        "model": "Model No. VDP505 (1000W Series)",
+        "features": [
+            "Delivers high-speed performance with a 1000 Watt element enabling faster heating.",
+            "Guarantees uniform heat distribution via a solid 100% aluminium soleplate.",
+            "Features a smart iron temperature-ready light for precise thermal indication."
+        ],
+        "specifications": {
+            "Power Output": "1000W",
+            "Soleplate Material": "100% Aluminium",
+            "Indicator": "Temperature-Ready Light"
+        },
+        "image": "/src/assets/images/products/irons/bullet_primary.png",
+        "gallery": [
+            "/src/assets/images/products/irons/bullet_primary.png",
+            "/src/assets/images/products/irons/bullet_pomelli-image (1).png"
+        ]
     }
 ]
