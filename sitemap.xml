@@ -1,67 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-
+<!-- ═══ Homepage ═══ -->
 <url>
   <loc>https://rdavedanta.in/</loc>
-  <lastmod>2026-03-04T04:45:24+00:00</lastmod>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>1.00</priority>
 </url>
+
+<!-- ═══ Main Sections ═══ -->
 <url>
-  <loc>https://rdavedanta.in/our-team</loc>
-  <lastmod>2026-03-04T04:45:24+00:00</lastmod>
+  <loc>https://rdavedanta.in/leadership/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rdavedanta.in/src/assets/catalogs/rda-coolers.pdf</loc>
-  <lastmod>2026-03-04T04:45:24+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://rdavedanta.in/products/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://rdavedanta.in/src/assets/catalogs/rda-heaters.pdf</loc>
-  <lastmod>2026-03-04T04:45:24+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rdavedanta.in/src/assets/catalogs/rda-wires-cables.pdf</loc>
-  <lastmod>2026-03-04T04:45:24+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rdavedanta.in/src/assets/catalogs/rda-fans.pdf</loc>
-  <lastmod>2026-03-04T04:45:24+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rdavedanta.in/src/assets/catalogs/rda-other-fans.pdf</loc>
-  <lastmod>2026-03-04T04:45:24+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rdavedanta.in/src/assets/catalogs/rda-pipes.pdf</loc>
-  <lastmod>2026-03-04T04:45:24+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rdavedanta.in/src/assets/catalogs/rda-irons.pdf</loc>
-  <lastmod>2026-03-04T04:45:24+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rdavedanta.in/src/assets/catalogs/rda-distribution-boards.pdf</loc>
-  <lastmod>2026-03-04T04:45:24+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rdavedanta.in/src/assets/catalogs/rda-electrical-accessories.pdf</loc>
-  <lastmod>2026-03-04T04:45:24+00:00</lastmod>
+  <loc>https://rdavedanta.in/contact/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 
+<!-- ═══ Product Category Pages (under /products/) ═══ -->
+<url>
+  <loc>https://rdavedanta.in/products/wires/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://rdavedanta.in/products/ceiling-fans/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://rdavedanta.in/products/other-fans/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://rdavedanta.in/products/coolers/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://rdavedanta.in/products/heaters/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://rdavedanta.in/products/irons/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://rdavedanta.in/products/immersion-rods/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://rdavedanta.in/products/pipes/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://rdavedanta.in/products/accessories/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+
+<!-- ═══ Standalone Product Shop Pages ═══ -->
+<url>
+  <loc>https://rdavedanta.in/wires/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://rdavedanta.in/fans/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://rdavedanta.in/other-fans/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://rdavedanta.in/coolers/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://rdavedanta.in/heaters/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://rdavedanta.in/irons/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://rdavedanta.in/immersion-rods/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://rdavedanta.in/pipes/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://rdavedanta.in/accessories/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://rdavedanta.in/switchgears/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://rdavedanta.in/mcb/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://rdavedanta.in/other-accessories/</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.60</priority>
+</url>
 
 </urlset>

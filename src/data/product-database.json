@@ -1218,6 +1218,24 @@
         ]
     },
     {
+        "id": "other-fan-12",
+        "category": "other-fans",
+        "parentCategory": "OTHER FANS",
+        "name": "Model- Udaan",
+        "model": "Farrata Fans (Standard Range)",
+        "features": [
+            "Reliable high-speed farrata fan designed for consistent performance.",
+            "Durable build suitable for standard household cooling needs."
+        ],
+        "image": "/src/assets/images/products/other-fans/farrata_fans_model_udaan_primary.png",
+        "gallery": [
+            "/src/assets/images/products/other-fans/farrata_fans_model_udaan_primary.png",
+            "/src/assets/images/products/other-fans/farrata_fans_model_udaan2.png",
+            "/src/assets/images/products/other-fans/farrata_fans_model_udaan3.png",
+            "/src/assets/images/products/other-fans/farrata_fans_model_udaan4.png"
+        ]
+    },
+    {
         "id": "other-fan-3",
         "category": "other-fans",
         "parentCategory": "OTHER FANS",
@@ -1441,24 +1459,6 @@
             "/src/assets/images/products/other-fans/heavy_duty_exhaust_fans_heavy_duty_exhaust_fan_grey2.png",
             "/src/assets/images/products/other-fans/heavy_duty_exhaust_fans_heavy_duty_exhaust_fan_grey3.png",
             "/src/assets/images/products/other-fans/heavy_duty_exhaust_fans_heavy_duty_exhaust_fan_grey4.png"
-        ]
-    },
-    {
-        "id": "other-fan-12",
-        "category": "other-fans",
-        "parentCategory": "OTHER FANS",
-        "name": "Model- Udaan",
-        "model": "Farrata Fans (Standard Range)",
-        "features": [
-            "Reliable high-speed farrata fan designed for consistent performance.",
-            "Durable build suitable for standard household cooling needs."
-        ],
-        "image": "/src/assets/images/products/other-fans/farrata_fans_model_udaan_primary.png",
-        "gallery": [
-            "/src/assets/images/products/other-fans/farrata_fans_model_udaan_primary.png",
-            "/src/assets/images/products/other-fans/farrata_fans_model_udaan2.png",
-            "/src/assets/images/products/other-fans/farrata_fans_model_udaan3.png",
-            "/src/assets/images/products/other-fans/farrata_fans_model_udaan4.png"
         ]
     },
     {
